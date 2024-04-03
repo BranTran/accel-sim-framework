@@ -1,0 +1,180 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 83549
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83549 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83600 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 83640
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83640 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83661 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sad_k1 with pid: 83715
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83715 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 83916
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83916 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83935 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 83952
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83952 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 84014
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84014 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84031 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 84065
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84065 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84081 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sad_k1 with pid: 84131
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84131 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 84387
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84387 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84403 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 84421
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84421 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 84482
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84482 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84498 Killed                  $BINDIR/backprop_k1 65536
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+Sleeping...
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 84531
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84531 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84583 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sad_k1 with pid: 84600
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84600 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 84824
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84824 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84840 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 84858
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84858 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 84916
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84916 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84933 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 84966
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84966 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84982 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sad_k1 with pid: 85034
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85034 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 85148
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85148 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85165 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 85182
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85182 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 85242
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85242 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85258 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 85293
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85293 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85310 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sad_k1 with pid: 85362
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85362 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 85578
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85578 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85594 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 85611
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 85611 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt

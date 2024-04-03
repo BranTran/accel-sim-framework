@@ -11,6 +11,12 @@
 
 //#include "ampere_RTX3070_hw_def.h"
 
+<<<<<<< HEAD
 #include "volta_TITANV_hw_def.h"
+=======
+//#include "volta_TITANV_hw_def.h"
+
+#include "volta_V100_hw_def.h"
+>>>>>>> 7e02543 (Update Summit repo things April 3rd)
 
 #endif

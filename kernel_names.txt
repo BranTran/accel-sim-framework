@@ -1,0 +1,1 @@
+11.0,/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../hw_run/traces/device-0/11.0/_i___data_large_input_64_64_64_dataset_bin__o_64_64_64_dataset_out/traces/kernel-23.07.10-Monday--10:54:59.traceg,,2023Jul10105820

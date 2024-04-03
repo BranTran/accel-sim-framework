@@ -1,0 +1,343 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+RUNNING POWER/TEMP DUMP WITH ONLY SLEEPS
+Starting execution of pathfinder_k1 
+Temperature is currently 28 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 448062
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448062 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 448116
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448116 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 448173
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448173 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 448195
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448195 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 448253
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448253 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 448310
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448310 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 448331
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448331 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 448386
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448386 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 448442
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448442 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 448473
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448473 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 448531
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448531 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 448586
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448586 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 448607
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448607 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 448660
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448660 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 448721
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 448721 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUPS AND SLEEPS
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 448742
+Temperature is currently 41 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 448742 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 448800
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 448800 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 448858
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 448858 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 448914
+Temperature is currently 41 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 448914 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 448970
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 448970 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 449046
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449046 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 449104
+Temperature is currently 41 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449104 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 449162
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449162 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 449219
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449219 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 449241
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449241 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 449302
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449302 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 449363
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449363 Killed                  ${!bm_name} > /dev/null
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 449419
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449419 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 449475
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449475 Killed                  ${!bm_name} > /dev/null
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 29 C
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 449531
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 449531 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUP NO SLEEP
+Starting execution of pathfinder_k1 
+Temperature is currently 29 C
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 449590
+Temperature is currently 40 C
+Sleeping...
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 40 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449590 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 449607
+Temperature is currently 41 C
+Sleeping...
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 40 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449607 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 449654
+Temperature is currently 40 C
+Sleeping...
+Starting execution of pathfinder_k1 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449654 Killed                  ${!bm_name} > /dev/null
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 449709
+Temperature is currently 41 C
+Sleeping...
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 40 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449709 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 449730
+Temperature is currently 40 C
+Sleeping...
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449730 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 449786
+Temperature is currently 39 C
+Sleeping...
+Starting execution of pathfinder_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449786 Killed                  ${!bm_name} > /dev/null
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 449840
+Temperature is currently 41 C
+Sleeping...
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 40 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449840 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 449853
+Temperature is currently 40 C
+Sleeping...
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 40 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449853 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 449909
+Temperature is currently 39 C
+Sleeping...
+Starting execution of pathfinder_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449909 Killed                  ${!bm_name} > /dev/null
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 449963
+Temperature is currently 41 C
+Sleeping...
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 40 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449963 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 449986
+Temperature is currently 40 C
+Sleeping...
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 449986 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 450041
+Temperature is currently 39 C
+Sleeping...
+Starting execution of pathfinder_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 450041 Killed                  ${!bm_name} > /dev/null
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 450100
+Temperature is currently 41 C
+Sleeping...
+Starting execution of quasirandomGenerator_k1 
+Temperature is currently 41 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 450100 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 450153
+Temperature is currently 41 C
+Sleeping...
+Starting execution of quasirandomGenerator_k2 
+Temperature is currently 40 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 450153 Killed                  ${!bm_name} > /dev/null
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 450177
+Temperature is currently 38 C
+Sleeping...

@@ -1,0 +1,56 @@
+####START INFO####
+Host information: Node
+
+h37n02
+####END   INFO####
+
+The following have been reloaded with a version change:
+  1) python/2.7.15 => python/3.8-anaconda3
+
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+0 GPU-10cd2ad5-2ef0-186c-cdd0-3a4b6aaa4c09
+Initializing...
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+M: 4096 (16 x 256)
+N: 4096 (16 x 256)
+K: 4096 (16 x 256)
+Preparing data for GPU...
+Required shared memory size: 64 Kb
+Computing... using high performance kernel compute_gemm 
+Writing results to ./traces/kernel-1.trace
+Time: 667108.437500 ms
+TFLOPS: 0.00
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cudaTensorCoreGemm/NO_ARGS/traces/kernel-1.trace
+Running cudaTensorCoreGemm

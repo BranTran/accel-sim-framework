@@ -1,0 +1,144 @@
+####START INFO####
+Host information: Node
+
+h37n09
+####END   INFO####
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+0 GPU-0906110d-881b-2ee7-be0d-07cc35de7024
+WG size of kernel 1 & 2  = 256 
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Selecting device 0
+Input File: ./data/mil.txt 
+Command File: ./data/command.txt 
+Command Buffer: 
+j 6000 3000
+k 10000
+
+
+Getting input from file ./data/mil.txt...
+Transforming data to a GPU suitable structure...
+Tree transformation took 0.282379
+Waiting for command
+> 
+******command: j count=6000, rSize=6000 
+knodes_elem=7874, knodes_unit_mem=2068, knodes_mem=16283432
+# of blocks = 6000, # of threads/block = 256 (ensure that device can handle)
+Cuda error: cudaMalloc  recordsD: all CUDA-capable devices are busy or unavailable.
+Unable to open file: /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/b+tree-rodinia-3.1/file___data_mil_txt_command___data_command_txt/traces/kernelslist
+Random number generator seed: 7
+Input layer size : 65536
+Starting training kernel
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Performing GPU computation
+bpnn kernel error: all CUDA-capable devices are busy or unavailable
+Unable to open file: /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/backprop-rodinia-3.1/65536/traces/kernelslist
+WG size of kernel = 16 X 16
+pyramidHeight: 2
+gridSize: [1024, 1024]
+border:[2, 2]
+blockGrid:[86, 86]
+targetBlock:[12, 12]
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Start computing the transient temperature
+Ending simulation
+Unable to open file: /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/hotspot-rodinia-3.1/1024_2_2___data_temp_1024___data_power_1024_output_out/traces/kernelslist
+
+I/O completed
+
+Number of objects: 819200
+Number of features: 34
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+run.sh: line 2: 694194 Segmentation fault      (core dumped) CUDA_INJECTION64_PATH=/gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/util/tracer_nvbit/tracer_tool/tracer_tool.so /gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_benchmarks/validation/kmeans-rodinia-3.1 -o -i ./data/819200.txt
+Unable to open file: /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/kmeans-rodinia-3.1/_o__i___data_819200_txt/traces/kernelslist
+The file was not opened for reading
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Cuda error: setup: all CUDA-capable devices are busy or unavailable.
+Unable to open file: /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernelslist
+Running b+tree-rodinia-3.1
+Running backprop-rodinia-3.1
+Running hotspot-rodinia-3.1
+Running kmeans-rodinia-3.1
+Running srad_v1-rodinia-3.1

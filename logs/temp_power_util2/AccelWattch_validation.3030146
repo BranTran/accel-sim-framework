@@ -1,0 +1,343 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+RUNNING POWER/TEMP DUMP WITH ONLY SLEEPS
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 250309
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250309 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 250342
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250342 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 250400
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250400 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 250456
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250456 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 250477
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250477 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 250531
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250531 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 250590
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250590 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 250611
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250611 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 250675
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250675 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 250730
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250730 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 250751
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250751 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 250806
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250806 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 250862
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250862 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 250883
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250883 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 250940
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 250940 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUPS AND SLEEPS
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 250997
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 250997 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 251021
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251021 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 251078
+Temperature is currently 37 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251078 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 251136
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251136 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 251192
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251192 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 251248
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251248 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 251305
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251305 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 251365
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251365 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 251419
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251419 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 251476
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251476 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 251500
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251500 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 251559
+Temperature is currently 36 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251559 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 251614
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251614 Killed                  ${!bm_name} > /dev/null
+Starting execution of dct8x8_k2 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 251673
+Temperature is currently 38 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251673 Killed                  ${!bm_name} > /dev/null
+Starting execution of cutlass_k1 
+Temperature is currently 31 C
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 251731
+Temperature is currently 37 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 251731 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUP NO SLEEP
+Starting execution of dct8x8_k1 
+Temperature is currently 31 C
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 251788
+Temperature is currently 38 C
+Sleeping...
+Starting execution of dct8x8_k2 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 251788 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 251839
+Temperature is currently 39 C
+Sleeping...
+Starting execution of cutlass_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 251839 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 251860
+Temperature is currently 37 C
+Sleeping...
+Starting execution of dct8x8_k1 
+Temperature is currently 37 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 251860 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 251918
+Temperature is currently 39 C
+Sleeping...
+Starting execution of dct8x8_k2 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 251918 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 251972
+Temperature is currently 38 C
+Sleeping...
+Starting execution of cutlass_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 251972 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 251994
+Temperature is currently 37 C
+Sleeping...
+Starting execution of dct8x8_k1 
+Temperature is currently 37 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 251994 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 252048
+Temperature is currently 39 C
+Sleeping...
+Starting execution of dct8x8_k2 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252048 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 252104
+Temperature is currently 38 C
+Sleeping...
+Starting execution of cutlass_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252104 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 252125
+Temperature is currently 37 C
+Sleeping...
+Starting execution of dct8x8_k1 
+Temperature is currently 37 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252125 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 252181
+Temperature is currently 38 C
+Sleeping...
+Starting execution of dct8x8_k2 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252181 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 252234
+Temperature is currently 39 C
+Sleeping...
+Starting execution of cutlass_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252234 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 252256
+Temperature is currently 37 C
+Sleeping...
+Starting execution of dct8x8_k1 
+Temperature is currently 37 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252256 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 252313
+Temperature is currently 38 C
+Sleeping...
+Starting execution of dct8x8_k2 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252313 Killed                  ${!bm_name} > /dev/null
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 252372
+Temperature is currently 38 C
+Sleeping...
+Starting execution of cutlass_k1 
+Temperature is currently 38 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 252372 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 252393
+Temperature is currently 37 C
+Sleeping...

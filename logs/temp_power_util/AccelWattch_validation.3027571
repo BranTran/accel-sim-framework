@@ -1,0 +1,343 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+RUNNING POWER/TEMP DUMP WITH ONLY SLEEPS
+Starting execution of parboil_mriq_k1 
+Temperature is currently 31 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 371546
+Temperature is currently 52 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371546 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 371601
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371601 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 371624
+Temperature is currently 56 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371624 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 371681
+Temperature is currently 53 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371681 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 371706
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371706 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 371758
+Temperature is currently 56 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371758 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 371814
+Temperature is currently 52 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371814 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 371871
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371871 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 371893
+Temperature is currently 55 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371893 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 371947
+Temperature is currently 52 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 371947 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 372005
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 372005 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 372026
+Temperature is currently 57 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 372026 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 372084
+Temperature is currently 53 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 372084 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 372141
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 372141 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 372162
+Temperature is currently 56 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 372162 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUPS AND SLEEPS
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 372216
+Temperature is currently 53 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372216 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 372275
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372275 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 372333
+Temperature is currently 56 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372333 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 372392
+Temperature is currently 54 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372392 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 372415
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372415 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 372471
+Temperature is currently 58 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372471 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 372529
+Temperature is currently 54 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372529 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 372588
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372588 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 372647
+Temperature is currently 57 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372647 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 372704
+Temperature is currently 54 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372704 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 372771
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372771 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 372830
+Temperature is currently 57 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372830 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 372888
+Temperature is currently 53 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372888 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sad_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 372910
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372910 Killed                  ${!bm_name} > /dev/null
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 33 C
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 372968
+Temperature is currently 57 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 372968 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUP NO SLEEP
+Starting execution of parboil_mriq_k1 
+Temperature is currently 34 C
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 373022
+Temperature is currently 53 C
+Sleeping...
+Starting execution of parboil_sad_k1 
+Temperature is currently 52 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373022 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 373074
+Temperature is currently 46 C
+Sleeping...
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373074 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 373123
+Temperature is currently 57 C
+Sleeping...
+Starting execution of parboil_mriq_k1 
+Temperature is currently 55 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373123 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 373144
+Temperature is currently 55 C
+Sleeping...
+Starting execution of parboil_sad_k1 
+Temperature is currently 54 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373144 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 373200
+Temperature is currently 46 C
+Sleeping...
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373200 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 373256
+Temperature is currently 57 C
+Sleeping...
+Starting execution of parboil_mriq_k1 
+Temperature is currently 56 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373256 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 373278
+Temperature is currently 54 C
+Sleeping...
+Starting execution of parboil_sad_k1 
+Temperature is currently 54 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373278 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 373332
+Temperature is currently 46 C
+Sleeping...
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373332 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 373392
+Temperature is currently 57 C
+Sleeping...
+Starting execution of parboil_mriq_k1 
+Temperature is currently 56 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373392 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 373414
+Temperature is currently 56 C
+Sleeping...
+Starting execution of parboil_sad_k1 
+Temperature is currently 56 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373414 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 373472
+Temperature is currently 46 C
+Sleeping...
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373472 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 373540
+Temperature is currently 56 C
+Sleeping...
+Starting execution of parboil_mriq_k1 
+Temperature is currently 56 C
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373540 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+Temperature is currently 32 C
+Sleeping...
+Starting execution of parboil_sad_k1 
+Temperature is currently 32 C
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 373615
+Temperature is currently 45 C
+Sleeping...
+Starting execution of parboil_sgemm_k1 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 373615 Killed                  ${!bm_name} > /dev/null
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 373668
+Temperature is currently 56 C
+Sleeping...

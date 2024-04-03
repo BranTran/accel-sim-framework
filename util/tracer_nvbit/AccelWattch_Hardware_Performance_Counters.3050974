@@ -1,0 +1,171 @@
+####START INFO####
+Host information: Node
+
+h33n17
+####END   INFO####
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+0 GPU-ffdf6e15-9b17-767b-0e04-83022a8dfde0
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+
+============================================================================
+Writing results to ./traces/kernel-1.trace
+Writing results to ./traces/kernel-2.trace
+Writing results to ./traces/kernel-3.trace
+Writing results to ./traces/kernel-4.trace
+Writing results to ./traces/kernel-5.trace
+Writing results to ./traces/kernel-6.trace
+Writing results to ./traces/kernel-7.trace
+[[1;34mNotVerified[0m]: wmma_gemm_nn with disposition: not_verified
+Kernel: [1mwmma_gemm_nn[0m
+    provider: Cutlass
+    problem: 2560-by-16-by-2560, A: column-major, B: column-major, beta: 0, batch: 1
+    disposition: [1;31mnot_verified[0m
+    runtime:     9565.9 ms
+
+    performance: [1m0.0219232 GFLOPs[0m
+
+
+
+
+
+Provider,Kernel,M,N,K,Layout_A,Layout_B,Beta,batch_count,Disposition,Runtime,GFLOPs
+Cutlass,wmma_gemm_nn,2560,16,2560,column,column,0,1,not_verified,9565.9,0.0219232
+
+[[1;32mPASSED[0m]
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k1/__seed_2020___dist_0____m_2560___n_16___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k1/__seed_2020___dist_0____m_2560___n_16___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-2.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k1/__seed_2020___dist_0____m_2560___n_16___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-3.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k1/__seed_2020___dist_0____m_2560___n_16___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-4.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k1/__seed_2020___dist_0____m_2560___n_16___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-5.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k1/__seed_2020___dist_0____m_2560___n_16___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-6.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k1/__seed_2020___dist_0____m_2560___n_16___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-7.trace
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+
+============================================================================
+Writing results to ./traces/kernel-1.trace
+Writing results to ./traces/kernel-2.trace
+Writing results to ./traces/kernel-3.trace
+Writing results to ./traces/kernel-4.trace
+Writing results to ./traces/kernel-5.trace
+Writing results to ./traces/kernel-6.trace
+Writing results to ./traces/kernel-7.trace
+[[1;34mNotVerified[0m]: wmma_gemm_nn with disposition: not_verified
+Kernel: [1mwmma_gemm_nn[0m
+    provider: Cutlass
+    problem: 4096-by-128-by-4096, A: column-major, B: column-major, beta: 0, batch: 1
+    disposition: [1;31mnot_verified[0m
+    runtime:     23445 ms
+
+    performance: [1m0.183194 GFLOPs[0m
+
+
+
+
+
+Provider,Kernel,M,N,K,Layout_A,Layout_B,Beta,batch_count,Disposition,Runtime,GFLOPs
+Cutlass,wmma_gemm_nn,4096,128,4096,column,column,0,1,not_verified,23445,0.183194
+
+[[1;32mPASSED[0m]
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k2/__seed_2020___dist_0____m_4096___n_128___k_4096___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k2/__seed_2020___dist_0____m_4096___n_128___k_4096___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-2.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k2/__seed_2020___dist_0____m_4096___n_128___k_4096___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-3.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k2/__seed_2020___dist_0____m_4096___n_128___k_4096___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-4.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k2/__seed_2020___dist_0____m_4096___n_128___k_4096___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-5.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k2/__seed_2020___dist_0____m_4096___n_128___k_4096___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-6.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k2/__seed_2020___dist_0____m_4096___n_128___k_4096___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-7.trace
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+
+============================================================================
+Writing results to ./traces/kernel-1.trace
+Writing results to ./traces/kernel-2.trace
+Writing results to ./traces/kernel-3.trace
+Writing results to ./traces/kernel-4.trace
+Writing results to ./traces/kernel-5.trace
+Writing results to ./traces/kernel-6.trace
+Writing results to ./traces/kernel-7.trace
+[[1;34mNotVerified[0m]: wmma_gemm_nn with disposition: not_verified
+Kernel: [1mwmma_gemm_nn[0m
+    provider: Cutlass
+    problem: 2560-by-512-by-2560, A: column-major, B: column-major, beta: 0, batch: 1
+    disposition: [1;31mnot_verified[0m
+    runtime:     36544 ms
+
+    performance: [1m0.183638 GFLOPs[0m
+
+
+
+
+
+Provider,Kernel,M,N,K,Layout_A,Layout_B,Beta,batch_count,Disposition,Runtime,GFLOPs
+Cutlass,wmma_gemm_nn,2560,512,2560,column,column,0,1,not_verified,36544,0.183638
+
+[[1;32mPASSED[0m]
+run.sh: line 2: 727891 Segmentation fault      (core dumped) CUDA_INJECTION64_PATH=/gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/util/tracer_nvbit/tracer_tool/tracer_tool.so /gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_benchmarks/validation/cutlass_perf_test_k3 --seed=2020 --dist=0 --m=2560 --n=512 --k=2560 --kernels=wmma_gemm_nn --iterations=5 --providers=cutlass
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k3/__seed_2020___dist_0____m_2560___n_512___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k3/__seed_2020___dist_0____m_2560___n_512___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-2.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k3/__seed_2020___dist_0____m_2560___n_512___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-3.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k3/__seed_2020___dist_0____m_2560___n_512___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-4.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k3/__seed_2020___dist_0____m_2560___n_512___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-5.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k3/__seed_2020___dist_0____m_2560___n_512___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-6.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/cutlass_perf_test_k3/__seed_2020___dist_0____m_2560___n_512___k_2560___kernels_wmma_gemm_nn____iterations_5___providers_cutlass/traces/kernel-7.trace
+Running cutlass_perf_test_k1
+Running cutlass_perf_test_k2
+Running cutlass_perf_test_k3

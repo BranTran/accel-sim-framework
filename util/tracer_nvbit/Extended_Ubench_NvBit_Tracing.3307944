@@ -1,0 +1,117 @@
+
+The following have been reloaded with a version change:
+  1) nsight-compute/2023.2.2 => nsight-compute/2021.2.1
+
+
+The following have been reloaded with a version change:
+  1) nsight-compute/2021.2.1 => nsight-compute/2023.2.2
+
+/ccs/home/brantran/.lsbatch/1708537026.3307944.shell: line 24: cd: /gpfs/alpine2/scratch/brantran/gen150/accelwattch-artifact-appendix: No such file or directory
+/ccs/home/brantran/.lsbatch/1708537026.3307944.shell: line 27: ./accel-sim-framework/gpu-simulator/setup_environment.sh: No such file or directory
+/gpfs/alpine2/scratch/brantran/gen150/power_modeling/accel-sim-framework/gpu-simulator
+Launching nvbit tracer for ACT_CORE1 2 16 32
+Launching nvbit tracer for ACT_CORE1 2 1 32
+Launching nvbit tracer for ACT_CORE1 2 32 32
+Launching nvbit tracer for ACT_CORE1 2 48 32
+Launching nvbit tracer for ACT_CORE1 2 64 32
+Launching nvbit tracer for ACT_CORE1 2 80 32
+Launching nvbit tracer for ACT_CORE2 2 16 32
+Launching nvbit tracer for ACT_CORE2 2 1 32
+Launching nvbit tracer for ACT_CORE2 2 32 32
+Launching nvbit tracer for ACT_CORE2 2 48 32
+Launching nvbit tracer for ACT_CORE2 2 64 32
+Launching nvbit tracer for ACT_CORE2 2 80 32
+Launching nvbit tracer for BE_DP_FP_ADD 2
+Launching nvbit tracer for BE_DP_FP_DIV 2
+Launching nvbit tracer for BE_DP_FP_MAD 2
+Launching nvbit tracer for BE_DP_FP_MUL 2
+Launching nvbit tracer for BE_L1D_HIT 2
+Launching nvbit tracer for BE_L2D_HIT 2
+Launching nvbit tracer for BE_MEM_DRAM_Acss 2
+Launching nvbit tracer for BE_MEM_SHRD_Acss 2
+Launching nvbit tracer for BE_SFU_EXP 2
+Launching nvbit tracer for BE_SFU_LG2 2
+Launching nvbit tracer for BE_SFU_SIN 2
+Launching nvbit tracer for BE_SFU_SQRT 2
+Launching nvbit tracer for BE_SP_FP_ADD 2
+Launching nvbit tracer for BE_SP_FP_DIV 2
+Launching nvbit tracer for BE_SP_FP_MAD 2
+Launching nvbit tracer for BE_SP_FP_MUL 2
+Launching nvbit tracer for BE_SP_INT_ADD 2
+Launching nvbit tracer for BE_SP_INT_DIV 2
+Launching nvbit tracer for BE_SP_INT_LOGIC 2
+Launching nvbit tracer for BE_SP_INT_MUL24 2
+Launching nvbit tracer for BE_SP_INT_MUL32 2
+Launching nvbit tracer for BE_SP_INT_MUL 2
+Launching nvbit tracer for BE_TEXTURE_ACCESS 2
+Launching nvbit tracer for BE_TEXTURE_ACCESS_2 2
+Launching nvbit tracer for BRANCHING1 2
+Launching nvbit tracer for BRANCHING2 2
+Launching nvbit tracer for BRANCHING3 2
+Launching nvbit tracer for BRANCHING4 2
+Launching nvbit tracer for BRANCHING5 2
+Launching nvbit tracer for INT_FP_DP_STATIC 2 80 1
+Launching nvbit tracer for INT_FP_DP_STATIC 2 80 16
+Launching nvbit tracer for INT_FP_DP_STATIC 2 80 24
+Launching nvbit tracer for INT_FP_DP_STATIC 2 80 32
+Launching nvbit tracer for INT_FP_DP_STATIC 2 80 8
+Launching nvbit tracer for INT_FP_SFU_STATIC 2 80 1
+Launching nvbit tracer for INT_FP_SFU_STATIC 2 80 16
+Launching nvbit tracer for INT_FP_SFU_STATIC 2 80 24
+Launching nvbit tracer for INT_FP_SFU_STATIC 2 80 32
+Launching nvbit tracer for INT_FP_SFU_STATIC 2 80 8
+Launching nvbit tracer for INT_FP_STATIC 2 80 1
+Launching nvbit tracer for INT_FP_STATIC 2 80 16
+Launching nvbit tracer for INT_FP_STATIC 2 80 24
+Launching nvbit tracer for INT_FP_STATIC 2 80 32
+Launching nvbit tracer for INT_FP_STATIC 2 80 8
+Launching nvbit tracer for INT_FP_TENSOR_STATIC 2 80 1
+Launching nvbit tracer for INT_FP_TENSOR_STATIC 2 80 16
+Launching nvbit tracer for INT_FP_TENSOR_STATIC 2 80 24
+Launching nvbit tracer for INT_FP_TENSOR_STATIC 2 80 32
+Launching nvbit tracer for INT_FP_TENSOR_STATIC 2 80 8
+Launching nvbit tracer for INT_FP_TEX_STATIC 2 80 1
+Launching nvbit tracer for INT_FP_TEX_STATIC 2 80 16
+Launching nvbit tracer for INT_FP_TEX_STATIC 2 80 24
+Launching nvbit tracer for INT_FP_TEX_STATIC 2 80 32
+Launching nvbit tracer for INT_FP_TEX_STATIC 2 80 8
+Launching nvbit tracer for INT_STATIC 2 80 1
+Launching nvbit tracer for INT_STATIC 2 80 16
+Launching nvbit tracer for INT_STATIC 2 80 24
+Launching nvbit tracer for INT_STATIC 2 80 32
+Launching nvbit tracer for INT_STATIC 2 80 8
+Launching nvbit tracer for REG_FILE 2
+Launching nvbit tracer for SHRD_TEX_SFU 2
+Launching nvbit tracer for TENSOR 2
+Launching nvbit tracer for add_mem_1 2
+Launching nvbit tracer for add_mem_2 2
+Launching nvbit tracer for mul_mem_1 2
+Launching nvbit tracer for mul_mem_2 2
+Launching nvbit tracer for immediates_constant 2
+Launching nvbit tracer for immediates_texture 2
+Launching nvbit tracer for mix10 2
+Launching nvbit tracer for mix11 2
+Launching nvbit tracer for mix12 2
+Launching nvbit tracer for mix13 2
+Launching nvbit tracer for mix14 2
+Launching nvbit tracer for mix15 2
+Launching nvbit tracer for mix16 2
+Launching nvbit tracer for mix17 2
+Launching nvbit tracer for mix18 2
+Launching nvbit tracer for mix19 2
+Launching nvbit tracer for mix1 2
+Launching nvbit tracer for mix20 2
+Launching nvbit tracer for mix2 2
+Launching nvbit tracer for mix3 2
+Launching nvbit tracer for mix4 2
+Launching nvbit tracer for mix5 2
+Launching nvbit tracer for mix6 2
+Launching nvbit tracer for mix7 2
+Launching nvbit tracer for mix8 2
+Launching nvbit tracer for mix9 2
+Launching nvbit tracer for mul_add_tex_1 2
+Launching nvbit tracer for mul_add_tex_2 2
+Launching nvbit tracer for BE_HP_FP_ADD 2
+Launching nvbit tracer for BE_HP_FP_DIV 2
+Launching nvbit tracer for BE_HP_FP_MAD 2
+Launching nvbit tracer for BE_HP_FP_MUL 2

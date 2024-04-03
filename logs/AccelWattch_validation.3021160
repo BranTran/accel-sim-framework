@@ -1,0 +1,521 @@
+
+Lmod is automatically replacing "xl/16.1.1-10" with "gcc/7.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/10.4.0.3-20210112
+
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+rm: cannot remove '/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/validation_profile_output/barbara.bmp': No such file or directory
+mkdir: cannot create directory '/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/validation_profile_output': File exists
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 300619
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300619 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 300640
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300640 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300656 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing backprop_k2 with pid: 300673
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300673 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 300698
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300698 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at binomialOptions.cpp:110 code=46(cudaErrorDevicesUnavailable) "cudaDeviceSynchronize()" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300713 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 300747
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300747 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300762 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k1 with pid: 300780
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300780 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 300794
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300794 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300810 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k2 with pid: 300827
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300827 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 300843
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300843 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at cudaTensorCoreGemm.cu:473 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void**)&A, sizeof(half) * M_GLOBAL * K_GLOBAL)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300858 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 300890
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300890 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300906 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing dct8x8_k1 with pid: 300923
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300923 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 300947
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300947 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300963 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing dct8x8_k2 with pid: 300980
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 300980 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 301005
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301005 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301021 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301038 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k1 with pid: 
+Sleeping...
+Starting profiling of cutlass_k2 
+Profiling concluded. Killing cutlass_k2 with pid: 301054
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301054 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301070 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301087 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k3 
+Profiling concluded. Killing cutlass_k3 with pid: 301103
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301103 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301119 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301137 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k3 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k1 
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 301152
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301152 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301168 Killed                  $BINDIR/backprop_k1 65536
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+Sleeping...
+Starting profiling of fastWalshTransform_k2 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 301200
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301200 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301215 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of histogram_k1 
+Profiling concluded. Killing histogram_k1 with pid: 301248
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301248 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301263 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing histogram_k1 with pid: 301280
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301280 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 301295
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301295 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301310 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing hotspot_k1 with pid: 301329
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301329 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 301353
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301353 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301369 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing kmeans_k1 with pid: 301386
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301386 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 301411
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301411 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301427 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing mergeSort_k1 with pid: 301444
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301444 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 301468
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301468 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301483 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing mergeSort_k2 with pid: 301501
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301501 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 301526
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301526 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 301547
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301547 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301563 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sad_k1 with pid: 301580
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301580 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 301791
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301791 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 301814
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301814 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301830 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing pathfinder_k1 with pid: 301847
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301847 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 301863
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301863 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301879 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 301921
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301921 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301936 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 301971
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301971 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 301992
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 301992 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 302014
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302014 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 302035
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302035 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302051 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing backprop_k2 with pid: 302069
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302069 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 302092
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302092 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at binomialOptions.cpp:110 code=46(cudaErrorDevicesUnavailable) "cudaDeviceSynchronize()" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302107 Killed                  $BINDIR/backprop_k1 65536
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+Sleeping...
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 302140
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302140 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302155 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k1 with pid: 302172
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302172 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 302187
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302187 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302203 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k2 with pid: 302221
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302221 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 302238
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302238 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at cudaTensorCoreGemm.cu:473 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void**)&A, sizeof(half) * M_GLOBAL * K_GLOBAL)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302253 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 302285
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302285 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302301 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing dct8x8_k1 with pid: 302318
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302318 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 302343
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302343 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302359 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing dct8x8_k2 with pid: 302376
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302376 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of cutlass_k1 
+Profiling concluded. Killing cutlass_k1 with pid: 302400
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302400 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302416 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302433 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k2 
+Profiling concluded. Killing cutlass_k2 with pid: 302450
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302450 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302466 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302483 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k2 with pid: 
+Sleeping...
+Starting profiling of cutlass_k3 
+Profiling concluded. Killing cutlass_k3 with pid: 302499
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302499 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302514 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302531 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k3 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k1 
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 302547
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302547 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302563 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k2 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 302595
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302595 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302611 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of histogram_k1 
+Profiling concluded. Killing histogram_k1 with pid: 302643
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302643 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302658 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing histogram_k1 with pid: 302676
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302676 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 302691
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302691 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302706 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing hotspot_k1 with pid: 302723
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302723 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 302750
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302750 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302765 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing kmeans_k1 with pid: 302783
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302783 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 302808
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302808 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302823 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing mergeSort_k1 with pid: 302840
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302840 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 302864
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302864 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302879 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing mergeSort_k2 with pid: 302896
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302896 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of parboil_mriq_k1 
+Profiling concluded. Killing parboil_mriq_k1 with pid: 302920
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302920 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302935 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_sad_k1 
+Profiling concluded. Killing parboil_sad_k1 with pid: 302968
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302968 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 302983 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sad_k1 with pid: 303001
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303001 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 303174
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303174 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303189 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 303206
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303206 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 303230
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303230 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303245 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing pathfinder_k1 with pid: 303263
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303263 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of quasirandomGenerator_k1 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 303278
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303278 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303295 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of quasirandomGenerator_k2 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 303328
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303328 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303344 Killed                  $BINDIR/backprop_k1 65536
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 
+Sleeping...
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 303378
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303378 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Caught exception: all CUDA-capable devices are busy or unavailable
+Unable to allocate GPU memory (try running with fewer vectors/dimensions)
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303393 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing sobolQRNG_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 303426
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303426 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303441 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing srad_v1_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 303488
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303488 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303509 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing backprop_k1 with pid: 303526
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303526 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 303550
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303550 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303567 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing backprop_k2 with pid: 303585
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303585 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 303608
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303608 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at binomialOptions.cpp:110 code=46(cudaErrorDevicesUnavailable) "cudaDeviceSynchronize()" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303624 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 303656
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303656 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303671 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k1 with pid: 303689
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303689 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 303703
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303703 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303719 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k2 with pid: 303736
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303736 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 303752
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303752 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at cudaTensorCoreGemm.cu:473 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void**)&A, sizeof(half) * M_GLOBAL * K_GLOBAL)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 303767 Killed                  $BINDIR/backprop_k1 65536
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+Sleeping...
+Starting profiling of dct8x8_k1 
+User defined signal 2
+ERROR:  One or more process (first noticed rank 0) terminated with signal 12

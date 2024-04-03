@@ -1,0 +1,330 @@
+####START INFO####
+Host information: Node
+
+h36n18
+####END   INFO####
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+0 GPU-11b8b1ad-f5b1-691f-418e-295d86e68524
+Power Microbenchmark with 10 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 9.29 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix10/10/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 4.93 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix11/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 6.06 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix12/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 7.40 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix13/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 9.37 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix14/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 6.34 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix15/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 3.19 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix16/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 1.72 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix17/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 3.31 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix18/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 5.07 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix19/100/traces/kernel-1.trace
+Power Microbenchmark with 100 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 3.33 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix20/100/traces/kernel-1.trace
+Power Microbenchmark with 10 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 9.86 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix5/10/traces/kernel-1.trace
+Power Microbenchmark with 10 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 10.23 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix6/10/traces/kernel-1.trace
+Power Microbenchmark with 10 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 8.17 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix7/10/traces/kernel-1.trace
+Power Microbenchmark with 10 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 10.11 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix8/10/traces/kernel-1.trace
+Power Microbenchmark with 10 iterations
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+gpu execution time = 13.68 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/mix9/10/traces/kernel-1.trace
+Running mix10
+Running mix11
+Running mix12
+Running mix13
+Running mix14
+Running mix15
+Running mix16
+Running mix17
+Running mix18
+Running mix19
+Running mix20
+Running mix5
+Running mix6
+Running mix7
+Running mix8
+Running mix9

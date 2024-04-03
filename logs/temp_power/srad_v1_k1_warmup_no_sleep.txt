@@ -1,0 +1,3095 @@
+Options: 
+	Output File = (null)
+	CSV mode = 0
+	Device ID = 0
+	Sample Rate = 100 ms
+	Number of power samples = 600
+	Print PSU info = 0
+	Process Name = (null)
+
+	Temperature Cutoff (0 iff disabled) = 0
+Initializing NVML... Success
+Getting device... Selected device 0: Tesla V100-SXM2-16GB
+
+
+Starting power measurement...
+[000] Application util under 95%: 00
+[001] Application util under 95%: 00
+[002] Application util under 95%: 00
+[003] Application util under 95%: 00
+[004] Application util under 95%: 00
+[005] Application util under 95%: 00
+[006] Application util under 95%: 00
+[007] Application util under 95%: 00
+[008] Application util under 95%: 00
+[009] Application util under 95%: 00
+[010] Application util under 95%: 00
+[011] Application util under 95%: 00
+[012] Application util under 95%: 00
+[013] Application util under 95%: 00
+[014] Application util under 95%: 00
+[015] Application util under 95%: 00
+[016] Application util under 95%: 00
+[017] Application util under 95%: 00
+[018] Application util under 95%: 00
+[019] Application util under 95%: 00
+[020] Application util under 95%: 00
+[021] Application util under 95%: 00
+[022] Application util under 95%: 00
+[023] Application util under 95%: 00
+[024] Application util under 95%: 00
+[025] Application util under 95%: 00
+[026] Application util under 95%: 00
+[027] Application util under 95%: 00
+[028] Application util under 95%: 00
+[029] Application util under 95%: 00
+[030] Application util under 95%: 00
+[031] Application util under 95%: 00
+[032] Application util under 95%: 00
+[033] Application util under 95%: 00
+[034] Application util under 95%: 00
+[035] Application util under 95%: 00
+[036] Application util under 95%: 00
+[037] Application util under 95%: 00
+[038] Application util under 95%: 00
+[039] Application util under 95%: 00
+[040] Application util under 95%: 00
+[041] Application util under 95%: 00
+[042] Application util under 95%: 00
+[043] Application util under 95%: 00
+[044] Application util under 95%: 00
+[045] Application util under 95%: 00
+[046] Application util under 95%: 00
+[047] Application util under 95%: 00
+[048] Application util under 95%: 00
+[049] Application util under 95%: 00
+[050] Application util under 95%: 00
+[051] Application util under 95%: 00
+[052] Application util under 95%: 00
+[053] Application util under 95%: 00
+[054] Application util under 95%: 00
+[055] Application util under 95%: 00
+[056] Application util under 95%: 00
+[057] Application util under 95%: 00
+[058] Application util under 95%: 00
+[059] Application util under 95%: 00
+[060] Application util under 95%: 00
+[061] Application util under 95%: 00
+[062] Application util under 95%: 00
+[063] Application util under 95%: 00
+[064] Application util under 95%: 00
+[065] Application util under 95%: 00
+[066] Application util under 95%: 00
+[067] Application util under 95%: 00
+[068] Application util under 95%: 00
+[069] Application util under 95%: 00
+[070] Application util under 95%: 00
+[071] Application util under 95%: 00
+[072] Application util under 95%: 00
+[073] Application util under 95%: 00
+[074] Application util under 95%: 00
+[075] Application util under 95%: 00
+[076] Application util under 95%: 00
+[077] Application util under 95%: 00
+[078] Application util under 95%: 00
+[079] Application util under 95%: 00
+[080] Application util under 95%: 00
+[081] Application util under 95%: 00
+[082] Application util under 95%: 00
+[083] Application util under 95%: 00
+[084] Application util under 95%: 00
+[085] Application util under 95%: 00
+[086] Application util under 95%: 00
+[087] Application util under 95%: 00
+[088] Application util under 95%: 00
+[089] Application util under 95%: 00
+[090] Application util under 95%: 00
+[091] Application util under 95%: 00
+[092] Application util under 95%: 00
+[093] Application util under 95%: 00
+[094] Application util under 95%: 00
+[095] Application util under 95%: 00
+[096] Application util under 95%: 00
+[097] Application util under 95%: 00
+[098] Application util under 95%: 00
+[099] Application util under 95%: 00
+[100] Application util under 95%: 00
+[101] Application util under 95%: 00
+[102] Application util under 95%: 00
+[103] Application util under 95%: 00
+[104] Application util under 95%: 00
+[105] Application util under 95%: 00
+[106] Application util under 95%: 00
+[107] Application util under 95%: 00
+[108] Application util under 95%: 00
+[109] Application util under 95%: 00
+[110] Application util under 95%: 00
+[111] Application util under 95%: 00
+[112] Application util under 95%: 00
+[113] Application util under 95%: 00
+[114] Application util under 95%: 00
+[115] Application util under 95%: 00
+[116] Application util under 95%: 00
+[117] Application util under 95%: 00
+[118] Application util under 95%: 00
+[119] Application util under 95%: 00
+[120] Application util under 95%: 00
+[121] Application util under 95%: 00
+[122] Application util under 95%: 00
+[123] Application util under 95%: 00
+[124] Application util under 95%: 00
+[125] Application util under 95%: 00
+[126] Application util under 95%: 00
+[127] Application util under 95%: 00
+[128] Application util under 95%: 00
+[129] Application util under 95%: 00
+[130] Application util under 95%: 00
+[131] Application util under 95%: 00
+[132] Application util under 95%: 00
+[133] Application util under 95%: 00
+[134] Application util under 95%: 00
+[135] Application util under 95%: 00
+[136] Application util under 95%: 00
+[137] Application util under 95%: 00
+[138] Application util under 95%: 00
+[139] Application util under 95%: 00
+[140] Application util under 95%: 00
+[141] Application util under 95%: 00
+[142] Application util under 95%: 00
+[143] Application util under 95%: 00
+[144] Application util under 95%: 00
+[145] Application util under 95%: 00
+[146] Application util under 95%: 00
+[147] Application util under 95%: 00
+[148] Application util under 95%: 00
+[149] Application util under 95%: 00
+[150] Application util under 95%: 00
+[151] Application util under 95%: 00
+[152] Application util under 95%: 00
+[153] Application util under 95%: 00
+[154] Application util under 95%: 00
+[155] Application util under 95%: 00
+[156] Application util under 95%: 00
+[157] Application util under 95%: 00
+[158] Application util under 95%: 00
+[159] Application util under 95%: 00
+[160] Application util under 95%: 00
+[161] Application util under 95%: 00
+[162] Application util under 95%: 00
+[163] Application util under 95%: 00
+[164] Application util under 95%: 00
+[165] Application util under 95%: 00
+[166] Application util under 95%: 00
+[167] Application util under 95%: 00
+[168] Application util under 95%: 00
+[169] Application util under 95%: 00
+[170] Application util under 95%: 00
+[171] Application util under 95%: 00
+[172] Application util under 95%: 00
+[173] Application util under 95%: 00
+[174] Application util under 95%: 00
+[175] Application util under 95%: 00
+[176] Application util under 95%: 00
+[177] Application util under 95%: 00
+[178] Application util under 95%: 00
+[179] Application util under 95%: 00
+[180] Application util under 95%: 00
+[181] Application util under 95%: 00
+[182] Application util under 95%: 00
+[183] Application util under 95%: 00
+[184] Application util under 95%: 00
+[185] Application util under 95%: 00
+[186] Application util under 95%: 00
+[187] Application util under 95%: 00
+[188] Application util under 95%: 00
+[189] Application util under 95%: 00
+[190] Application util under 95%: 00
+[191] Application util under 95%: 00
+[192] Application util under 95%: 00
+[193] Application util under 95%: 00
+[194] Application util under 95%: 00
+[195] Application util under 95%: 00
+[196] Application util under 95%: 00
+[197] Application util under 95%: 00
+[198] Application util under 95%: 00
+[199] Application util under 95%: 00
+[200] Application util under 95%: 00
+[201] Application util under 95%: 00
+[202] Application util under 95%: 00
+[203] Application util under 95%: 00
+[204] Application util under 95%: 00
+[205] Application util under 95%: 00
+[206] Application util under 95%: 00
+[207] Application util under 95%: 00
+[208] Application util under 95%: 00
+[209] Application util under 95%: 00
+[210] Application util under 95%: 00
+[211] Application util under 95%: 00
+[212] Application util under 95%: 00
+[213] Application util under 95%: 00
+[214] Application util under 95%: 00
+[215] Application util under 95%: 00
+[216] Application util under 95%: 00
+[217] Application util under 95%: 00
+[218] Application util under 95%: 00
+[219] Application util under 95%: 00
+[220] Application util under 95%: 00
+[221] Application util under 95%: 00
+[222] Application util under 95%: 00
+[223] Application util under 95%: 00
+[224] Application util under 95%: 00
+[225] Application util under 95%: 00
+[226] Application util under 95%: 00
+[227] Application util under 95%: 00
+[228] Application util under 95%: 00
+[229] Application util under 95%: 00
+[230] Application util under 95%: 00
+[231] Application util under 95%: 00
+[232] Application util under 95%: 00
+[233] Application util under 95%: 00
+[234] Application util under 95%: 00
+[235] Application util under 95%: 00
+[236] Application util under 95%: 00
+[237] Application util under 95%: 00
+[238] Application util under 95%: 00
+[239] Application util under 95%: 00
+[240] Application util under 95%: 00
+[241] Application util under 95%: 00
+[242] Application util under 95%: 00
+[243] Application util under 95%: 00
+[244] Application util under 95%: 00
+[245] Application util under 95%: 00
+[246] Application util under 95%: 00
+[247] Application util under 95%: 00
+[248] Application util under 95%: 00
+[249] Application util under 95%: 00
+[250] Application util under 95%: 00
+[251] Application util under 95%: 00
+[252] Application util under 95%: 00
+[253] Application util under 95%: 00
+[254] Application util under 95%: 00
+[255] Application util under 95%: 00
+[256] Application util under 95%: 00
+[257] Application util under 95%: 00
+[258] Application util under 95%: 00
+[259] Application util under 95%: 00
+[260] Application util under 95%: 00
+[261] Application util under 95%: 00
+[262] Application util under 95%: 00
+[263] Application util under 95%: 00
+[264] Application util under 95%: 00
+[265] Application util under 95%: 00
+[266] Application util under 95%: 00
+[267] Application util under 95%: 00
+[268] Application util under 95%: 00
+[269] Application util under 95%: 00
+[270] Application util under 95%: 00
+[271] Application util under 95%: 00
+[272] Application util under 95%: 00
+[273] Application util under 95%: 00
+[274] Application util under 95%: 00
+[275] Application util under 95%: 00
+[276] Application util under 95%: 00
+[277] Application util under 95%: 00
+[278] Application util under 95%: 00
+[279] Application util under 95%: 00
+[280] Application util under 95%: 00
+[281] Application util under 95%: 00
+[282] Application util under 95%: 00
+[283] Application util under 95%: 00
+[284] Application util under 95%: 00
+[285] Application util under 95%: 00
+[286] Application util under 95%: 00
+[287] Application util under 95%: 00
+[288] Application util under 95%: 00
+[289] Application util under 95%: 00
+[290] Application util under 95%: 00
+[291] Application util under 95%: 00
+[292] Application util under 95%: 00
+[293] Application util under 95%: 00
+[294] Application util under 95%: 00
+[295] Application util under 95%: 00
+[296] Application util under 95%: 00
+[297] Application util under 95%: 00
+[298] Application util under 95%: 00
+[299] Application util under 95%: 00
+[300] Application util under 95%: 00
+[301] Application util under 95%: 00
+[302] Application util under 95%: 00
+[303] Application util under 95%: 00
+[304] Application util under 95%: 00
+[305] Application util under 95%: 00
+[306] Application util under 95%: 00
+[307] Application util under 95%: 00
+[308] Application util under 95%: 00
+[309] Application util under 95%: 00
+[310] Application util under 95%: 00
+[311] Application util under 95%: 00
+[312] Application util under 95%: 00
+[313] Application util under 95%: 00
+[314] Application util under 95%: 00
+[315] Application util under 95%: 00
+[316] Application util under 95%: 00
+[317] Application util under 95%: 00
+[318] Application util under 95%: 00
+[319] Application util under 95%: 00
+[320] Application util under 95%: 00
+[321] Application util under 95%: 00
+[322] Application util under 95%: 00
+[323] Application util under 95%: 00
+[324] Application util under 95%: 00
+[325] Application util under 95%: 00
+[326] Application util under 95%: 00
+[327] Application util under 95%: 00
+[328] Application util under 95%: 00
+[329] Application util under 95%: 00
+[330] Application util under 95%: 00
+[331] Application util under 95%: 00
+[332] Application util under 95%: 00
+[333] Application util under 95%: 00
+[334] Application util under 95%: 00
+[335] Application util under 95%: 00
+[336] Application util under 95%: 00
+[337] Application util under 95%: 00
+[338] Application util under 95%: 00
+[339] Application util under 95%: 00
+[340] Application util under 95%: 00
+[341] Application util under 95%: 00
+[342] Application util under 95%: 00
+[343] Application util under 95%: 00
+[344] Application util under 95%: 00
+[345] Application util under 95%: 00
+[346] Application util under 95%: 00
+[347] Application util under 95%: 00
+[348] Application util under 95%: 00
+[349] Application util under 95%: 00
+[350] Application util under 95%: 00
+[351] Application util under 95%: 00
+[352] Application util under 95%: 00
+[353] Application util under 95%: 00
+[354] Application util under 95%: 00
+[355] Application util under 95%: 00
+[356] Application util under 95%: 00
+[357] Application util under 95%: 00
+[358] Application util under 95%: 00
+[359] Application util under 95%: 00
+[360] Application util under 95%: 00
+[361] Application util under 95%: 00
+[362] Application util under 95%: 00
+[363] Application util under 95%: 00
+[364] Application util under 95%: 00
+[365] Application util under 95%: 00
+[366] Application util under 95%: 00
+[367] Application util under 95%: 00
+[368] Application util under 95%: 00
+[369] Application util under 95%: 00
+[370] Application util under 95%: 00
+[371] Application util under 95%: 00
+[372] Application util under 95%: 00
+[373] Application util under 95%: 00
+[374] Application util under 95%: 00
+[375] Application util under 95%: 00
+[376] Application util under 95%: 00
+[377] Application util under 95%: 00
+[378] Application util under 95%: 00
+[379] Application util under 95%: 00
+[380] Application util under 95%: 00
+[381] Application util under 95%: 00
+[382] Application util under 95%: 00
+[383] Application util under 95%: 00
+[384] Application util under 95%: 00
+[385] Application util under 95%: 00
+[386] Application util under 95%: 00
+[387] Application util under 95%: 00
+[388] Application util under 95%: 00
+[389] Application util under 95%: 00
+[390] Application util under 95%: 00
+[391] Application util under 95%: 00
+[392] Application util under 95%: 00
+[393] Application util under 95%: 00
+[394] Application util under 95%: 00
+[395] Application util under 95%: 00
+[396] Application util under 95%: 00
+[397] Application util under 95%: 00
+[398] Application util under 95%: 00
+[399] Application util under 95%: 00
+[400] Application util under 95%: 00
+[401] Application util under 95%: 00
+[402] Application util under 95%: 00
+[403] Application util under 95%: 00
+[404] Application util under 95%: 00
+[405] Application util under 95%: 00
+[406] Application util under 95%: 00
+[407] Application util under 95%: 00
+[408] Application util under 95%: 00
+[409] Application util under 95%: 00
+[410] Application util under 95%: 00
+[411] Application util under 95%: 00
+[412] Application util under 95%: 00
+[413] Application util under 95%: 00
+[414] Application util under 95%: 00
+[415] Application util under 95%: 00
+[416] Application util under 95%: 00
+[417] Application util under 95%: 00
+[418] Application util under 95%: 00
+[419] Application util under 95%: 00
+[420] Application util under 95%: 00
+[421] Application util under 95%: 00
+[422] Application util under 95%: 00
+[423] Application util under 95%: 00
+[424] Application util under 95%: 00
+[425] Application util under 95%: 00
+[426] Application util under 95%: 00
+[427] Application util under 95%: 00
+[428] Application util under 95%: 00
+[429] Application util under 95%: 00
+[430] Application util under 95%: 00
+[431] Application util under 95%: 00
+[432] Application util under 95%: 00
+[433] Application util under 95%: 00
+[434] Application util under 95%: 00
+[435] Application util under 95%: 00
+[436] Application util under 95%: 00
+[437] Application util under 95%: 00
+[438] Application util under 95%: 00
+[439] Application util under 95%: 00
+[440] Application util under 95%: 00
+[441] Application util under 95%: 00
+[442] Application util under 95%: 00
+[443] Application util under 95%: 00
+[444] Application util under 95%: 00
+[445] Application util under 95%: 00
+[446] Application util under 95%: 00
+[447] Application util under 95%: 00
+[448] Application util under 95%: 00
+[449] Application util under 95%: 00
+[450] Application util under 95%: 00
+[451] Application util under 95%: 00
+[452] Application util under 95%: 00
+[453] Application util under 95%: 00
+[454] Application util under 95%: 00
+[455] Application util under 95%: 00
+[456] Application util under 95%: 00
+[457] Application util under 95%: 00
+[458] Application util under 95%: 00
+[459] Application util under 95%: 00
+[460] Application util under 95%: 00
+[461] Application util under 95%: 00
+[462] Application util under 95%: 00
+[463] Application util under 95%: 00
+[464] Application util under 95%: 00
+[465] Application util under 95%: 00
+[466] Application util under 95%: 00
+[467] Application util under 95%: 00
+[468] Application util under 95%: 00
+[469] Application util under 95%: 00
+[470] Application util under 95%: 00
+[471] Application util under 95%: 00
+[472] Application util under 95%: 00
+[473] Application util under 95%: 00
+[474] Application util under 95%: 00
+[475] Application util under 95%: 00
+[476] Application util under 95%: 00
+[477] Application util under 95%: 00
+[478] Application util under 95%: 00
+[479] Application util under 95%: 00
+[480] Application util under 95%: 00
+[481] Application util under 95%: 00
+[482] Application util under 95%: 00
+[483] Application util under 95%: 00
+[484] Application util under 95%: 00
+[485] Application util under 95%: 00
+[486] Application util under 95%: 00
+[487] Application util under 95%: 00
+[488] Application util under 95%: 00
+[489] Application util under 95%: 00
+[490] Application util under 95%: 00
+[491] Application util under 95%: 00
+[492] Application util under 95%: 00
+[493] Application util under 95%: 00
+[494] Application util under 95%: 00
+[495] Application util under 95%: 00
+[496] Application util under 95%: 00
+[497] Application util under 95%: 00
+[498] Application util under 95%: 00
+[499] Application util under 95%: 00
+[500] Application util under 95%: 00
+[501] Application util under 95%: 00
+[502] Application util under 95%: 00
+[503] Application util under 95%: 00
+[504] Application util under 95%: 00
+[505] Application util under 95%: 00
+[506] Application util under 95%: 00
+[507] Application util under 95%: 00
+[508] Application util under 95%: 00
+[509] Application util under 95%: 00
+[510] Application util under 95%: 00
+[511] Application util under 95%: 00
+[512] Application util under 95%: 00
+[513] Application util under 95%: 00
+[514] Application util under 95%: 00
+[515] Application util under 95%: 00
+[516] Application util under 95%: 00
+[517] Application util under 95%: 00
+[518] Application util under 95%: 00
+[519] Application util under 95%: 00
+[520] Application util under 95%: 00
+[521] Application util under 95%: 00
+[522] Application util under 95%: 00
+[523] Application util under 95%: 00
+[524] Application util under 95%: 00
+[525] Application util under 95%: 00
+[526] Application util under 95%: 00
+[527] Application util under 95%: 00
+[528] Application util under 95%: 00
+[529] Application util under 95%: 00
+[530] Application util under 95%: 00
+[531] Application util under 95%: 00
+[532] Application util under 95%: 00
+[533] Application util under 95%: 00
+[534] Application util under 95%: 00
+[535] Application util under 95%: 00
+[536] Application util under 95%: 00
+[537] Application util under 95%: 00
+[538] Application util under 95%: 00
+[539] Application util under 95%: 00
+[540] Application util under 95%: 00
+[541] Application util under 95%: 00
+[542] Application util under 95%: 00
+[543] Application util under 95%: 00
+[544] Application util under 95%: 00
+[545] Application util under 95%: 00
+[546] Application util under 95%: 00
+[547] Application util under 95%: 00
+[548] Application util under 95%: 00
+[549] Application util under 95%: 00
+[550] Application util under 95%: 00
+[551] Application util under 95%: 00
+[552] Application util under 95%: 00
+[553] Application util under 95%: 00
+[554] Application util under 95%: 00
+[555] Application util under 95%: 00
+[556] Application util under 95%: 00
+[557] Application util under 95%: 00
+[558] Application util under 95%: 00
+[559] Application util under 95%: 00
+[560] Application util under 95%: 00
+[561] Application util under 95%: 00
+[562] Application util under 95%: 00
+[563] Application util under 95%: 00
+[564] Application util under 95%: 00
+[565] Application util under 95%: 00
+[566] Application util under 95%: 00
+[567] Application util under 95%: 00
+[568] Application util under 95%: 00
+[569] Application util under 95%: 00
+[570] Application util under 95%: 00
+[571] Application util under 95%: 00
+[572] Application util under 95%: 00
+[573] Application util under 95%: 00
+[574] Application util under 95%: 00
+[575] Application util under 95%: 00
+[576] Application util under 95%: 00
+[577] Application util under 95%: 00
+[578] Application util under 95%: 00
+[579] Application util under 95%: 00
+[580] Application util under 95%: 00
+[581] Application util under 95%: 00
+[582] Application util under 95%: 00
+[583] Application util under 95%: 00
+[584] Application util under 95%: 00
+[585] Application util under 95%: 00
+[586] Application util under 95%: 00
+[587] Application util under 95%: 00
+[588] Application util under 95%: 00
+[589] Application util under 95%: 00
+[590] Application util under 95%: 00
+[591] Application util under 95%: 00
+[592] Application util under 95%: 00
+[593] Application util under 95%: 00
+[594] Application util under 95%: 00
+[595] Application util under 95%: 00
+[596] Application util under 95%: 00
+[597] Application util under 95%: 00
+[598] Application util under 95%: 00
+[599] Application util under 95%: 00
+
+
+Shutting down NVML... Success
+Complete 
+Options: 
+	Output File = (null)
+	CSV mode = 0
+	Device ID = 0
+	Sample Rate = 100 ms
+	Number of power samples = 600
+	Print PSU info = 0
+	Process Name = (null)
+
+	Temperature Cutoff (0 iff disabled) = 0
+Initializing NVML... Success
+Getting device... Selected device 0: Tesla V100-SXM2-16GB
+
+
+Starting power measurement...
+[000] Power: 146.3040, Temp: 41
+[001] Power: 146.3040, Temp: 41
+[002] Power: 146.3040, Temp: 41
+[003] Power: 146.3040, Temp: 41
+[004] Power: 146.3040, Temp: 41
+[005] Power: 146.3040, Temp: 41
+[006] Power: 146.3040, Temp: 41
+[007] Power: 146.3040, Temp: 41
+[008] Power: 146.3040, Temp: 41
+[009] Power: 146.3040, Temp: 41
+[010] Power: 146.3040, Temp: 41
+[011] Power: 146.3040, Temp: 41
+[012] Power: 146.3040, Temp: 41
+[013] Power: 146.3040, Temp: 41
+[014] Power: 146.3040, Temp: 41
+[015] Power: 146.3040, Temp: 41
+[016] Power: 146.3040, Temp: 41
+[017] Power: 146.3040, Temp: 41
+[018] Power: 146.3040, Temp: 41
+[019] Power: 146.3040, Temp: 41
+[020] Power: 146.4000, Temp: 41
+[021] Power: 146.3040, Temp: 41
+[022] Power: 146.3040, Temp: 41
+[023] Power: 146.3040, Temp: 41
+[024] Power: 146.3040, Temp: 41
+[025] Power: 146.3040, Temp: 41
+[026] Power: 146.3040, Temp: 41
+[027] Power: 146.3040, Temp: 41
+[028] Power: 146.3040, Temp: 41
+[029] Power: 146.3040, Temp: 41
+[030] Power: 146.4000, Temp: 41
+[031] Power: 146.4000, Temp: 41
+[032] Power: 146.4000, Temp: 41
+[033] Power: 146.3040, Temp: 41
+[034] Power: 146.3040, Temp: 41
+[035] Power: 146.3040, Temp: 41
+[036] Power: 146.3040, Temp: 41
+[037] Power: 146.3040, Temp: 41
+[038] Power: 146.3040, Temp: 41
+[039] Power: 146.3040, Temp: 41
+[040] Power: 146.3040, Temp: 41
+[041] Power: 146.3040, Temp: 41
+[042] Power: 146.3040, Temp: 41
+[043] Power: 146.3040, Temp: 41
+[044] Power: 146.3040, Temp: 41
+[045] Power: 146.3040, Temp: 41
+[046] Power: 146.4000, Temp: 41
+[047] Power: 146.4000, Temp: 41
+[048] Power: 146.3040, Temp: 41
+[049] Power: 146.3040, Temp: 41
+[050] Power: 146.3040, Temp: 41
+[051] Power: 146.3040, Temp: 41
+[052] Power: 146.4000, Temp: 41
+[053] Power: 146.3040, Temp: 41
+[054] Power: 146.3040, Temp: 41
+[055] Power: 146.3040, Temp: 41
+[056] Power: 146.3040, Temp: 41
+[057] Power: 146.3040, Temp: 41
+[058] Power: 146.3040, Temp: 41
+[059] Power: 146.3040, Temp: 41
+[060] Power: 146.3040, Temp: 41
+[061] Power: 146.3040, Temp: 41
+[062] Power: 146.3040, Temp: 41
+[063] Power: 146.3040, Temp: 41
+[064] Power: 146.3040, Temp: 41
+[065] Power: 146.3040, Temp: 41
+[066] Power: 146.3040, Temp: 41
+[067] Power: 146.3040, Temp: 41
+[068] Power: 146.3040, Temp: 41
+[069] Power: 146.3040, Temp: 41
+[070] Power: 146.3040, Temp: 41
+[071] Power: 146.3040, Temp: 41
+[072] Power: 146.3040, Temp: 41
+[073] Power: 146.3040, Temp: 41
+[074] Power: 146.4000, Temp: 41
+[075] Power: 146.3040, Temp: 41
+[076] Power: 146.4000, Temp: 41
+[077] Power: 146.3040, Temp: 41
+[078] Power: 146.3040, Temp: 41
+[079] Power: 146.3040, Temp: 41
+[080] Power: 146.3040, Temp: 41
+[081] Power: 146.3040, Temp: 41
+[082] Power: 146.3040, Temp: 41
+[083] Power: 146.3040, Temp: 41
+[084] Power: 146.3040, Temp: 41
+[085] Power: 146.3040, Temp: 41
+[086] Power: 146.3040, Temp: 41
+[087] Power: 146.4000, Temp: 41
+[088] Power: 146.3040, Temp: 41
+[089] Power: 146.3040, Temp: 41
+[090] Power: 146.4000, Temp: 41
+[091] Power: 146.3040, Temp: 41
+[092] Power: 146.3040, Temp: 41
+[093] Power: 146.3040, Temp: 41
+[094] Power: 146.4000, Temp: 41
+[095] Power: 146.3040, Temp: 41
+[096] Power: 146.3040, Temp: 41
+[097] Power: 146.3040, Temp: 41
+[098] Power: 146.3040, Temp: 41
+[099] Power: 146.3040, Temp: 41
+[100] Power: 146.3040, Temp: 41
+[101] Power: 146.3040, Temp: 41
+[102] Power: 146.3040, Temp: 41
+[103] Power: 146.3040, Temp: 41
+[104] Power: 146.3040, Temp: 41
+[105] Power: 146.3040, Temp: 41
+[106] Power: 146.3040, Temp: 41
+[107] Power: 146.3040, Temp: 41
+[108] Power: 146.3040, Temp: 41
+[109] Power: 146.4000, Temp: 41
+[110] Power: 146.3040, Temp: 41
+[111] Power: 146.3040, Temp: 41
+[112] Power: 146.3040, Temp: 41
+[113] Power: 146.4000, Temp: 41
+[114] Power: 146.3040, Temp: 41
+[115] Power: 146.3040, Temp: 41
+[116] Power: 146.3040, Temp: 41
+[117] Power: 146.3040, Temp: 41
+[118] Power: 146.3040, Temp: 41
+[119] Power: 146.3040, Temp: 41
+[120] Power: 146.3040, Temp: 41
+[121] Power: 146.3040, Temp: 41
+[122] Power: 146.3040, Temp: 41
+[123] Power: 146.4000, Temp: 41
+[124] Power: 146.3040, Temp: 41
+[125] Power: 146.3040, Temp: 41
+[126] Power: 146.4000, Temp: 41
+[127] Power: 146.3040, Temp: 41
+[128] Power: 146.3040, Temp: 41
+[129] Power: 146.3040, Temp: 41
+[130] Power: 146.3040, Temp: 41
+[131] Power: 146.4000, Temp: 41
+[132] Power: 146.3040, Temp: 41
+[133] Power: 146.4000, Temp: 41
+[134] Power: 146.3040, Temp: 41
+[135] Power: 146.3040, Temp: 41
+[136] Power: 146.3040, Temp: 41
+[137] Power: 146.3040, Temp: 41
+[138] Power: 146.3040, Temp: 41
+[139] Power: 146.4000, Temp: 41
+[140] Power: 146.3040, Temp: 41
+[141] Power: 146.3040, Temp: 41
+[142] Power: 146.3040, Temp: 41
+[143] Power: 146.3040, Temp: 41
+[144] Power: 146.3040, Temp: 41
+[145] Power: 146.3040, Temp: 41
+[146] Power: 146.4000, Temp: 41
+[147] Power: 146.3040, Temp: 41
+[148] Power: 146.3040, Temp: 41
+[149] Power: 146.3040, Temp: 41
+[150] Power: 146.3040, Temp: 41
+[151] Power: 146.3040, Temp: 41
+[152] Power: 146.3040, Temp: 41
+[153] Power: 146.3040, Temp: 41
+[154] Power: 146.3040, Temp: 41
+[155] Power: 146.3040, Temp: 41
+[156] Power: 146.3040, Temp: 41
+[157] Power: 146.3040, Temp: 41
+[158] Power: 146.3040, Temp: 41
+[159] Power: 146.3040, Temp: 41
+[160] Power: 146.3040, Temp: 41
+[161] Power: 146.3040, Temp: 41
+[162] Power: 146.3040, Temp: 41
+[163] Power: 146.4000, Temp: 41
+[164] Power: 146.3040, Temp: 41
+[165] Power: 146.3040, Temp: 41
+[166] Power: 146.3040, Temp: 41
+[167] Power: 146.4000, Temp: 41
+[168] Power: 146.3040, Temp: 41
+[169] Power: 146.3040, Temp: 41
+[170] Power: 146.3040, Temp: 41
+[171] Power: 146.3040, Temp: 41
+[172] Power: 146.3040, Temp: 41
+[173] Power: 146.3040, Temp: 41
+[174] Power: 146.3040, Temp: 41
+[175] Power: 146.3040, Temp: 41
+[176] Power: 146.3040, Temp: 41
+[177] Power: 146.3040, Temp: 41
+[178] Power: 146.3040, Temp: 41
+[179] Power: 146.3040, Temp: 41
+[180] Power: 146.3040, Temp: 41
+[181] Power: 146.3040, Temp: 41
+[182] Power: 146.3040, Temp: 41
+[183] Power: 146.3040, Temp: 41
+[184] Power: 146.3040, Temp: 41
+[185] Power: 146.3040, Temp: 41
+[186] Power: 146.4000, Temp: 41
+[187] Power: 146.4000, Temp: 41
+[188] Power: 146.3040, Temp: 41
+[189] Power: 146.3040, Temp: 41
+[190] Power: 145.8160, Temp: 41
+[191] Power: 146.3040, Temp: 41
+[192] Power: 146.3040, Temp: 41
+[193] Power: 146.4000, Temp: 41
+[194] Power: 146.3040, Temp: 41
+[195] Power: 146.3040, Temp: 41
+[196] Power: 146.3040, Temp: 41
+[197] Power: 146.3040, Temp: 41
+[198] Power: 146.3040, Temp: 41
+[199] Power: 146.4000, Temp: 41
+[200] Power: 146.3040, Temp: 41
+[201] Power: 146.3040, Temp: 41
+[202] Power: 146.3040, Temp: 41
+[203] Power: 146.3040, Temp: 41
+[204] Power: 146.3040, Temp: 41
+[205] Power: 146.3040, Temp: 41
+[206] Power: 146.3040, Temp: 41
+[207] Power: 146.3040, Temp: 41
+[208] Power: 146.3040, Temp: 41
+[209] Power: 146.3040, Temp: 41
+[210] Power: 146.4000, Temp: 41
+[211] Power: 146.3040, Temp: 41
+[212] Power: 146.4000, Temp: 41
+[213] Power: 146.3040, Temp: 41
+[214] Power: 146.3040, Temp: 41
+[215] Power: 146.4000, Temp: 41
+[216] Power: 146.3040, Temp: 41
+[217] Power: 146.4000, Temp: 41
+[218] Power: 146.3040, Temp: 41
+[219] Power: 146.3040, Temp: 41
+[220] Power: 146.3040, Temp: 41
+[221] Power: 146.3040, Temp: 41
+[222] Power: 146.4000, Temp: 41
+[223] Power: 146.3040, Temp: 41
+[224] Power: 146.3040, Temp: 41
+[225] Power: 146.3040, Temp: 41
+[226] Power: 146.3040, Temp: 41
+[227] Power: 146.3040, Temp: 41
+[228] Power: 146.3040, Temp: 41
+[229] Power: 146.3040, Temp: 41
+[230] Power: 146.3040, Temp: 41
+[231] Power: 146.3040, Temp: 41
+[232] Power: 146.4000, Temp: 41
+[233] Power: 146.3040, Temp: 41
+[234] Power: 146.3040, Temp: 41
+[235] Power: 146.4000, Temp: 41
+[236] Power: 146.3040, Temp: 41
+[237] Power: 146.3040, Temp: 41
+[238] Power: 146.3040, Temp: 41
+[239] Power: 146.4000, Temp: 41
+[240] Power: 146.3040, Temp: 41
+[241] Power: 146.3040, Temp: 41
+[242] Power: 146.3040, Temp: 41
+[243] Power: 146.3040, Temp: 41
+[244] Power: 146.3040, Temp: 41
+[245] Power: 146.3040, Temp: 41
+[246] Power: 146.3040, Temp: 41
+[247] Power: 146.3040, Temp: 41
+[248] Power: 146.3040, Temp: 41
+[249] Power: 146.4000, Temp: 41
+[250] Power: 146.4000, Temp: 41
+[251] Power: 146.4000, Temp: 41
+[252] Power: 146.3040, Temp: 41
+[253] Power: 146.4000, Temp: 41
+[254] Power: 146.3040, Temp: 41
+[255] Power: 146.3040, Temp: 41
+[256] Power: 146.3040, Temp: 41
+[257] Power: 146.3040, Temp: 41
+[258] Power: 146.4000, Temp: 41
+[259] Power: 146.3040, Temp: 41
+[260] Power: 146.3040, Temp: 41
+[261] Power: 146.3040, Temp: 41
+[262] Power: 146.3040, Temp: 41
+[263] Power: 146.3040, Temp: 41
+[264] Power: 146.3040, Temp: 41
+[265] Power: 146.3040, Temp: 41
+[266] Power: 146.3040, Temp: 41
+[267] Power: 146.4000, Temp: 41
+[268] Power: 146.3040, Temp: 41
+[269] Power: 146.3040, Temp: 41
+[270] Power: 146.4000, Temp: 41
+[271] Power: 146.3040, Temp: 41
+[272] Power: 146.3040, Temp: 41
+[273] Power: 146.3040, Temp: 41
+[274] Power: 146.4000, Temp: 41
+[275] Power: 146.3040, Temp: 41
+[276] Power: 146.3040, Temp: 41
+[277] Power: 146.4000, Temp: 41
+[278] Power: 146.3040, Temp: 41
+[279] Power: 146.3040, Temp: 41
+[280] Power: 146.4000, Temp: 41
+[281] Power: 146.3040, Temp: 41
+[282] Power: 146.3040, Temp: 41
+[283] Power: 146.4000, Temp: 41
+[284] Power: 146.3040, Temp: 41
+[285] Power: 146.3040, Temp: 41
+[286] Power: 146.3040, Temp: 41
+[287] Power: 146.3040, Temp: 41
+[288] Power: 146.3040, Temp: 41
+[289] Power: 146.3040, Temp: 41
+[290] Power: 146.3040, Temp: 41
+[291] Power: 146.3040, Temp: 41
+[292] Power: 146.3040, Temp: 41
+[293] Power: 146.3040, Temp: 41
+[294] Power: 146.4000, Temp: 41
+[295] Power: 146.3040, Temp: 41
+[296] Power: 146.3040, Temp: 41
+[297] Power: 146.3040, Temp: 41
+[298] Power: 146.3040, Temp: 41
+[299] Power: 146.3040, Temp: 41
+[300] Power: 146.3040, Temp: 41
+[301] Power: 146.3040, Temp: 41
+[302] Power: 146.3040, Temp: 41
+[303] Power: 146.4000, Temp: 41
+[304] Power: 146.3040, Temp: 41
+[305] Power: 146.3040, Temp: 41
+[306] Power: 146.3040, Temp: 41
+[307] Power: 146.3040, Temp: 41
+[308] Power: 146.3040, Temp: 41
+[309] Power: 146.3040, Temp: 41
+[310] Power: 146.3040, Temp: 41
+[311] Power: 146.3040, Temp: 41
+[312] Power: 146.3040, Temp: 41
+[313] Power: 146.3040, Temp: 41
+[314] Power: 146.3040, Temp: 41
+[315] Power: 146.3040, Temp: 41
+[316] Power: 146.3040, Temp: 41
+[317] Power: 146.3040, Temp: 41
+[318] Power: 146.3040, Temp: 41
+[319] Power: 146.3040, Temp: 41
+[320] Power: 146.3040, Temp: 41
+[321] Power: 146.3040, Temp: 41
+[322] Power: 146.3040, Temp: 41
+[323] Power: 146.3040, Temp: 41
+[324] Power: 146.3040, Temp: 41
+[325] Power: 146.3040, Temp: 41
+[326] Power: 146.3040, Temp: 41
+[327] Power: 146.4000, Temp: 41
+[328] Power: 146.3040, Temp: 41
+[329] Power: 146.3040, Temp: 41
+[330] Power: 146.3040, Temp: 41
+[331] Power: 146.3040, Temp: 41
+[332] Power: 146.3040, Temp: 41
+[333] Power: 146.3040, Temp: 41
+[334] Power: 146.3040, Temp: 41
+[335] Power: 146.3040, Temp: 41
+[336] Power: 146.3040, Temp: 41
+[337] Power: 146.3040, Temp: 41
+[338] Power: 146.3040, Temp: 41
+[339] Power: 146.3040, Temp: 41
+[340] Power: 146.4000, Temp: 41
+[341] Power: 146.4000, Temp: 41
+[342] Power: 146.3040, Temp: 41
+[343] Power: 146.3040, Temp: 41
+[344] Power: 146.4000, Temp: 41
+[345] Power: 146.3040, Temp: 41
+[346] Power: 146.4000, Temp: 41
+[347] Power: 146.3040, Temp: 41
+[348] Power: 146.3040, Temp: 41
+[349] Power: 146.3040, Temp: 41
+[350] Power: 146.4000, Temp: 41
+[351] Power: 146.3040, Temp: 41
+[352] Power: 146.4000, Temp: 41
+[353] Power: 146.3040, Temp: 41
+[354] Power: 146.3040, Temp: 41
+[355] Power: 146.4000, Temp: 41
+[356] Power: 146.4000, Temp: 41
+[357] Power: 146.3040, Temp: 41
+[358] Power: 146.4000, Temp: 41
+[359] Power: 146.3040, Temp: 41
+[360] Power: 146.3040, Temp: 41
+[361] Power: 146.3040, Temp: 41
+[362] Power: 146.3040, Temp: 41
+[363] Power: 146.3040, Temp: 41
+[364] Power: 146.3040, Temp: 41
+[365] Power: 146.3040, Temp: 41
+[366] Power: 146.3040, Temp: 41
+[367] Power: 146.3040, Temp: 41
+[368] Power: 146.3040, Temp: 41
+[369] Power: 146.3040, Temp: 41
+[370] Power: 146.3040, Temp: 41
+[371] Power: 146.3040, Temp: 41
+[372] Power: 146.3040, Temp: 41
+[373] Power: 146.3040, Temp: 41
+[374] Power: 146.3040, Temp: 41
+[375] Power: 146.3040, Temp: 41
+[376] Power: 146.4000, Temp: 41
+[377] Power: 146.3040, Temp: 41
+[378] Power: 146.3040, Temp: 41
+[379] Power: 146.3040, Temp: 41
+[380] Power: 146.3040, Temp: 41
+[381] Power: 146.3040, Temp: 41
+[382] Power: 146.4000, Temp: 41
+[383] Power: 146.3040, Temp: 41
+[384] Power: 146.3040, Temp: 41
+[385] Power: 146.3040, Temp: 41
+[386] Power: 146.3040, Temp: 41
+[387] Power: 146.3040, Temp: 41
+[388] Power: 146.3040, Temp: 41
+[389] Power: 146.3040, Temp: 41
+[390] Power: 146.3040, Temp: 41
+[391] Power: 146.3040, Temp: 41
+[392] Power: 146.3040, Temp: 41
+[393] Power: 146.3040, Temp: 41
+[394] Power: 146.3040, Temp: 41
+[395] Power: 146.4000, Temp: 41
+[396] Power: 146.3040, Temp: 41
+[397] Power: 146.4000, Temp: 41
+[398] Power: 146.3040, Temp: 41
+[399] Power: 146.3040, Temp: 41
+[400] Power: 146.3040, Temp: 41
+[401] Power: 146.4000, Temp: 41
+[402] Power: 146.3040, Temp: 41
+[403] Power: 146.3040, Temp: 41
+[404] Power: 146.3040, Temp: 41
+[405] Power: 146.4000, Temp: 41
+[406] Power: 146.3040, Temp: 41
+[407] Power: 146.3040, Temp: 41
+[408] Power: 146.3040, Temp: 41
+[409] Power: 146.3040, Temp: 41
+[410] Power: 146.3040, Temp: 41
+[411] Power: 146.3040, Temp: 41
+[412] Power: 146.3040, Temp: 41
+[413] Power: 146.4000, Temp: 41
+[414] Power: 146.4000, Temp: 41
+[415] Power: 146.3040, Temp: 41
+[416] Power: 146.3040, Temp: 41
+[417] Power: 146.4000, Temp: 41
+[418] Power: 146.4000, Temp: 41
+[419] Power: 146.3040, Temp: 41
+[420] Power: 146.3040, Temp: 41
+[421] Power: 146.3040, Temp: 41
+[422] Power: 146.3040, Temp: 41
+[423] Power: 146.3040, Temp: 41
+[424] Power: 146.3040, Temp: 41
+[425] Power: 146.3040, Temp: 41
+[426] Power: 146.3040, Temp: 41
+[427] Power: 146.3040, Temp: 41
+[428] Power: 146.3040, Temp: 41
+[429] Power: 146.3040, Temp: 41
+[430] Power: 146.3040, Temp: 41
+[431] Power: 146.3040, Temp: 41
+[432] Power: 146.3040, Temp: 41
+[433] Power: 146.4000, Temp: 41
+[434] Power: 146.3040, Temp: 41
+[435] Power: 146.3040, Temp: 41
+[436] Power: 146.3040, Temp: 41
+[437] Power: 146.3040, Temp: 41
+[438] Power: 146.3040, Temp: 41
+[439] Power: 146.3040, Temp: 41
+[440] Power: 146.3040, Temp: 41
+[441] Power: 146.3040, Temp: 41
+[442] Power: 146.3040, Temp: 41
+[443] Power: 146.3040, Temp: 41
+[444] Power: 146.3040, Temp: 41
+[445] Power: 146.3040, Temp: 41
+[446] Power: 146.3040, Temp: 41
+[447] Power: 146.3040, Temp: 41
+[448] Power: 146.3040, Temp: 41
+[449] Power: 146.3040, Temp: 41
+[450] Power: 146.3040, Temp: 41
+[451] Power: 146.3040, Temp: 41
+[452] Power: 146.3040, Temp: 41
+[453] Power: 146.3040, Temp: 41
+[454] Power: 146.3040, Temp: 41
+[455] Power: 146.3040, Temp: 41
+[456] Power: 146.3040, Temp: 41
+[457] Power: 146.3040, Temp: 41
+[458] Power: 146.3040, Temp: 41
+[459] Power: 146.3040, Temp: 41
+[460] Power: 146.3040, Temp: 41
+[461] Power: 146.3040, Temp: 41
+[462] Power: 146.3040, Temp: 41
+[463] Power: 146.4000, Temp: 41
+[464] Power: 146.3040, Temp: 41
+[465] Power: 146.4000, Temp: 41
+[466] Power: 146.3040, Temp: 41
+[467] Power: 146.3040, Temp: 41
+[468] Power: 146.3040, Temp: 41
+[469] Power: 146.3040, Temp: 41
+[470] Power: 146.3040, Temp: 41
+[471] Power: 146.3040, Temp: 41
+[472] Power: 146.3040, Temp: 41
+[473] Power: 146.3040, Temp: 41
+[474] Power: 146.3040, Temp: 41
+[475] Power: 146.3040, Temp: 41
+[476] Power: 146.3040, Temp: 41
+[477] Power: 146.4000, Temp: 41
+[478] Power: 146.3040, Temp: 41
+[479] Power: 146.4000, Temp: 41
+[480] Power: 146.3040, Temp: 41
+[481] Power: 146.3040, Temp: 41
+[482] Power: 146.3040, Temp: 41
+[483] Power: 146.3040, Temp: 41
+[484] Power: 146.3040, Temp: 41
+[485] Power: 146.3040, Temp: 41
+[486] Power: 146.3040, Temp: 41
+[487] Power: 146.4000, Temp: 41
+[488] Power: 146.3040, Temp: 41
+[489] Power: 146.3040, Temp: 41
+[490] Power: 146.4000, Temp: 41
+[491] Power: 146.3040, Temp: 41
+[492] Power: 146.4000, Temp: 41
+[493] Power: 146.3040, Temp: 41
+[494] Power: 146.4000, Temp: 41
+[495] Power: 146.3040, Temp: 41
+[496] Power: 146.3040, Temp: 41
+[497] Power: 146.3040, Temp: 41
+[498] Power: 146.3040, Temp: 41
+[499] Power: 146.3040, Temp: 41
+[500] Power: 146.3040, Temp: 41
+[501] Power: 146.3040, Temp: 41
+[502] Power: 146.3040, Temp: 41
+[503] Power: 146.3040, Temp: 41
+[504] Power: 146.3040, Temp: 41
+[505] Power: 146.3040, Temp: 41
+[506] Power: 146.4000, Temp: 41
+[507] Power: 146.3040, Temp: 41
+[508] Power: 146.3040, Temp: 41
+[509] Power: 146.3040, Temp: 41
+[510] Power: 146.4000, Temp: 41
+[511] Power: 146.3040, Temp: 41
+[512] Power: 146.3040, Temp: 41
+[513] Power: 146.3040, Temp: 41
+[514] Power: 146.3040, Temp: 41
+[515] Power: 146.3040, Temp: 41
+[516] Power: 146.3040, Temp: 41
+[517] Power: 146.3040, Temp: 41
+[518] Power: 146.3040, Temp: 41
+[519] Power: 146.3040, Temp: 41
+[520] Power: 146.3040, Temp: 41
+[521] Power: 146.3040, Temp: 41
+[522] Power: 146.3040, Temp: 41
+[523] Power: 146.3040, Temp: 41
+[524] Power: 146.3040, Temp: 41
+[525] Power: 146.3040, Temp: 41
+[526] Power: 146.3040, Temp: 41
+[527] Power: 146.3040, Temp: 41
+[528] Power: 146.3040, Temp: 41
+[529] Power: 146.3040, Temp: 41
+[530] Power: 146.3040, Temp: 41
+[531] Power: 146.3040, Temp: 41
+[532] Power: 146.3040, Temp: 41
+[533] Power: 146.3040, Temp: 41
+[534] Power: 146.3040, Temp: 41
+[535] Power: 146.3040, Temp: 41
+[536] Power: 146.3040, Temp: 41
+[537] Power: 146.4000, Temp: 41
+[538] Power: 146.3040, Temp: 41
+[539] Power: 146.3040, Temp: 41
+[540] Power: 146.3040, Temp: 41
+[541] Power: 146.3040, Temp: 41
+[542] Power: 146.3040, Temp: 41
+[543] Power: 146.3040, Temp: 41
+[544] Power: 146.3040, Temp: 41
+[545] Power: 146.3040, Temp: 41
+[546] Power: 146.3040, Temp: 41
+[547] Power: 146.3040, Temp: 41
+[548] Power: 146.3040, Temp: 41
+[549] Power: 146.3040, Temp: 41
+[550] Power: 146.3040, Temp: 41
+[551] Power: 146.3040, Temp: 41
+[552] Power: 146.3040, Temp: 41
+[553] Power: 146.3040, Temp: 41
+[554] Power: 146.4000, Temp: 41
+[555] Power: 146.3040, Temp: 41
+[556] Power: 146.3040, Temp: 41
+[557] Power: 146.3040, Temp: 41
+[558] Power: 146.3040, Temp: 41
+[559] Power: 146.3040, Temp: 41
+[560] Power: 146.3040, Temp: 41
+[561] Power: 146.3040, Temp: 41
+[562] Power: 146.3040, Temp: 41
+[563] Power: 146.3040, Temp: 41
+[564] Power: 146.3040, Temp: 41
+[565] Power: 146.3040, Temp: 41
+[566] Power: 146.3040, Temp: 41
+[567] Power: 146.3040, Temp: 41
+[568] Power: 146.3040, Temp: 41
+[569] Power: 146.3040, Temp: 41
+[570] Power: 146.4000, Temp: 41
+[571] Power: 146.3040, Temp: 41
+[572] Power: 146.3040, Temp: 41
+[573] Power: 146.3040, Temp: 41
+[574] Power: 146.4000, Temp: 41
+[575] Power: 146.3040, Temp: 41
+[576] Power: 146.3040, Temp: 41
+[577] Power: 146.3040, Temp: 41
+[578] Power: 146.3040, Temp: 41
+[579] Power: 146.4000, Temp: 41
+[580] Power: 146.3040, Temp: 41
+[581] Power: 146.3040, Temp: 41
+[582] Power: 146.4000, Temp: 41
+[583] Power: 146.4000, Temp: 41
+[584] Power: 146.3040, Temp: 41
+[585] Power: 146.3040, Temp: 41
+[586] Power: 146.3040, Temp: 41
+[587] Power: 146.3040, Temp: 41
+[588] Power: 146.3040, Temp: 41
+[589] Power: 146.3040, Temp: 41
+[590] Power: 146.4000, Temp: 41
+[591] Power: 146.3040, Temp: 41
+[592] Power: 146.3040, Temp: 41
+[593] Power: 146.4000, Temp: 41
+[594] Power: 146.3040, Temp: 41
+[595] Power: 146.4000, Temp: 41
+[596] Power: 146.3040, Temp: 41
+[597] Power: 146.3040, Temp: 41
+[598] Power: 146.3040, Temp: 41
+[599] Power: 146.4000, Temp: 41
+
+
+Shutting down NVML... Success
+Complete 
+Options: 
+	Output File = (null)
+	CSV mode = 0
+	Device ID = 0
+	Sample Rate = 100 ms
+	Number of power samples = 600
+	Print PSU info = 0
+	Process Name = (null)
+
+	Temperature Cutoff (0 iff disabled) = 0
+Initializing NVML... Success
+Getting device... Selected device 0: Tesla V100-SXM2-16GB
+
+
+Starting power measurement...
+[000] Power: 146.3040, Temp: 41
+[001] Power: 146.3040, Temp: 41
+[002] Power: 146.3040, Temp: 41
+[003] Power: 146.3040, Temp: 41
+[004] Power: 146.3040, Temp: 41
+[005] Power: 146.3040, Temp: 41
+[006] Power: 146.3040, Temp: 41
+[007] Power: 146.3040, Temp: 41
+[008] Power: 146.3040, Temp: 41
+[009] Power: 146.3040, Temp: 41
+[010] Power: 146.3040, Temp: 41
+[011] Power: 146.4000, Temp: 41
+[012] Power: 146.3040, Temp: 41
+[013] Power: 146.3040, Temp: 41
+[014] Power: 146.3040, Temp: 41
+[015] Power: 146.3040, Temp: 41
+[016] Power: 146.3040, Temp: 41
+[017] Power: 146.3040, Temp: 41
+[018] Power: 146.3040, Temp: 41
+[019] Power: 146.3040, Temp: 41
+[020] Power: 146.3040, Temp: 41
+[021] Power: 146.3040, Temp: 41
+[022] Power: 146.3040, Temp: 41
+[023] Power: 146.3040, Temp: 41
+[024] Power: 146.3040, Temp: 41
+[025] Power: 146.3040, Temp: 41
+[026] Power: 146.4000, Temp: 41
+[027] Power: 146.3040, Temp: 41
+[028] Power: 146.3040, Temp: 41
+[029] Power: 146.3040, Temp: 41
+[030] Power: 146.3040, Temp: 41
+[031] Power: 146.3040, Temp: 41
+[032] Power: 146.3040, Temp: 41
+[033] Power: 146.3040, Temp: 41
+[034] Power: 146.3040, Temp: 41
+[035] Power: 146.3040, Temp: 41
+[036] Power: 146.4000, Temp: 41
+[037] Power: 146.4000, Temp: 41
+[038] Power: 146.3040, Temp: 41
+[039] Power: 146.3040, Temp: 41
+[040] Power: 146.3040, Temp: 41
+[041] Power: 146.3040, Temp: 41
+[042] Power: 146.3040, Temp: 41
+[043] Power: 146.3040, Temp: 41
+[044] Power: 146.3040, Temp: 41
+[045] Power: 146.3040, Temp: 41
+[046] Power: 146.3040, Temp: 41
+[047] Power: 146.4000, Temp: 41
+[048] Power: 146.3040, Temp: 41
+[049] Power: 146.3040, Temp: 41
+[050] Power: 146.4000, Temp: 41
+[051] Power: 146.3040, Temp: 41
+[052] Power: 146.3040, Temp: 41
+[053] Power: 146.3040, Temp: 41
+[054] Power: 146.3040, Temp: 41
+[055] Power: 146.3040, Temp: 41
+[056] Power: 146.3040, Temp: 41
+[057] Power: 146.3040, Temp: 41
+[058] Power: 146.3040, Temp: 41
+[059] Power: 146.3040, Temp: 41
+[060] Power: 146.4000, Temp: 41
+[061] Power: 146.3040, Temp: 41
+[062] Power: 146.3040, Temp: 41
+[063] Power: 146.3040, Temp: 41
+[064] Power: 146.4000, Temp: 41
+[065] Power: 146.3040, Temp: 41
+[066] Power: 146.3040, Temp: 41
+[067] Power: 146.4000, Temp: 41
+[068] Power: 146.4000, Temp: 41
+[069] Power: 146.4000, Temp: 41
+[070] Power: 146.3040, Temp: 41
+[071] Power: 146.3040, Temp: 41
+[072] Power: 146.3040, Temp: 41
+[073] Power: 146.4000, Temp: 41
+[074] Power: 146.3040, Temp: 41
+[075] Power: 146.3040, Temp: 41
+[076] Power: 146.3040, Temp: 41
+[077] Power: 146.3040, Temp: 41
+[078] Power: 146.3040, Temp: 41
+[079] Power: 146.3040, Temp: 41
+[080] Power: 146.3040, Temp: 41
+[081] Power: 146.3040, Temp: 41
+[082] Power: 146.3040, Temp: 41
+[083] Power: 146.3040, Temp: 41
+[084] Power: 146.3040, Temp: 41
+[085] Power: 146.3040, Temp: 41
+[086] Power: 146.3040, Temp: 41
+[087] Power: 146.3040, Temp: 41
+[088] Power: 146.3040, Temp: 41
+[089] Power: 146.3040, Temp: 41
+[090] Power: 146.3040, Temp: 41
+[091] Power: 146.4000, Temp: 41
+[092] Power: 146.3040, Temp: 41
+[093] Power: 146.3040, Temp: 41
+[094] Power: 146.3040, Temp: 41
+[095] Power: 146.3040, Temp: 41
+[096] Power: 146.3040, Temp: 41
+[097] Power: 146.4000, Temp: 41
+[098] Power: 146.3040, Temp: 41
+[099] Power: 146.3040, Temp: 41
+[100] Power: 146.3040, Temp: 41
+[101] Power: 146.3040, Temp: 41
+[102] Power: 146.3040, Temp: 41
+[103] Power: 146.3040, Temp: 41
+[104] Power: 146.3040, Temp: 41
+[105] Power: 146.3040, Temp: 41
+[106] Power: 146.3040, Temp: 41
+[107] Power: 146.3040, Temp: 41
+[108] Power: 146.3040, Temp: 41
+[109] Power: 146.3040, Temp: 41
+[110] Power: 146.3040, Temp: 41
+[111] Power: 146.3040, Temp: 41
+[112] Power: 146.3040, Temp: 41
+[113] Power: 146.3040, Temp: 41
+[114] Power: 146.3040, Temp: 41
+[115] Power: 146.3040, Temp: 41
+[116] Power: 146.3040, Temp: 41
+[117] Power: 146.3040, Temp: 41
+[118] Power: 146.3040, Temp: 41
+[119] Power: 146.3040, Temp: 41
+[120] Power: 146.3040, Temp: 41
+[121] Power: 146.3040, Temp: 41
+[122] Power: 146.3040, Temp: 41
+[123] Power: 146.3040, Temp: 41
+[124] Power: 146.3040, Temp: 41
+[125] Power: 146.3040, Temp: 41
+[126] Power: 146.3040, Temp: 41
+[127] Power: 146.3040, Temp: 41
+[128] Power: 146.3040, Temp: 41
+[129] Power: 146.3040, Temp: 41
+[130] Power: 146.3040, Temp: 41
+[131] Power: 146.3040, Temp: 41
+[132] Power: 146.3040, Temp: 41
+[133] Power: 146.4000, Temp: 41
+[134] Power: 146.3040, Temp: 41
+[135] Power: 146.3040, Temp: 41
+[136] Power: 146.3040, Temp: 41
+[137] Power: 146.3040, Temp: 41
+[138] Power: 146.3040, Temp: 41
+[139] Power: 146.3040, Temp: 41
+[140] Power: 146.3040, Temp: 41
+[141] Power: 146.3040, Temp: 41
+[142] Power: 146.3040, Temp: 41
+[143] Power: 146.3040, Temp: 41
+[144] Power: 146.3040, Temp: 41
+[145] Power: 146.3040, Temp: 41
+[146] Power: 146.3040, Temp: 41
+[147] Power: 146.3040, Temp: 41
+[148] Power: 146.3040, Temp: 41
+[149] Power: 146.3040, Temp: 41
+[150] Power: 146.3040, Temp: 41
+[151] Power: 146.3040, Temp: 41
+[152] Power: 146.3040, Temp: 41
+[153] Power: 146.3040, Temp: 41
+[154] Power: 146.3040, Temp: 41
+[155] Power: 146.3040, Temp: 41
+[156] Power: 146.3040, Temp: 41
+[157] Power: 146.3040, Temp: 41
+[158] Power: 146.3040, Temp: 41
+[159] Power: 146.3040, Temp: 41
+[160] Power: 146.3040, Temp: 41
+[161] Power: 146.4000, Temp: 41
+[162] Power: 146.3040, Temp: 41
+[163] Power: 146.3040, Temp: 41
+[164] Power: 146.3040, Temp: 41
+[165] Power: 146.3040, Temp: 41
+[166] Power: 146.3040, Temp: 41
+[167] Power: 146.3040, Temp: 41
+[168] Power: 146.3040, Temp: 41
+[169] Power: 146.3040, Temp: 41
+[170] Power: 146.3040, Temp: 41
+[171] Power: 146.3040, Temp: 41
+[172] Power: 146.3040, Temp: 41
+[173] Power: 146.3040, Temp: 41
+[174] Power: 146.4000, Temp: 41
+[175] Power: 146.3040, Temp: 41
+[176] Power: 146.3040, Temp: 41
+[177] Power: 146.4000, Temp: 41
+[178] Power: 146.3040, Temp: 41
+[179] Power: 146.4000, Temp: 41
+[180] Power: 146.3040, Temp: 41
+[181] Power: 146.3040, Temp: 41
+[182] Power: 146.3040, Temp: 41
+[183] Power: 146.3040, Temp: 41
+[184] Power: 146.4000, Temp: 41
+[185] Power: 146.3040, Temp: 41
+[186] Power: 146.3040, Temp: 41
+[187] Power: 146.3040, Temp: 41
+[188] Power: 146.3040, Temp: 41
+[189] Power: 146.3040, Temp: 41
+[190] Power: 146.3040, Temp: 41
+[191] Power: 146.3040, Temp: 41
+[192] Power: 146.4000, Temp: 41
+[193] Power: 146.3040, Temp: 41
+[194] Power: 146.3040, Temp: 41
+[195] Power: 146.4000, Temp: 41
+[196] Power: 146.3040, Temp: 41
+[197] Power: 146.3040, Temp: 41
+[198] Power: 146.4000, Temp: 41
+[199] Power: 146.4000, Temp: 41
+[200] Power: 146.3040, Temp: 41
+[201] Power: 146.4000, Temp: 41
+[202] Power: 146.3040, Temp: 41
+[203] Power: 146.3040, Temp: 41
+[204] Power: 146.3040, Temp: 41
+[205] Power: 146.3040, Temp: 41
+[206] Power: 146.3040, Temp: 41
+[207] Power: 146.3040, Temp: 41
+[208] Power: 146.3040, Temp: 41
+[209] Power: 146.3040, Temp: 41
+[210] Power: 146.3040, Temp: 41
+[211] Power: 146.4000, Temp: 41
+[212] Power: 146.3040, Temp: 41
+[213] Power: 146.3040, Temp: 41
+[214] Power: 146.3040, Temp: 41
+[215] Power: 146.3040, Temp: 41
+[216] Power: 146.4000, Temp: 41
+[217] Power: 146.3040, Temp: 41
+[218] Power: 146.4000, Temp: 41
+[219] Power: 146.4000, Temp: 41
+[220] Power: 146.3040, Temp: 41
+[221] Power: 146.3040, Temp: 41
+[222] Power: 146.3040, Temp: 41
+[223] Power: 146.3040, Temp: 41
+[224] Power: 146.3040, Temp: 41
+[225] Power: 146.4000, Temp: 41
+[226] Power: 146.3040, Temp: 41
+[227] Power: 146.3040, Temp: 41
+[228] Power: 146.3040, Temp: 41
+[229] Power: 146.3040, Temp: 41
+[230] Power: 146.3040, Temp: 41
+[231] Power: 146.3040, Temp: 41
+[232] Power: 146.3040, Temp: 41
+[233] Power: 146.3040, Temp: 41
+[234] Power: 146.3040, Temp: 41
+[235] Power: 146.3040, Temp: 41
+[236] Power: 146.3040, Temp: 41
+[237] Power: 146.3040, Temp: 41
+[238] Power: 146.3040, Temp: 41
+[239] Power: 146.3040, Temp: 41
+[240] Power: 146.3040, Temp: 41
+[241] Power: 146.4000, Temp: 41
+[242] Power: 146.3040, Temp: 41
+[243] Power: 146.3040, Temp: 41
+[244] Power: 146.3040, Temp: 41
+[245] Power: 146.4000, Temp: 41
+[246] Power: 146.3040, Temp: 41
+[247] Power: 146.3040, Temp: 41
+[248] Power: 146.3040, Temp: 41
+[249] Power: 146.3040, Temp: 41
+[250] Power: 146.3040, Temp: 41
+[251] Power: 146.3040, Temp: 41
+[252] Power: 146.3040, Temp: 41
+[253] Power: 146.3040, Temp: 41
+[254] Power: 146.3040, Temp: 41
+[255] Power: 146.3040, Temp: 41
+[256] Power: 146.3040, Temp: 41
+[257] Power: 146.3040, Temp: 41
+[258] Power: 146.3040, Temp: 41
+[259] Power: 146.4000, Temp: 41
+[260] Power: 146.3040, Temp: 41
+[261] Power: 146.3040, Temp: 41
+[262] Power: 146.3040, Temp: 41
+[263] Power: 146.3040, Temp: 41
+[264] Power: 146.3040, Temp: 41
+[265] Power: 146.3040, Temp: 41
+[266] Power: 146.3040, Temp: 41
+[267] Power: 146.3040, Temp: 41
+[268] Power: 146.3040, Temp: 41
+[269] Power: 146.3040, Temp: 41
+[270] Power: 146.3040, Temp: 41
+[271] Power: 146.3040, Temp: 41
+[272] Power: 146.3040, Temp: 41
+[273] Power: 146.4000, Temp: 41
+[274] Power: 146.3040, Temp: 41
+[275] Power: 146.3040, Temp: 41
+[276] Power: 146.3040, Temp: 41
+[277] Power: 146.3040, Temp: 41
+[278] Power: 146.3040, Temp: 41
+[279] Power: 146.3040, Temp: 41
+[280] Power: 146.3040, Temp: 41
+[281] Power: 146.3040, Temp: 41
+[282] Power: 146.3040, Temp: 41
+[283] Power: 146.3040, Temp: 41
+[284] Power: 146.3040, Temp: 41
+[285] Power: 146.4000, Temp: 41
+[286] Power: 146.3040, Temp: 41
+[287] Power: 146.3040, Temp: 41
+[288] Power: 146.3040, Temp: 41
+[289] Power: 146.4000, Temp: 41
+[290] Power: 146.3040, Temp: 41
+[291] Power: 146.3040, Temp: 41
+[292] Power: 146.3040, Temp: 41
+[293] Power: 146.3040, Temp: 41
+[294] Power: 146.3040, Temp: 41
+[295] Power: 146.3040, Temp: 41
+[296] Power: 146.3040, Temp: 41
+[297] Power: 146.3040, Temp: 41
+[298] Power: 146.3040, Temp: 41
+[299] Power: 146.3040, Temp: 41
+[300] Power: 146.3040, Temp: 41
+[301] Power: 146.3040, Temp: 41
+[302] Power: 146.3040, Temp: 41
+[303] Power: 146.4000, Temp: 41
+[304] Power: 146.4000, Temp: 41
+[305] Power: 146.3040, Temp: 41
+[306] Power: 146.3040, Temp: 41
+[307] Power: 146.3040, Temp: 41
+[308] Power: 146.3040, Temp: 41
+[309] Power: 146.4000, Temp: 41
+[310] Power: 146.3040, Temp: 41
+[311] Power: 146.4000, Temp: 41
+[312] Power: 146.3040, Temp: 41
+[313] Power: 146.3040, Temp: 41
+[314] Power: 146.3040, Temp: 41
+[315] Power: 146.4000, Temp: 41
+[316] Power: 146.3040, Temp: 41
+[317] Power: 146.3040, Temp: 41
+[318] Power: 146.3040, Temp: 41
+[319] Power: 146.3040, Temp: 41
+[320] Power: 146.3040, Temp: 41
+[321] Power: 146.3040, Temp: 41
+[322] Power: 146.3040, Temp: 41
+[323] Power: 146.3040, Temp: 41
+[324] Power: 146.3040, Temp: 41
+[325] Power: 146.3040, Temp: 41
+[326] Power: 146.3040, Temp: 41
+[327] Power: 146.3040, Temp: 41
+[328] Power: 146.3040, Temp: 41
+[329] Power: 146.3040, Temp: 41
+[330] Power: 146.3040, Temp: 41
+[331] Power: 146.3040, Temp: 41
+[332] Power: 146.3040, Temp: 41
+[333] Power: 146.3040, Temp: 41
+[334] Power: 146.3040, Temp: 41
+[335] Power: 146.3040, Temp: 41
+[336] Power: 146.3040, Temp: 41
+[337] Power: 146.3040, Temp: 41
+[338] Power: 146.4000, Temp: 41
+[339] Power: 146.3040, Temp: 41
+[340] Power: 146.3040, Temp: 41
+[341] Power: 146.3040, Temp: 41
+[342] Power: 146.4000, Temp: 41
+[343] Power: 146.3040, Temp: 41
+[344] Power: 146.4000, Temp: 41
+[345] Power: 146.3040, Temp: 41
+[346] Power: 146.3040, Temp: 41
+[347] Power: 146.3040, Temp: 41
+[348] Power: 146.3040, Temp: 41
+[349] Power: 146.3040, Temp: 41
+[350] Power: 146.3040, Temp: 41
+[351] Power: 146.3040, Temp: 41
+[352] Power: 146.3040, Temp: 41
+[353] Power: 146.3040, Temp: 41
+[354] Power: 146.3040, Temp: 41
+[355] Power: 146.3040, Temp: 41
+[356] Power: 146.4000, Temp: 41
+[357] Power: 146.3040, Temp: 41
+[358] Power: 146.3040, Temp: 41
+[359] Power: 146.3040, Temp: 41
+[360] Power: 146.3040, Temp: 41
+[361] Power: 146.3040, Temp: 41
+[362] Power: 146.3040, Temp: 41
+[363] Power: 146.3040, Temp: 41
+[364] Power: 146.3040, Temp: 41
+[365] Power: 146.3040, Temp: 41
+[366] Power: 146.3040, Temp: 41
+[367] Power: 146.3040, Temp: 41
+[368] Power: 146.3040, Temp: 41
+[369] Power: 146.4000, Temp: 41
+[370] Power: 146.4000, Temp: 41
+[371] Power: 146.3040, Temp: 41
+[372] Power: 146.4000, Temp: 41
+[373] Power: 146.3040, Temp: 41
+[374] Power: 146.4000, Temp: 41
+[375] Power: 146.3040, Temp: 41
+[376] Power: 146.4000, Temp: 41
+[377] Power: 146.3040, Temp: 41
+[378] Power: 146.3040, Temp: 41
+[379] Power: 146.4000, Temp: 41
+[380] Power: 146.4000, Temp: 41
+[381] Power: 146.3040, Temp: 41
+[382] Power: 146.4000, Temp: 41
+[383] Power: 146.3040, Temp: 41
+[384] Power: 146.3040, Temp: 41
+[385] Power: 146.3040, Temp: 41
+[386] Power: 146.3040, Temp: 41
+[387] Power: 146.3040, Temp: 41
+[388] Power: 146.3040, Temp: 41
+[389] Power: 146.3040, Temp: 41
+[390] Power: 146.3040, Temp: 41
+[391] Power: 146.4000, Temp: 41
+[392] Power: 146.3040, Temp: 41
+[393] Power: 146.3040, Temp: 41
+[394] Power: 146.3040, Temp: 41
+[395] Power: 146.3040, Temp: 41
+[396] Power: 146.3040, Temp: 41
+[397] Power: 146.3040, Temp: 41
+[398] Power: 146.3040, Temp: 41
+[399] Power: 146.3040, Temp: 41
+[400] Power: 146.3040, Temp: 41
+[401] Power: 146.3040, Temp: 41
+[402] Power: 146.3040, Temp: 41
+[403] Power: 146.3040, Temp: 41
+[404] Power: 146.3040, Temp: 41
+[405] Power: 146.3040, Temp: 41
+[406] Power: 146.3040, Temp: 41
+[407] Power: 146.3040, Temp: 41
+[408] Power: 146.3040, Temp: 41
+[409] Power: 146.3040, Temp: 41
+[410] Power: 146.3040, Temp: 41
+[411] Power: 146.3040, Temp: 41
+[412] Power: 146.3040, Temp: 41
+[413] Power: 146.3040, Temp: 41
+[414] Power: 146.3040, Temp: 41
+[415] Power: 146.3040, Temp: 41
+[416] Power: 146.3040, Temp: 41
+[417] Power: 146.3040, Temp: 41
+[418] Power: 146.4000, Temp: 41
+[419] Power: 146.3040, Temp: 41
+[420] Power: 146.3040, Temp: 41
+[421] Power: 146.3040, Temp: 41
+[422] Power: 146.3040, Temp: 41
+[423] Power: 146.3040, Temp: 41
+[424] Power: 146.3040, Temp: 41
+[425] Power: 146.3040, Temp: 41
+[426] Power: 146.3040, Temp: 41
+[427] Power: 146.3040, Temp: 41
+[428] Power: 146.3040, Temp: 41
+[429] Power: 146.3040, Temp: 41
+[430] Power: 146.3040, Temp: 41
+[431] Power: 146.3040, Temp: 41
+[432] Power: 146.3040, Temp: 41
+[433] Power: 146.3040, Temp: 41
+[434] Power: 146.3040, Temp: 41
+[435] Power: 146.3040, Temp: 41
+[436] Power: 146.3040, Temp: 41
+[437] Power: 146.3040, Temp: 41
+[438] Power: 146.3040, Temp: 41
+[439] Power: 146.3040, Temp: 41
+[440] Power: 146.3040, Temp: 41
+[441] Power: 146.3040, Temp: 41
+[442] Power: 146.3040, Temp: 41
+[443] Power: 146.3040, Temp: 41
+[444] Power: 146.3040, Temp: 41
+[445] Power: 146.3040, Temp: 41
+[446] Power: 146.3040, Temp: 41
+[447] Power: 146.3040, Temp: 41
+[448] Power: 146.4000, Temp: 41
+[449] Power: 146.4000, Temp: 41
+[450] Power: 146.4000, Temp: 41
+[451] Power: 146.3040, Temp: 41
+[452] Power: 146.3040, Temp: 41
+[453] Power: 146.4000, Temp: 41
+[454] Power: 146.3040, Temp: 41
+[455] Power: 146.3040, Temp: 41
+[456] Power: 146.3040, Temp: 41
+[457] Power: 146.4000, Temp: 41
+[458] Power: 146.4000, Temp: 41
+[459] Power: 146.3040, Temp: 41
+[460] Power: 146.3040, Temp: 41
+[461] Power: 146.3040, Temp: 41
+[462] Power: 146.3040, Temp: 41
+[463] Power: 146.3040, Temp: 41
+[464] Power: 146.3040, Temp: 41
+[465] Power: 146.3040, Temp: 41
+[466] Power: 146.3040, Temp: 41
+[467] Power: 146.3040, Temp: 41
+[468] Power: 146.3040, Temp: 41
+[469] Power: 146.3040, Temp: 41
+[470] Power: 146.3040, Temp: 41
+[471] Power: 146.3040, Temp: 41
+[472] Power: 146.3040, Temp: 41
+[473] Power: 146.3040, Temp: 41
+[474] Power: 146.3040, Temp: 41
+[475] Power: 146.3040, Temp: 41
+[476] Power: 146.3040, Temp: 41
+[477] Power: 146.3040, Temp: 41
+[478] Power: 146.3040, Temp: 41
+[479] Power: 146.3040, Temp: 41
+[480] Power: 146.3040, Temp: 41
+[481] Power: 146.3040, Temp: 41
+[482] Power: 146.4000, Temp: 41
+[483] Power: 146.3040, Temp: 41
+[484] Power: 146.4000, Temp: 41
+[485] Power: 146.3040, Temp: 41
+[486] Power: 146.3040, Temp: 41
+[487] Power: 146.3040, Temp: 41
+[488] Power: 146.3040, Temp: 41
+[489] Power: 146.3040, Temp: 41
+[490] Power: 146.4000, Temp: 41
+[491] Power: 146.3040, Temp: 41
+[492] Power: 146.3040, Temp: 41
+[493] Power: 146.4000, Temp: 41
+[494] Power: 146.3040, Temp: 41
+[495] Power: 146.3040, Temp: 41
+[496] Power: 146.3040, Temp: 41
+[497] Power: 146.3040, Temp: 41
+[498] Power: 146.3040, Temp: 41
+[499] Power: 146.3040, Temp: 41
+[500] Power: 146.3040, Temp: 41
+[501] Power: 146.3040, Temp: 41
+[502] Power: 146.3040, Temp: 41
+[503] Power: 146.3040, Temp: 41
+[504] Power: 146.3040, Temp: 41
+[505] Power: 146.3040, Temp: 41
+[506] Power: 146.3040, Temp: 41
+[507] Power: 146.3040, Temp: 41
+[508] Power: 146.4000, Temp: 41
+[509] Power: 146.3040, Temp: 41
+[510] Power: 146.3040, Temp: 41
+[511] Power: 146.4000, Temp: 41
+[512] Power: 146.4000, Temp: 41
+[513] Power: 146.4000, Temp: 41
+[514] Power: 146.4000, Temp: 41
+[515] Power: 146.4000, Temp: 41
+[516] Power: 146.3040, Temp: 41
+[517] Power: 146.4000, Temp: 41
+[518] Power: 146.3040, Temp: 41
+[519] Power: 146.3040, Temp: 41
+[520] Power: 146.3040, Temp: 41
+[521] Power: 146.3040, Temp: 41
+[522] Power: 146.3040, Temp: 41
+[523] Power: 146.3040, Temp: 41
+[524] Power: 146.3040, Temp: 41
+[525] Power: 146.3040, Temp: 41
+[526] Power: 146.3040, Temp: 41
+[527] Power: 146.3040, Temp: 41
+[528] Power: 146.3040, Temp: 41
+[529] Power: 146.3040, Temp: 41
+[530] Power: 146.3040, Temp: 41
+[531] Power: 146.3040, Temp: 41
+[532] Power: 146.3040, Temp: 41
+[533] Power: 146.3040, Temp: 41
+[534] Power: 146.3040, Temp: 41
+[535] Power: 146.3040, Temp: 41
+[536] Power: 146.3040, Temp: 41
+[537] Power: 146.3040, Temp: 41
+[538] Power: 146.4000, Temp: 41
+[539] Power: 146.3040, Temp: 41
+[540] Power: 146.4000, Temp: 41
+[541] Power: 146.4000, Temp: 41
+[542] Power: 146.3040, Temp: 41
+[543] Power: 146.3040, Temp: 41
+[544] Power: 146.3040, Temp: 41
+[545] Power: 146.3040, Temp: 41
+[546] Power: 146.3040, Temp: 41
+[547] Power: 146.3040, Temp: 41
+[548] Power: 146.4000, Temp: 41
+[549] Power: 146.3040, Temp: 41
+[550] Power: 146.3040, Temp: 41
+[551] Power: 146.4000, Temp: 41
+[552] Power: 146.3040, Temp: 41
+[553] Power: 146.4000, Temp: 41
+[554] Power: 146.3040, Temp: 41
+[555] Power: 146.3040, Temp: 41
+[556] Power: 146.4000, Temp: 41
+[557] Power: 146.3040, Temp: 41
+[558] Power: 146.3040, Temp: 41
+[559] Power: 146.3040, Temp: 41
+[560] Power: 146.3040, Temp: 41
+[561] Power: 146.3040, Temp: 41
+[562] Power: 146.3040, Temp: 41
+[563] Power: 146.3040, Temp: 41
+[564] Power: 146.3040, Temp: 41
+[565] Power: 146.4000, Temp: 41
+[566] Power: 146.3040, Temp: 41
+[567] Power: 146.3040, Temp: 41
+[568] Power: 146.3040, Temp: 41
+[569] Power: 146.3040, Temp: 41
+[570] Power: 146.3040, Temp: 41
+[571] Power: 146.3040, Temp: 41
+[572] Power: 146.3040, Temp: 41
+[573] Power: 146.3040, Temp: 41
+[574] Power: 146.3040, Temp: 41
+[575] Power: 146.3040, Temp: 41
+[576] Power: 146.3040, Temp: 41
+[577] Power: 146.3040, Temp: 41
+[578] Power: 146.3040, Temp: 41
+[579] Power: 146.3040, Temp: 41
+[580] Power: 146.3040, Temp: 41
+[581] Power: 146.3040, Temp: 41
+[582] Power: 146.3040, Temp: 41
+[583] Power: 146.3040, Temp: 41
+[584] Power: 146.3040, Temp: 41
+[585] Power: 146.4000, Temp: 41
+[586] Power: 146.3040, Temp: 41
+[587] Power: 146.4000, Temp: 41
+[588] Power: 146.3040, Temp: 41
+[589] Power: 146.3040, Temp: 41
+[590] Power: 146.3040, Temp: 41
+[591] Power: 146.3040, Temp: 41
+[592] Power: 146.3040, Temp: 41
+[593] Power: 146.3040, Temp: 41
+[594] Power: 146.3040, Temp: 41
+[595] Power: 146.3040, Temp: 41
+[596] Power: 146.3040, Temp: 41
+[597] Power: 146.3040, Temp: 41
+[598] Power: 146.3040, Temp: 41
+[599] Power: 146.3040, Temp: 41
+
+
+Shutting down NVML... Success
+Complete 
+Options: 
+	Output File = (null)
+	CSV mode = 0
+	Device ID = 0
+	Sample Rate = 100 ms
+	Number of power samples = 600
+	Print PSU info = 0
+	Process Name = (null)
+
+	Temperature Cutoff (0 iff disabled) = 0
+Initializing NVML... Success
+Getting device... Selected device 0: Tesla V100-SXM2-16GB
+
+
+Starting power measurement...
+[000] Power: 146.4000, Temp: 41
+[001] Power: 146.3040, Temp: 41
+[002] Power: 146.3040, Temp: 41
+[003] Power: 146.3040, Temp: 41
+[004] Power: 146.3040, Temp: 41
+[005] Power: 146.3040, Temp: 41
+[006] Power: 146.3040, Temp: 41
+[007] Power: 146.3040, Temp: 41
+[008] Power: 146.3040, Temp: 41
+[009] Power: 146.3040, Temp: 41
+[010] Power: 146.3040, Temp: 41
+[011] Power: 146.3040, Temp: 41
+[012] Power: 146.3040, Temp: 41
+[013] Power: 146.4000, Temp: 41
+[014] Power: 146.3040, Temp: 41
+[015] Power: 146.3040, Temp: 41
+[016] Power: 146.3040, Temp: 41
+[017] Power: 146.3040, Temp: 41
+[018] Power: 146.3040, Temp: 41
+[019] Power: 146.3040, Temp: 41
+[020] Power: 146.3040, Temp: 41
+[021] Power: 146.3040, Temp: 41
+[022] Power: 146.3040, Temp: 41
+[023] Power: 146.4000, Temp: 41
+[024] Power: 146.3040, Temp: 41
+[025] Power: 146.3040, Temp: 41
+[026] Power: 146.3040, Temp: 41
+[027] Power: 146.3040, Temp: 41
+[028] Power: 146.3040, Temp: 41
+[029] Power: 146.3040, Temp: 41
+[030] Power: 146.3040, Temp: 41
+[031] Power: 146.3040, Temp: 41
+[032] Power: 146.3040, Temp: 41
+[033] Power: 146.3040, Temp: 41
+[034] Power: 146.3040, Temp: 41
+[035] Power: 146.3040, Temp: 41
+[036] Power: 146.3040, Temp: 41
+[037] Power: 146.3040, Temp: 41
+[038] Power: 146.3040, Temp: 41
+[039] Power: 146.3040, Temp: 41
+[040] Power: 146.3040, Temp: 41
+[041] Power: 146.3040, Temp: 41
+[042] Power: 146.3040, Temp: 41
+[043] Power: 146.3040, Temp: 41
+[044] Power: 146.3040, Temp: 41
+[045] Power: 146.3040, Temp: 41
+[046] Power: 146.3040, Temp: 41
+[047] Power: 146.3040, Temp: 41
+[048] Power: 146.3040, Temp: 41
+[049] Power: 146.3040, Temp: 41
+[050] Power: 146.3040, Temp: 41
+[051] Power: 146.3040, Temp: 41
+[052] Power: 146.3040, Temp: 41
+[053] Power: 146.3040, Temp: 41
+[054] Power: 145.8160, Temp: 41
+[055] Power: 146.3040, Temp: 41
+[056] Power: 146.3040, Temp: 41
+[057] Power: 146.3040, Temp: 41
+[058] Power: 146.3040, Temp: 41
+[059] Power: 146.3040, Temp: 41
+[060] Power: 146.3040, Temp: 41
+[061] Power: 146.3040, Temp: 41
+[062] Power: 146.3040, Temp: 41
+[063] Power: 146.3040, Temp: 41
+[064] Power: 146.3040, Temp: 41
+[065] Power: 146.3040, Temp: 41
+[066] Power: 146.3040, Temp: 41
+[067] Power: 146.3040, Temp: 41
+[068] Power: 146.3040, Temp: 41
+[069] Power: 146.3040, Temp: 41
+[070] Power: 146.3040, Temp: 41
+[071] Power: 146.3040, Temp: 41
+[072] Power: 146.3040, Temp: 41
+[073] Power: 146.3040, Temp: 41
+[074] Power: 146.3040, Temp: 41
+[075] Power: 146.3040, Temp: 41
+[076] Power: 146.3040, Temp: 41
+[077] Power: 146.3040, Temp: 41
+[078] Power: 146.3040, Temp: 41
+[079] Power: 146.3040, Temp: 41
+[080] Power: 146.3040, Temp: 41
+[081] Power: 146.3040, Temp: 41
+[082] Power: 146.3040, Temp: 41
+[083] Power: 146.3040, Temp: 41
+[084] Power: 146.4000, Temp: 41
+[085] Power: 146.3040, Temp: 41
+[086] Power: 146.3040, Temp: 41
+[087] Power: 146.3040, Temp: 41
+[088] Power: 146.4000, Temp: 41
+[089] Power: 146.3040, Temp: 41
+[090] Power: 146.3040, Temp: 41
+[091] Power: 146.3040, Temp: 41
+[092] Power: 146.3040, Temp: 41
+[093] Power: 146.3040, Temp: 41
+[094] Power: 146.3040, Temp: 41
+[095] Power: 146.3040, Temp: 41
+[096] Power: 146.3040, Temp: 41
+[097] Power: 146.3040, Temp: 41
+[098] Power: 146.3040, Temp: 41
+[099] Power: 146.3040, Temp: 41
+[100] Power: 146.3040, Temp: 41
+[101] Power: 145.8160, Temp: 41
+[102] Power: 146.3040, Temp: 41
+[103] Power: 146.3040, Temp: 41
+[104] Power: 146.3040, Temp: 41
+[105] Power: 146.3040, Temp: 41
+[106] Power: 146.3040, Temp: 41
+[107] Power: 146.3040, Temp: 41
+[108] Power: 146.3040, Temp: 41
+[109] Power: 146.3040, Temp: 41
+[110] Power: 146.3040, Temp: 41
+[111] Power: 146.3040, Temp: 41
+[112] Power: 146.3040, Temp: 41
+[113] Power: 146.3040, Temp: 41
+[114] Power: 146.3040, Temp: 41
+[115] Power: 145.9120, Temp: 41
+[116] Power: 146.3040, Temp: 41
+[117] Power: 146.3040, Temp: 41
+[118] Power: 146.3040, Temp: 41
+[119] Power: 145.8160, Temp: 41
+[120] Power: 146.3040, Temp: 41
+[121] Power: 146.4000, Temp: 41
+[122] Power: 146.3040, Temp: 41
+[123] Power: 146.3040, Temp: 41
+[124] Power: 146.4000, Temp: 41
+[125] Power: 146.3040, Temp: 41
+[126] Power: 146.3040, Temp: 41
+[127] Power: 146.3040, Temp: 41
+[128] Power: 146.3040, Temp: 41
+[129] Power: 146.3040, Temp: 41
+[130] Power: 146.3040, Temp: 41
+[131] Power: 146.3040, Temp: 41
+[132] Power: 146.3040, Temp: 41
+[133] Power: 146.3040, Temp: 41
+[134] Power: 146.3040, Temp: 41
+[135] Power: 146.3040, Temp: 41
+[136] Power: 146.3040, Temp: 41
+[137] Power: 145.8160, Temp: 41
+[138] Power: 146.3040, Temp: 41
+[139] Power: 146.3040, Temp: 41
+[140] Power: 146.4000, Temp: 41
+[141] Power: 146.3040, Temp: 41
+[142] Power: 146.3040, Temp: 41
+[143] Power: 146.4000, Temp: 41
+[144] Power: 145.8160, Temp: 41
+[145] Power: 146.3040, Temp: 41
+[146] Power: 146.3040, Temp: 41
+[147] Power: 146.3040, Temp: 41
+[148] Power: 145.8160, Temp: 41
+[149] Power: 146.3040, Temp: 41
+[150] Power: 145.8160, Temp: 41
+[151] Power: 146.3040, Temp: 41
+[152] Power: 146.3040, Temp: 41
+[153] Power: 146.3040, Temp: 41
+[154] Power: 146.4000, Temp: 41
+[155] Power: 146.3040, Temp: 41
+[156] Power: 146.4000, Temp: 41
+[157] Power: 145.8160, Temp: 41
+[158] Power: 146.3040, Temp: 41
+[159] Power: 145.8160, Temp: 41
+[160] Power: 146.3040, Temp: 41
+[161] Power: 146.3040, Temp: 41
+[162] Power: 145.9120, Temp: 41
+[163] Power: 145.9120, Temp: 41
+[164] Power: 145.8160, Temp: 41
+[165] Power: 146.3040, Temp: 41
+[166] Power: 146.3040, Temp: 41
+[167] Power: 145.8160, Temp: 41
+[168] Power: 146.3040, Temp: 41
+[169] Power: 146.4000, Temp: 41
+[170] Power: 146.3040, Temp: 41
+[171] Power: 146.3040, Temp: 41
+[172] Power: 146.3040, Temp: 41
+[173] Power: 146.4000, Temp: 41
+[174] Power: 145.8160, Temp: 41
+[175] Power: 145.9120, Temp: 41
+[176] Power: 146.3040, Temp: 41
+[177] Power: 146.3040, Temp: 41
+[178] Power: 145.9120, Temp: 41
+[179] Power: 146.3040, Temp: 41
+[180] Power: 146.3040, Temp: 41
+[181] Power: 146.3040, Temp: 41
+[182] Power: 145.8160, Temp: 41
+[183] Power: 146.3040, Temp: 41
+[184] Power: 146.3040, Temp: 41
+[185] Power: 146.3040, Temp: 41
+[186] Power: 146.3040, Temp: 41
+[187] Power: 146.3040, Temp: 41
+[188] Power: 146.3040, Temp: 41
+[189] Power: 146.4000, Temp: 41
+[190] Power: 146.3040, Temp: 41
+[191] Power: 146.3040, Temp: 41
+[192] Power: 146.3040, Temp: 41
+[193] Power: 146.3040, Temp: 41
+[194] Power: 145.8160, Temp: 41
+[195] Power: 146.3040, Temp: 41
+[196] Power: 146.3040, Temp: 41
+[197] Power: 146.3040, Temp: 41
+[198] Power: 146.3040, Temp: 41
+[199] Power: 146.3040, Temp: 41
+[200] Power: 146.3040, Temp: 41
+[201] Power: 145.8160, Temp: 41
+[202] Power: 146.3040, Temp: 41
+[203] Power: 146.3040, Temp: 41
+[204] Power: 146.3040, Temp: 41
+[205] Power: 146.3040, Temp: 41
+[206] Power: 146.3040, Temp: 41
+[207] Power: 146.4000, Temp: 41
+[208] Power: 146.3040, Temp: 41
+[209] Power: 145.8160, Temp: 41
+[210] Power: 146.3040, Temp: 41
+[211] Power: 146.3040, Temp: 41
+[212] Power: 146.3040, Temp: 41
+[213] Power: 146.3040, Temp: 41
+[214] Power: 146.3040, Temp: 41
+[215] Power: 146.3040, Temp: 41
+[216] Power: 146.3040, Temp: 41
+[217] Power: 146.3040, Temp: 41
+[218] Power: 146.3040, Temp: 41
+[219] Power: 145.8160, Temp: 41
+[220] Power: 146.3040, Temp: 41
+[221] Power: 146.3040, Temp: 41
+[222] Power: 146.3040, Temp: 41
+[223] Power: 146.3040, Temp: 41
+[224] Power: 146.3040, Temp: 41
+[225] Power: 146.3040, Temp: 41
+[226] Power: 146.3040, Temp: 41
+[227] Power: 145.8160, Temp: 41
+[228] Power: 146.3040, Temp: 41
+[229] Power: 146.3040, Temp: 41
+[230] Power: 146.3040, Temp: 41
+[231] Power: 146.3040, Temp: 41
+[232] Power: 146.3040, Temp: 41
+[233] Power: 146.3040, Temp: 41
+[234] Power: 146.3040, Temp: 41
+[235] Power: 146.3040, Temp: 41
+[236] Power: 146.3040, Temp: 41
+[237] Power: 146.3040, Temp: 41
+[238] Power: 146.3040, Temp: 41
+[239] Power: 146.3040, Temp: 41
+[240] Power: 145.8160, Temp: 41
+[241] Power: 146.3040, Temp: 41
+[242] Power: 146.3040, Temp: 41
+[243] Power: 146.3040, Temp: 41
+[244] Power: 146.4000, Temp: 41
+[245] Power: 146.3040, Temp: 41
+[246] Power: 146.3040, Temp: 41
+[247] Power: 146.3040, Temp: 41
+[248] Power: 146.3040, Temp: 41
+[249] Power: 146.3040, Temp: 41
+[250] Power: 146.3040, Temp: 41
+[251] Power: 146.3040, Temp: 41
+[252] Power: 145.8160, Temp: 41
+[253] Power: 146.3040, Temp: 41
+[254] Power: 146.3040, Temp: 41
+[255] Power: 146.3040, Temp: 41
+[256] Power: 146.3040, Temp: 41
+[257] Power: 146.4000, Temp: 41
+[258] Power: 146.3040, Temp: 41
+[259] Power: 145.9120, Temp: 41
+[260] Power: 146.3040, Temp: 41
+[261] Power: 145.8160, Temp: 41
+[262] Power: 146.3040, Temp: 41
+[263] Power: 146.3040, Temp: 41
+[264] Power: 146.3040, Temp: 41
+[265] Power: 146.3040, Temp: 41
+[266] Power: 146.3040, Temp: 41
+[267] Power: 146.3040, Temp: 41
+[268] Power: 145.8160, Temp: 41
+[269] Power: 145.8160, Temp: 41
+[270] Power: 145.8160, Temp: 41
+[271] Power: 146.3040, Temp: 41
+[272] Power: 146.3040, Temp: 41
+[273] Power: 146.3040, Temp: 41
+[274] Power: 146.3040, Temp: 41
+[275] Power: 146.3040, Temp: 41
+[276] Power: 146.3040, Temp: 41
+[277] Power: 146.3040, Temp: 41
+[278] Power: 146.3040, Temp: 41
+[279] Power: 146.3040, Temp: 41
+[280] Power: 146.3040, Temp: 41
+[281] Power: 146.3040, Temp: 41
+[282] Power: 146.3040, Temp: 41
+[283] Power: 146.3040, Temp: 41
+[284] Power: 146.3040, Temp: 41
+[285] Power: 145.8160, Temp: 41
+[286] Power: 146.3040, Temp: 41
+[287] Power: 146.3040, Temp: 41
+[288] Power: 145.8160, Temp: 41
+[289] Power: 145.8160, Temp: 41
+[290] Power: 146.4000, Temp: 41
+[291] Power: 146.3040, Temp: 41
+[292] Power: 146.3040, Temp: 41
+[293] Power: 146.3040, Temp: 41
+[294] Power: 146.3040, Temp: 41
+[295] Power: 145.8160, Temp: 41
+[296] Power: 146.3040, Temp: 41
+[297] Power: 146.3040, Temp: 41
+[298] Power: 146.4000, Temp: 41
+[299] Power: 146.3040, Temp: 41
+[300] Power: 146.3040, Temp: 41
+[301] Power: 146.3040, Temp: 41
+[302] Power: 146.3040, Temp: 41
+[303] Power: 146.3040, Temp: 41
+[304] Power: 146.3040, Temp: 41
+[305] Power: 146.3040, Temp: 41
+[306] Power: 146.3040, Temp: 41
+[307] Power: 146.3040, Temp: 41
+[308] Power: 146.3040, Temp: 41
+[309] Power: 146.4000, Temp: 41
+[310] Power: 146.3040, Temp: 41
+[311] Power: 146.3040, Temp: 41
+[312] Power: 146.3040, Temp: 41
+[313] Power: 146.3040, Temp: 41
+[314] Power: 146.3040, Temp: 41
+[315] Power: 145.8160, Temp: 41
+[316] Power: 146.3040, Temp: 41
+[317] Power: 146.3040, Temp: 41
+[318] Power: 146.3040, Temp: 41
+[319] Power: 146.3040, Temp: 41
+[320] Power: 146.4000, Temp: 41
+[321] Power: 146.3040, Temp: 41
+[322] Power: 146.3040, Temp: 41
+[323] Power: 146.3040, Temp: 41
+[324] Power: 146.3040, Temp: 41
+[325] Power: 146.3040, Temp: 41
+[326] Power: 146.3040, Temp: 41
+[327] Power: 146.3040, Temp: 41
+[328] Power: 146.3040, Temp: 41
+[329] Power: 146.4000, Temp: 41
+[330] Power: 145.8160, Temp: 41
+[331] Power: 146.3040, Temp: 41
+[332] Power: 145.8160, Temp: 41
+[333] Power: 146.3040, Temp: 41
+[334] Power: 146.3040, Temp: 41
+[335] Power: 146.3040, Temp: 41
+[336] Power: 145.8160, Temp: 41
+[337] Power: 146.4000, Temp: 41
+[338] Power: 146.4000, Temp: 41
+[339] Power: 146.4000, Temp: 41
+[340] Power: 146.3040, Temp: 41
+[341] Power: 146.3040, Temp: 41
+[342] Power: 145.8160, Temp: 41
+[343] Power: 146.3040, Temp: 41
+[344] Power: 146.4000, Temp: 41
+[345] Power: 146.3040, Temp: 41
+[346] Power: 146.3040, Temp: 41
+[347] Power: 146.3040, Temp: 41
+[348] Power: 146.3040, Temp: 41
+[349] Power: 146.3040, Temp: 41
+[350] Power: 146.3040, Temp: 41
+[351] Power: 146.3040, Temp: 41
+[352] Power: 145.8160, Temp: 41
+[353] Power: 146.3040, Temp: 41
+[354] Power: 146.4000, Temp: 41
+[355] Power: 146.3040, Temp: 41
+[356] Power: 146.3040, Temp: 41
+[357] Power: 146.3040, Temp: 41
+[358] Power: 146.3040, Temp: 41
+[359] Power: 145.8160, Temp: 41
+[360] Power: 146.3040, Temp: 41
+[361] Power: 145.9120, Temp: 41
+[362] Power: 145.8160, Temp: 41
+[363] Power: 146.3040, Temp: 41
+[364] Power: 146.4000, Temp: 41
+[365] Power: 145.8160, Temp: 41
+[366] Power: 146.3040, Temp: 41
+[367] Power: 146.3040, Temp: 41
+[368] Power: 145.9120, Temp: 41
+[369] Power: 145.8160, Temp: 41
+[370] Power: 146.4000, Temp: 41
+[371] Power: 146.3040, Temp: 41
+[372] Power: 145.8160, Temp: 41
+[373] Power: 146.3040, Temp: 41
+[374] Power: 146.3040, Temp: 41
+[375] Power: 146.4000, Temp: 41
+[376] Power: 145.8160, Temp: 41
+[377] Power: 146.3040, Temp: 41
+[378] Power: 146.3040, Temp: 41
+[379] Power: 146.3040, Temp: 41
+[380] Power: 145.8160, Temp: 41
+[381] Power: 145.8160, Temp: 41
+[382] Power: 146.3040, Temp: 41
+[383] Power: 146.3040, Temp: 41
+[384] Power: 146.3040, Temp: 41
+[385] Power: 146.4000, Temp: 41
+[386] Power: 146.3040, Temp: 41
+[387] Power: 146.3040, Temp: 41
+[388] Power: 146.3040, Temp: 41
+[389] Power: 146.3040, Temp: 41
+[390] Power: 146.4000, Temp: 41
+[391] Power: 146.3040, Temp: 41
+[392] Power: 145.8160, Temp: 41
+[393] Power: 146.3040, Temp: 41
+[394] Power: 146.4000, Temp: 41
+[395] Power: 146.3040, Temp: 41
+[396] Power: 146.3040, Temp: 41
+[397] Power: 146.3040, Temp: 41
+[398] Power: 145.8160, Temp: 41
+[399] Power: 145.8160, Temp: 41
+[400] Power: 146.3040, Temp: 41
+[401] Power: 146.4000, Temp: 41
+[402] Power: 146.3040, Temp: 41
+[403] Power: 145.8160, Temp: 41
+[404] Power: 146.3040, Temp: 41
+[405] Power: 145.9120, Temp: 41
+[406] Power: 146.3040, Temp: 41
+[407] Power: 145.8160, Temp: 41
+[408] Power: 146.3040, Temp: 41
+[409] Power: 146.3040, Temp: 41
+[410] Power: 146.3040, Temp: 41
+[411] Power: 146.3040, Temp: 41
+[412] Power: 146.3040, Temp: 41
+[413] Power: 146.3040, Temp: 41
+[414] Power: 145.8160, Temp: 41
+[415] Power: 146.3040, Temp: 41
+[416] Power: 146.4000, Temp: 41
+[417] Power: 146.3040, Temp: 41
+[418] Power: 146.3040, Temp: 41
+[419] Power: 145.8160, Temp: 41
+[420] Power: 146.3040, Temp: 41
+[421] Power: 146.4000, Temp: 41
+[422] Power: 146.3040, Temp: 41
+[423] Power: 146.3040, Temp: 41
+[424] Power: 146.3040, Temp: 41
+[425] Power: 146.4000, Temp: 41
+[426] Power: 146.3040, Temp: 41
+[427] Power: 145.8160, Temp: 41
+[428] Power: 145.8160, Temp: 41
+[429] Power: 146.3040, Temp: 41
+[430] Power: 146.3040, Temp: 41
+[431] Power: 146.3040, Temp: 41
+[432] Power: 146.3040, Temp: 41
+[433] Power: 146.3040, Temp: 41
+[434] Power: 146.4000, Temp: 41
+[435] Power: 146.3040, Temp: 41
+[436] Power: 146.3040, Temp: 41
+[437] Power: 146.3040, Temp: 41
+[438] Power: 146.3040, Temp: 41
+[439] Power: 145.8160, Temp: 41
+[440] Power: 146.3040, Temp: 41
+[441] Power: 145.3280, Temp: 41
+[442] Power: 146.4000, Temp: 41
+[443] Power: 146.3040, Temp: 41
+[444] Power: 145.8160, Temp: 41
+[445] Power: 145.8160, Temp: 41
+[446] Power: 146.3040, Temp: 41
+[447] Power: 146.3040, Temp: 41
+[448] Power: 145.8160, Temp: 41
+[449] Power: 145.8160, Temp: 41
+[450] Power: 146.3040, Temp: 41
+[451] Power: 146.3040, Temp: 41
+[452] Power: 145.8160, Temp: 41
+[453] Power: 145.8160, Temp: 41
+[454] Power: 146.3040, Temp: 41
+[455] Power: 145.8160, Temp: 41
+[456] Power: 146.3040, Temp: 41
+[457] Power: 146.3040, Temp: 41
+[458] Power: 146.3040, Temp: 41
+[459] Power: 145.9120, Temp: 41
+[460] Power: 146.3040, Temp: 41
+[461] Power: 146.3040, Temp: 41
+[462] Power: 145.8160, Temp: 41
+[463] Power: 145.8160, Temp: 41
+[464] Power: 146.3040, Temp: 41
+[465] Power: 145.8160, Temp: 41
+[466] Power: 146.3040, Temp: 41
+[467] Power: 146.3040, Temp: 41
+[468] Power: 145.8160, Temp: 41
+[469] Power: 145.8160, Temp: 41
+[470] Power: 145.8160, Temp: 41
+[471] Power: 146.3040, Temp: 41
+[472] Power: 146.4000, Temp: 41
+[473] Power: 146.3040, Temp: 41
+[474] Power: 145.8160, Temp: 41
+[475] Power: 146.3040, Temp: 41
+[476] Power: 146.3040, Temp: 41
+[477] Power: 146.3040, Temp: 41
+[478] Power: 146.3040, Temp: 41
+[479] Power: 145.8160, Temp: 41
+[480] Power: 146.3040, Temp: 41
+[481] Power: 146.3040, Temp: 41
+[482] Power: 146.4000, Temp: 41
+[483] Power: 146.3040, Temp: 41
+[484] Power: 145.8160, Temp: 41
+[485] Power: 146.3040, Temp: 41
+[486] Power: 146.3040, Temp: 41
+[487] Power: 145.8160, Temp: 41
+[488] Power: 146.3040, Temp: 41
+[489] Power: 145.8160, Temp: 41
+[490] Power: 145.8160, Temp: 41
+[491] Power: 146.3040, Temp: 41
+[492] Power: 145.8160, Temp: 41
+[493] Power: 145.9120, Temp: 41
+[494] Power: 146.3040, Temp: 41
+[495] Power: 146.3040, Temp: 41
+[496] Power: 145.8160, Temp: 41
+[497] Power: 145.8160, Temp: 41
+[498] Power: 146.3040, Temp: 41
+[499] Power: 146.3040, Temp: 41
+[500] Power: 145.9120, Temp: 41
+[501] Power: 146.3040, Temp: 41
+[502] Power: 146.4000, Temp: 41
+[503] Power: 145.8160, Temp: 41
+[504] Power: 146.4000, Temp: 41
+[505] Power: 146.3040, Temp: 41
+[506] Power: 146.4000, Temp: 41
+[507] Power: 145.8160, Temp: 41
+[508] Power: 146.3040, Temp: 41
+[509] Power: 146.3040, Temp: 41
+[510] Power: 146.3040, Temp: 41
+[511] Power: 145.8160, Temp: 41
+[512] Power: 146.3040, Temp: 41
+[513] Power: 145.8160, Temp: 41
+[514] Power: 145.8160, Temp: 41
+[515] Power: 146.3040, Temp: 41
+[516] Power: 145.8160, Temp: 41
+[517] Power: 145.8160, Temp: 41
+[518] Power: 146.3040, Temp: 41
+[519] Power: 146.4000, Temp: 41
+[520] Power: 145.8160, Temp: 41
+[521] Power: 145.8160, Temp: 41
+[522] Power: 145.8160, Temp: 41
+[523] Power: 146.3040, Temp: 41
+[524] Power: 146.3040, Temp: 41
+[525] Power: 145.8160, Temp: 41
+[526] Power: 146.3040, Temp: 41
+[527] Power: 146.3040, Temp: 41
+[528] Power: 146.3040, Temp: 41
+[529] Power: 145.8160, Temp: 41
+[530] Power: 145.9120, Temp: 41
+[531] Power: 146.3040, Temp: 41
+[532] Power: 145.8160, Temp: 41
+[533] Power: 145.8160, Temp: 41
+[534] Power: 146.3040, Temp: 41
+[535] Power: 145.8160, Temp: 41
+[536] Power: 146.3040, Temp: 41
+[537] Power: 146.3040, Temp: 41
+[538] Power: 146.3040, Temp: 41
+[539] Power: 145.8160, Temp: 41
+[540] Power: 146.3040, Temp: 41
+[541] Power: 146.3040, Temp: 41
+[542] Power: 145.8160, Temp: 41
+[543] Power: 145.8160, Temp: 41
+[544] Power: 146.3040, Temp: 41
+[545] Power: 146.4000, Temp: 41
+[546] Power: 146.4000, Temp: 41
+[547] Power: 146.3040, Temp: 41
+[548] Power: 146.3040, Temp: 41
+[549] Power: 146.3040, Temp: 41
+[550] Power: 146.3040, Temp: 41
+[551] Power: 146.3040, Temp: 41
+[552] Power: 145.8160, Temp: 41
+[553] Power: 145.8160, Temp: 41
+[554] Power: 146.3040, Temp: 41
+[555] Power: 145.8160, Temp: 41
+[556] Power: 146.3040, Temp: 41
+[557] Power: 146.3040, Temp: 41
+[558] Power: 146.3040, Temp: 41
+[559] Power: 145.8160, Temp: 41
+[560] Power: 146.3040, Temp: 41
+[561] Power: 146.3040, Temp: 41
+[562] Power: 145.8160, Temp: 41
+[563] Power: 146.3040, Temp: 41
+[564] Power: 146.3040, Temp: 41
+[565] Power: 145.8160, Temp: 41
+[566] Power: 146.3040, Temp: 41
+[567] Power: 145.8160, Temp: 41
+[568] Power: 146.3040, Temp: 41
+[569] Power: 146.4000, Temp: 41
+[570] Power: 145.8160, Temp: 41
+[571] Power: 146.3040, Temp: 41
+[572] Power: 146.3040, Temp: 41
+[573] Power: 146.4000, Temp: 41
+[574] Power: 145.8160, Temp: 41
+[575] Power: 146.3040, Temp: 41
+[576] Power: 146.3040, Temp: 41
+[577] Power: 146.3040, Temp: 41
+[578] Power: 146.3040, Temp: 41
+[579] Power: 145.8160, Temp: 41
+[580] Power: 146.3040, Temp: 41
+[581] Power: 146.3040, Temp: 41
+[582] Power: 145.8160, Temp: 41
+[583] Power: 145.8160, Temp: 41
+[584] Power: 146.3040, Temp: 41
+[585] Power: 145.8160, Temp: 41
+[586] Power: 145.8160, Temp: 41
+[587] Power: 146.3040, Temp: 41
+[588] Power: 145.8160, Temp: 41
+[589] Power: 146.3040, Temp: 41
+[590] Power: 145.8160, Temp: 41
+[591] Power: 146.3040, Temp: 41
+[592] Power: 146.3040, Temp: 41
+[593] Power: 146.3040, Temp: 41
+[594] Power: 146.3040, Temp: 41
+[595] Power: 146.4000, Temp: 41
+[596] Power: 145.8160, Temp: 41
+[597] Power: 145.8160, Temp: 41
+[598] Power: 146.3040, Temp: 41
+[599] Power: 145.8160, Temp: 41
+
+
+Shutting down NVML... Success
+Complete 
+Options: 
+	Output File = (null)
+	CSV mode = 0
+	Device ID = 0
+	Sample Rate = 100 ms
+	Number of power samples = 600
+	Print PSU info = 0
+	Process Name = (null)
+
+	Temperature Cutoff (0 iff disabled) = 0
+Initializing NVML... Success
+Getting device... Selected device 0: Tesla V100-SXM2-16GB
+
+
+Starting power measurement...
+[000] Power: 146.3040, Temp: 41
+[001] Power: 146.3040, Temp: 41
+[002] Power: 146.4000, Temp: 41
+[003] Power: 146.3040, Temp: 41
+[004] Power: 146.4000, Temp: 41
+[005] Power: 146.3040, Temp: 41
+[006] Power: 146.3040, Temp: 41
+[007] Power: 146.4000, Temp: 41
+[008] Power: 146.3040, Temp: 41
+[009] Power: 146.3040, Temp: 41
+[010] Power: 146.3040, Temp: 41
+[011] Power: 146.3040, Temp: 41
+[012] Power: 146.3040, Temp: 41
+[013] Power: 146.3040, Temp: 41
+[014] Power: 146.3040, Temp: 41
+[015] Power: 146.4000, Temp: 41
+[016] Power: 146.3040, Temp: 41
+[017] Power: 146.3040, Temp: 41
+[018] Power: 146.3040, Temp: 41
+[019] Power: 146.3040, Temp: 41
+[020] Power: 146.3040, Temp: 41
+[021] Power: 146.4000, Temp: 41
+[022] Power: 146.3040, Temp: 41
+[023] Power: 146.3040, Temp: 41
+[024] Power: 146.3040, Temp: 41
+[025] Power: 146.4000, Temp: 41
+[026] Power: 146.3040, Temp: 41
+[027] Power: 146.3040, Temp: 41
+[028] Power: 146.4000, Temp: 41
+[029] Power: 146.3040, Temp: 41
+[030] Power: 146.3040, Temp: 41
+[031] Power: 146.3040, Temp: 41
+[032] Power: 146.3040, Temp: 41
+[033] Power: 146.3040, Temp: 41
+[034] Power: 146.3040, Temp: 41
+[035] Power: 146.3040, Temp: 41
+[036] Power: 146.4000, Temp: 41
+[037] Power: 146.3040, Temp: 41
+[038] Power: 146.3040, Temp: 41
+[039] Power: 146.3040, Temp: 41
+[040] Power: 146.3040, Temp: 41
+[041] Power: 146.3040, Temp: 41
+[042] Power: 146.3040, Temp: 41
+[043] Power: 146.3040, Temp: 41
+[044] Power: 146.3040, Temp: 41
+[045] Power: 146.4000, Temp: 41
+[046] Power: 146.3040, Temp: 41
+[047] Power: 146.3040, Temp: 41
+[048] Power: 146.3040, Temp: 41
+[049] Power: 146.3040, Temp: 41
+[050] Power: 146.3040, Temp: 41
+[051] Power: 146.3040, Temp: 41
+[052] Power: 146.3040, Temp: 41
+[053] Power: 146.4000, Temp: 41
+[054] Power: 146.3040, Temp: 41
+[055] Power: 146.3040, Temp: 41
+[056] Power: 146.3040, Temp: 41
+[057] Power: 146.3040, Temp: 41
+[058] Power: 146.3040, Temp: 41
+[059] Power: 146.3040, Temp: 41
+[060] Power: 146.3040, Temp: 41
+[061] Power: 146.3040, Temp: 41
+[062] Power: 146.3040, Temp: 41
+[063] Power: 146.3040, Temp: 41
+[064] Power: 146.3040, Temp: 41
+[065] Power: 146.3040, Temp: 41
+[066] Power: 146.3040, Temp: 41
+[067] Power: 146.4000, Temp: 41
+[068] Power: 146.3040, Temp: 41
+[069] Power: 146.3040, Temp: 41
+[070] Power: 146.3040, Temp: 41
+[071] Power: 146.3040, Temp: 41
+[072] Power: 146.3040, Temp: 41
+[073] Power: 146.4000, Temp: 41
+[074] Power: 146.3040, Temp: 41
+[075] Power: 146.3040, Temp: 41
+[076] Power: 146.4000, Temp: 41
+[077] Power: 146.3040, Temp: 41
+[078] Power: 146.3040, Temp: 41
+[079] Power: 146.4000, Temp: 41
+[080] Power: 146.3040, Temp: 41
+[081] Power: 146.3040, Temp: 41
+[082] Power: 146.3040, Temp: 41
+[083] Power: 146.4000, Temp: 41
+[084] Power: 146.3040, Temp: 41
+[085] Power: 146.3040, Temp: 41
+[086] Power: 146.3040, Temp: 41
+[087] Power: 146.3040, Temp: 41
+[088] Power: 146.3040, Temp: 41
+[089] Power: 146.4000, Temp: 41
+[090] Power: 146.3040, Temp: 41
+[091] Power: 146.3040, Temp: 41
+[092] Power: 146.3040, Temp: 41
+[093] Power: 146.4000, Temp: 41
+[094] Power: 146.3040, Temp: 41
+[095] Power: 146.3040, Temp: 41
+[096] Power: 146.3040, Temp: 41
+[097] Power: 146.3040, Temp: 41
+[098] Power: 146.3040, Temp: 41
+[099] Power: 146.3040, Temp: 41
+[100] Power: 146.3040, Temp: 41
+[101] Power: 146.3040, Temp: 41
+[102] Power: 146.3040, Temp: 41
+[103] Power: 146.3040, Temp: 41
+[104] Power: 146.3040, Temp: 41
+[105] Power: 146.3040, Temp: 41
+[106] Power: 146.3040, Temp: 41
+[107] Power: 146.4000, Temp: 41
+[108] Power: 146.3040, Temp: 41
+[109] Power: 146.3040, Temp: 41
+[110] Power: 146.3040, Temp: 41
+[111] Power: 146.3040, Temp: 41
+[112] Power: 146.3040, Temp: 41
+[113] Power: 146.3040, Temp: 41
+[114] Power: 146.3040, Temp: 41
+[115] Power: 146.4000, Temp: 41
+[116] Power: 146.4000, Temp: 41
+[117] Power: 146.3040, Temp: 41
+[118] Power: 146.3040, Temp: 41
+[119] Power: 146.3040, Temp: 41
+[120] Power: 146.3040, Temp: 41
+[121] Power: 146.4000, Temp: 41
+[122] Power: 146.3040, Temp: 41
+[123] Power: 146.3040, Temp: 41
+[124] Power: 146.3040, Temp: 41
+[125] Power: 146.3040, Temp: 41
+[126] Power: 146.3040, Temp: 41
+[127] Power: 146.3040, Temp: 41
+[128] Power: 146.3040, Temp: 41
+[129] Power: 146.3040, Temp: 41
+[130] Power: 146.3040, Temp: 41
+[131] Power: 146.4000, Temp: 41
+[132] Power: 146.3040, Temp: 41
+[133] Power: 146.3040, Temp: 41
+[134] Power: 146.3040, Temp: 41
+[135] Power: 146.3040, Temp: 41
+[136] Power: 146.3040, Temp: 41
+[137] Power: 146.3040, Temp: 41
+[138] Power: 146.3040, Temp: 41
+[139] Power: 146.3040, Temp: 41
+[140] Power: 146.3040, Temp: 41
+[141] Power: 146.4000, Temp: 41
+[142] Power: 146.3040, Temp: 41
+[143] Power: 146.3040, Temp: 41
+[144] Power: 146.3040, Temp: 41
+[145] Power: 146.4000, Temp: 41
+[146] Power: 146.3040, Temp: 41
+[147] Power: 146.3040, Temp: 41
+[148] Power: 146.4000, Temp: 41
+[149] Power: 146.3040, Temp: 41
+[150] Power: 146.3040, Temp: 41
+[151] Power: 146.3040, Temp: 41
+[152] Power: 146.3040, Temp: 41
+[153] Power: 146.3040, Temp: 41
+[154] Power: 146.3040, Temp: 41
+[155] Power: 146.3040, Temp: 41
+[156] Power: 146.3040, Temp: 41
+[157] Power: 146.3040, Temp: 41
+[158] Power: 146.3040, Temp: 41
+[159] Power: 146.3040, Temp: 41
+[160] Power: 146.3040, Temp: 41
+[161] Power: 146.3040, Temp: 41
+[162] Power: 146.3040, Temp: 41
+[163] Power: 146.3040, Temp: 41
+[164] Power: 146.3040, Temp: 41
+[165] Power: 146.3040, Temp: 41
+[166] Power: 146.4000, Temp: 41
+[167] Power: 146.3040, Temp: 41
+[168] Power: 146.3040, Temp: 41
+[169] Power: 146.3040, Temp: 41
+[170] Power: 146.3040, Temp: 41
+[171] Power: 146.3040, Temp: 41
+[172] Power: 146.3040, Temp: 41
+[173] Power: 146.3040, Temp: 41
+[174] Power: 146.3040, Temp: 41
+[175] Power: 146.3040, Temp: 41
+[176] Power: 146.3040, Temp: 41
+[177] Power: 146.4000, Temp: 41
+[178] Power: 146.4000, Temp: 41
+[179] Power: 146.3040, Temp: 41
+[180] Power: 146.4000, Temp: 41
+[181] Power: 146.4000, Temp: 41
+[182] Power: 146.3040, Temp: 41
+[183] Power: 146.3040, Temp: 41
+[184] Power: 146.3040, Temp: 41
+[185] Power: 146.3040, Temp: 41
+[186] Power: 146.4000, Temp: 41
+[187] Power: 146.3040, Temp: 41
+[188] Power: 146.3040, Temp: 41
+[189] Power: 146.3040, Temp: 41
+[190] Power: 146.3040, Temp: 41
+[191] Power: 146.3040, Temp: 41
+[192] Power: 146.3040, Temp: 41
+[193] Power: 146.3040, Temp: 41
+[194] Power: 146.3040, Temp: 41
+[195] Power: 146.3040, Temp: 41
+[196] Power: 146.3040, Temp: 41
+[197] Power: 146.3040, Temp: 41
+[198] Power: 146.3040, Temp: 41
+[199] Power: 146.3040, Temp: 41
+[200] Power: 146.3040, Temp: 41
+[201] Power: 146.3040, Temp: 41
+[202] Power: 146.3040, Temp: 41
+[203] Power: 146.3040, Temp: 41
+[204] Power: 146.3040, Temp: 41
+[205] Power: 146.3040, Temp: 41
+[206] Power: 146.4000, Temp: 41
+[207] Power: 146.4000, Temp: 41
+[208] Power: 146.3040, Temp: 41
+[209] Power: 146.3040, Temp: 41
+[210] Power: 146.3040, Temp: 41
+[211] Power: 146.4000, Temp: 41
+[212] Power: 146.3040, Temp: 41
+[213] Power: 146.3040, Temp: 41
+[214] Power: 146.4000, Temp: 41
+[215] Power: 146.3040, Temp: 41
+[216] Power: 146.3040, Temp: 41
+[217] Power: 146.3040, Temp: 41
+[218] Power: 146.3040, Temp: 41
+[219] Power: 146.3040, Temp: 41
+[220] Power: 146.4000, Temp: 41
+[221] Power: 146.4000, Temp: 41
+[222] Power: 146.3040, Temp: 41
+[223] Power: 146.4000, Temp: 41
+[224] Power: 146.3040, Temp: 41
+[225] Power: 146.3040, Temp: 41
+[226] Power: 146.3040, Temp: 41
+[227] Power: 146.3040, Temp: 41
+[228] Power: 146.3040, Temp: 41
+[229] Power: 146.3040, Temp: 41
+[230] Power: 146.3040, Temp: 41
+[231] Power: 146.3040, Temp: 41
+[232] Power: 146.3040, Temp: 41
+[233] Power: 146.4000, Temp: 41
+[234] Power: 146.3040, Temp: 41
+[235] Power: 146.4000, Temp: 41
+[236] Power: 146.3040, Temp: 41
+[237] Power: 146.3040, Temp: 41
+[238] Power: 146.3040, Temp: 41
+[239] Power: 146.3040, Temp: 41
+[240] Power: 146.3040, Temp: 41
+[241] Power: 146.4000, Temp: 41
+[242] Power: 146.3040, Temp: 41
+[243] Power: 146.3040, Temp: 41
+[244] Power: 146.3040, Temp: 41
+[245] Power: 146.3040, Temp: 41
+[246] Power: 146.3040, Temp: 41
+[247] Power: 146.3040, Temp: 41
+[248] Power: 146.4000, Temp: 41
+[249] Power: 146.3040, Temp: 41
+[250] Power: 146.3040, Temp: 41
+[251] Power: 146.3040, Temp: 41
+[252] Power: 146.3040, Temp: 41
+[253] Power: 146.3040, Temp: 41
+[254] Power: 146.3040, Temp: 41
+[255] Power: 146.3040, Temp: 41
+[256] Power: 146.3040, Temp: 41
+[257] Power: 146.3040, Temp: 41
+[258] Power: 146.4000, Temp: 41
+[259] Power: 146.4000, Temp: 41
+[260] Power: 146.3040, Temp: 41
+[261] Power: 146.3040, Temp: 41
+[262] Power: 146.3040, Temp: 41
+[263] Power: 146.3040, Temp: 41
+[264] Power: 146.3040, Temp: 41
+[265] Power: 146.3040, Temp: 41
+[266] Power: 146.4000, Temp: 41
+[267] Power: 146.4000, Temp: 41
+[268] Power: 146.4000, Temp: 41
+[269] Power: 146.3040, Temp: 41
+[270] Power: 146.3040, Temp: 41
+[271] Power: 146.4000, Temp: 41
+[272] Power: 146.3040, Temp: 41
+[273] Power: 146.3040, Temp: 41
+[274] Power: 146.3040, Temp: 41
+[275] Power: 146.3040, Temp: 41
+[276] Power: 146.3040, Temp: 41
+[277] Power: 146.4000, Temp: 41
+[278] Power: 146.3040, Temp: 41
+[279] Power: 146.3040, Temp: 41
+[280] Power: 146.3040, Temp: 41
+[281] Power: 146.4000, Temp: 41
+[282] Power: 146.4000, Temp: 41
+[283] Power: 146.3040, Temp: 41
+[284] Power: 146.3040, Temp: 41
+[285] Power: 146.3040, Temp: 41
+[286] Power: 146.3040, Temp: 41
+[287] Power: 146.3040, Temp: 41
+[288] Power: 146.3040, Temp: 41
+[289] Power: 146.3040, Temp: 41
+[290] Power: 146.4000, Temp: 41
+[291] Power: 146.4000, Temp: 41
+[292] Power: 146.3040, Temp: 41
+[293] Power: 146.3040, Temp: 41
+[294] Power: 146.4000, Temp: 41
+[295] Power: 146.4000, Temp: 41
+[296] Power: 146.3040, Temp: 41
+[297] Power: 146.3040, Temp: 41
+[298] Power: 146.4000, Temp: 41
+[299] Power: 146.3040, Temp: 41
+[300] Power: 146.3040, Temp: 41
+[301] Power: 146.4000, Temp: 41
+[302] Power: 146.3040, Temp: 41
+[303] Power: 146.4000, Temp: 41
+[304] Power: 146.3040, Temp: 41
+[305] Power: 146.3040, Temp: 41
+[306] Power: 146.3040, Temp: 41
+[307] Power: 146.3040, Temp: 41
+[308] Power: 146.3040, Temp: 41
+[309] Power: 146.4000, Temp: 41
+[310] Power: 146.3040, Temp: 41
+[311] Power: 146.3040, Temp: 41
+[312] Power: 146.3040, Temp: 41
+[313] Power: 146.3040, Temp: 41
+[314] Power: 146.4000, Temp: 41
+[315] Power: 146.4000, Temp: 41
+[316] Power: 146.3040, Temp: 41
+[317] Power: 146.3040, Temp: 41
+[318] Power: 146.4000, Temp: 41
+[319] Power: 146.3040, Temp: 41
+[320] Power: 146.3040, Temp: 41
+[321] Power: 146.3040, Temp: 41
+[322] Power: 146.3040, Temp: 41
+[323] Power: 146.3040, Temp: 41
+[324] Power: 146.3040, Temp: 41
+[325] Power: 146.4000, Temp: 41
+[326] Power: 146.3040, Temp: 41
+[327] Power: 146.3040, Temp: 41
+[328] Power: 146.4000, Temp: 41
+[329] Power: 146.4000, Temp: 41
+[330] Power: 146.3040, Temp: 41
+[331] Power: 146.4000, Temp: 41
+[332] Power: 146.3040, Temp: 41
+[333] Power: 146.3040, Temp: 41
+[334] Power: 146.3040, Temp: 41
+[335] Power: 146.4000, Temp: 41
+[336] Power: 146.4000, Temp: 41
+[337] Power: 146.3040, Temp: 41
+[338] Power: 146.3040, Temp: 41
+[339] Power: 146.3040, Temp: 41
+[340] Power: 146.3040, Temp: 41
+[341] Power: 146.3040, Temp: 41
+[342] Power: 146.4000, Temp: 41
+[343] Power: 146.3040, Temp: 41
+[344] Power: 146.3040, Temp: 41
+[345] Power: 146.3040, Temp: 41
+[346] Power: 146.3040, Temp: 41
+[347] Power: 146.3040, Temp: 41
+[348] Power: 146.3040, Temp: 41
+[349] Power: 146.3040, Temp: 41
+[350] Power: 146.4000, Temp: 41
+[351] Power: 146.3040, Temp: 41
+[352] Power: 146.3040, Temp: 41
+[353] Power: 146.3040, Temp: 41
+[354] Power: 146.4000, Temp: 41
+[355] Power: 146.3040, Temp: 41
+[356] Power: 146.3040, Temp: 41
+[357] Power: 146.3040, Temp: 41
+[358] Power: 146.3040, Temp: 41
+[359] Power: 146.3040, Temp: 41
+[360] Power: 146.4000, Temp: 41
+[361] Power: 146.3040, Temp: 41
+[362] Power: 146.4000, Temp: 41
+[363] Power: 146.3040, Temp: 41
+[364] Power: 146.4000, Temp: 41
+[365] Power: 146.3040, Temp: 41
+[366] Power: 146.3040, Temp: 41
+[367] Power: 146.4000, Temp: 41
+[368] Power: 146.3040, Temp: 41
+[369] Power: 146.3040, Temp: 41
+[370] Power: 146.3040, Temp: 41
+[371] Power: 146.3040, Temp: 41
+[372] Power: 146.3040, Temp: 41
+[373] Power: 146.3040, Temp: 41
+[374] Power: 146.3040, Temp: 41
+[375] Power: 146.4000, Temp: 41
+[376] Power: 146.3040, Temp: 41
+[377] Power: 146.3040, Temp: 41
+[378] Power: 146.3040, Temp: 41
+[379] Power: 146.3040, Temp: 41
+[380] Power: 146.3040, Temp: 41
+[381] Power: 146.4000, Temp: 41
+[382] Power: 146.3040, Temp: 41
+[383] Power: 146.3040, Temp: 41
+[384] Power: 146.3040, Temp: 41
+[385] Power: 146.3040, Temp: 41
+[386] Power: 146.3040, Temp: 41
+[387] Power: 146.3040, Temp: 41
+[388] Power: 146.3040, Temp: 41
+[389] Power: 146.4000, Temp: 41
+[390] Power: 146.3040, Temp: 41
+[391] Power: 146.3040, Temp: 41
+[392] Power: 146.3040, Temp: 41
+[393] Power: 146.3040, Temp: 41
+[394] Power: 146.4000, Temp: 41
+[395] Power: 146.3040, Temp: 41
+[396] Power: 146.3040, Temp: 41
+[397] Power: 146.3040, Temp: 41
+[398] Power: 146.3040, Temp: 41
+[399] Power: 146.3040, Temp: 41
+[400] Power: 146.4000, Temp: 41
+[401] Power: 146.3040, Temp: 41
+[402] Power: 146.3040, Temp: 41
+[403] Power: 146.4000, Temp: 41
+[404] Power: 146.3040, Temp: 41
+[405] Power: 146.3040, Temp: 41
+[406] Power: 146.3040, Temp: 41
+[407] Power: 146.3040, Temp: 41
+[408] Power: 146.3040, Temp: 41
+[409] Power: 146.3040, Temp: 41
+[410] Power: 146.3040, Temp: 41
+[411] Power: 146.4000, Temp: 41
+[412] Power: 146.3040, Temp: 41
+[413] Power: 146.4000, Temp: 41
+[414] Power: 146.3040, Temp: 41
+[415] Power: 146.3040, Temp: 41
+[416] Power: 146.3040, Temp: 41
+[417] Power: 145.8160, Temp: 41
+[418] Power: 146.3040, Temp: 41
+[419] Power: 146.3040, Temp: 41
+[420] Power: 146.3040, Temp: 41
+[421] Power: 146.4000, Temp: 41
+[422] Power: 146.3040, Temp: 41
+[423] Power: 146.3040, Temp: 41
+[424] Power: 146.3040, Temp: 41
+[425] Power: 146.3040, Temp: 41
+[426] Power: 146.4000, Temp: 41
+[427] Power: 146.3040, Temp: 41
+[428] Power: 146.3040, Temp: 41
+[429] Power: 146.3040, Temp: 41
+[430] Power: 146.3040, Temp: 41
+[431] Power: 146.3040, Temp: 41
+[432] Power: 146.4000, Temp: 41
+[433] Power: 146.4000, Temp: 41
+[434] Power: 146.4000, Temp: 41
+[435] Power: 146.3040, Temp: 41
+[436] Power: 146.3040, Temp: 41
+[437] Power: 146.3040, Temp: 41
+[438] Power: 146.3040, Temp: 41
+[439] Power: 146.3040, Temp: 41
+[440] Power: 146.4000, Temp: 41
+[441] Power: 146.4000, Temp: 41
+[442] Power: 146.3040, Temp: 41
+[443] Power: 146.3040, Temp: 41
+[444] Power: 146.3040, Temp: 41
+[445] Power: 146.4000, Temp: 41
+[446] Power: 146.3040, Temp: 41
+[447] Power: 146.3040, Temp: 41
+[448] Power: 146.4000, Temp: 41
+[449] Power: 146.3040, Temp: 41
+[450] Power: 146.3040, Temp: 41
+[451] Power: 146.3040, Temp: 41
+[452] Power: 146.4000, Temp: 41
+[453] Power: 146.3040, Temp: 41
+[454] Power: 146.3040, Temp: 41
+[455] Power: 146.3040, Temp: 41
+[456] Power: 146.3040, Temp: 41
+[457] Power: 146.3040, Temp: 41
+[458] Power: 146.4000, Temp: 41
+[459] Power: 146.3040, Temp: 41
+[460] Power: 146.3040, Temp: 41
+[461] Power: 146.3040, Temp: 41
+[462] Power: 146.3040, Temp: 41
+[463] Power: 146.3040, Temp: 41
+[464] Power: 146.3040, Temp: 41
+[465] Power: 146.4000, Temp: 41
+[466] Power: 146.3040, Temp: 41
+[467] Power: 146.3040, Temp: 41
+[468] Power: 146.3040, Temp: 41
+[469] Power: 146.3040, Temp: 41
+[470] Power: 146.3040, Temp: 41
+[471] Power: 146.3040, Temp: 41
+[472] Power: 145.8160, Temp: 41
+[473] Power: 146.4000, Temp: 41
+[474] Power: 146.3040, Temp: 41
+[475] Power: 146.3040, Temp: 41
+[476] Power: 146.3040, Temp: 41
+[477] Power: 146.3040, Temp: 41
+[478] Power: 146.3040, Temp: 41
+[479] Power: 145.8160, Temp: 41
+[480] Power: 146.3040, Temp: 41
+[481] Power: 146.3040, Temp: 41
+[482] Power: 146.3040, Temp: 41
+[483] Power: 146.3040, Temp: 41
+[484] Power: 146.3040, Temp: 41
+[485] Power: 146.4000, Temp: 41
+[486] Power: 146.4000, Temp: 41
+[487] Power: 146.3040, Temp: 41
+[488] Power: 146.3040, Temp: 41
+[489] Power: 146.3040, Temp: 41
+[490] Power: 146.3040, Temp: 41
+[491] Power: 146.4000, Temp: 41
+[492] Power: 146.3040, Temp: 41
+[493] Power: 146.3040, Temp: 41
+[494] Power: 146.3040, Temp: 41
+[495] Power: 146.3040, Temp: 41
+[496] Power: 146.4000, Temp: 41
+[497] Power: 146.3040, Temp: 41
+[498] Power: 146.4000, Temp: 41
+[499] Power: 146.3040, Temp: 41
+[500] Power: 146.3040, Temp: 41
+[501] Power: 146.3040, Temp: 41
+[502] Power: 146.3040, Temp: 41
+[503] Power: 146.3040, Temp: 41
+[504] Power: 146.3040, Temp: 41
+[505] Power: 146.3040, Temp: 41
+[506] Power: 146.3040, Temp: 41
+[507] Power: 146.3040, Temp: 41
+[508] Power: 146.3040, Temp: 41
+[509] Power: 146.3040, Temp: 41
+[510] Power: 146.3040, Temp: 41
+[511] Power: 146.3040, Temp: 41
+[512] Power: 146.3040, Temp: 41
+[513] Power: 146.4000, Temp: 41
+[514] Power: 146.3040, Temp: 41
+[515] Power: 146.3040, Temp: 41
+[516] Power: 146.3040, Temp: 41
+[517] Power: 146.3040, Temp: 41
+[518] Power: 146.3040, Temp: 41
+[519] Power: 146.3040, Temp: 41
+[520] Power: 146.4000, Temp: 41
+[521] Power: 146.3040, Temp: 41
+[522] Power: 146.4000, Temp: 41
+[523] Power: 146.3040, Temp: 41
+[524] Power: 146.3040, Temp: 41
+[525] Power: 146.3040, Temp: 41
+[526] Power: 146.3040, Temp: 41
+[527] Power: 146.3040, Temp: 41
+[528] Power: 146.4000, Temp: 41
+[529] Power: 146.3040, Temp: 41
+[530] Power: 146.3040, Temp: 41
+[531] Power: 146.3040, Temp: 41
+[532] Power: 146.3040, Temp: 41
+[533] Power: 146.4000, Temp: 41
+[534] Power: 146.3040, Temp: 41
+[535] Power: 146.3040, Temp: 41
+[536] Power: 146.3040, Temp: 41
+[537] Power: 146.4000, Temp: 41
+[538] Power: 146.4000, Temp: 41
+[539] Power: 146.4000, Temp: 41
+[540] Power: 146.3040, Temp: 41
+[541] Power: 146.3040, Temp: 41
+[542] Power: 146.3040, Temp: 41
+[543] Power: 146.4000, Temp: 41
+[544] Power: 146.3040, Temp: 41
+[545] Power: 146.3040, Temp: 41
+[546] Power: 146.3040, Temp: 41
+[547] Power: 146.3040, Temp: 41
+[548] Power: 146.3040, Temp: 41
+[549] Power: 146.4000, Temp: 41
+[550] Power: 146.3040, Temp: 41
+[551] Power: 146.4000, Temp: 41
+[552] Power: 146.3040, Temp: 41
+[553] Power: 146.3040, Temp: 41
+[554] Power: 146.3040, Temp: 41
+[555] Power: 146.3040, Temp: 41
+[556] Power: 146.3040, Temp: 41
+[557] Power: 146.4000, Temp: 41
+[558] Power: 146.3040, Temp: 41
+[559] Power: 146.3040, Temp: 41
+[560] Power: 146.3040, Temp: 41
+[561] Power: 146.3040, Temp: 41
+[562] Power: 146.3040, Temp: 41
+[563] Power: 146.3040, Temp: 41
+[564] Power: 146.3040, Temp: 41
+[565] Power: 146.3040, Temp: 41
+[566] Power: 146.3040, Temp: 41
+[567] Power: 146.3040, Temp: 41
+[568] Power: 146.3040, Temp: 41
+[569] Power: 146.3040, Temp: 41
+[570] Power: 146.3040, Temp: 41
+[571] Power: 146.3040, Temp: 41
+[572] Power: 146.3040, Temp: 41
+[573] Power: 146.3040, Temp: 41
+[574] Power: 146.3040, Temp: 41
+[575] Power: 146.3040, Temp: 41
+[576] Power: 146.4000, Temp: 41
+[577] Power: 146.3040, Temp: 41
+[578] Power: 146.3040, Temp: 41
+[579] Power: 146.3040, Temp: 41
+[580] Power: 146.3040, Temp: 41
+[581] Power: 146.3040, Temp: 41
+[582] Power: 146.3040, Temp: 41
+[583] Power: 146.3040, Temp: 41
+[584] Power: 146.3040, Temp: 41
+[585] Power: 146.3040, Temp: 41
+[586] Power: 146.3040, Temp: 41
+[587] Power: 146.3040, Temp: 41
+[588] Power: 146.3040, Temp: 41
+[589] Power: 146.3040, Temp: 41
+[590] Power: 146.4000, Temp: 41
+[591] Power: 146.3040, Temp: 41
+[592] Power: 146.3040, Temp: 41
+[593] Power: 146.3040, Temp: 41
+[594] Power: 146.3040, Temp: 41
+[595] Power: 146.3040, Temp: 41
+[596] Power: 146.4000, Temp: 41
+[597] Power: 146.3040, Temp: 41
+[598] Power: 146.3040, Temp: 41
+[599] Power: 146.3040, Temp: 41
+
+
+Shutting down NVML... Success
+Complete 

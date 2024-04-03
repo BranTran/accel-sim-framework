@@ -1,0 +1,343 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+RUNNING POWER/TEMP DUMP WITH ONLY SLEEPS
+Starting execution of btree_k1 
+Temperature is currently 31 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 310947
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 310947 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 311003
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311003 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 311044
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311044 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 311106
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311106 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 311165
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311165 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 311186
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311186 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 311240
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311240 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 311297
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311297 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 311318
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311318 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 311374
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311374 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 311430
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311430 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 311451
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311451 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 311512
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311512 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 311567
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311567 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 311588
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 311588 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUPS AND SLEEPS
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 311647
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 311647 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 311707
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 311707 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 311765
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 311765 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 311821
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 311821 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 311878
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 311878 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 311937
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 311937 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 311961
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 311961 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 312018
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312018 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 312075
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312075 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 312133
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312133 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 312191
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312191 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 312292
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312292 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 312347
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312347 Killed                  ${!bm_name} > /dev/null
+Starting execution of btree_k2 
+Temperature is currently 32 C
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 312373
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312373 Killed                  ${!bm_name} > /dev/null
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 32 C
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 312431
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 312431 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUP NO SLEEP
+Starting execution of btree_k1 
+Temperature is currently 32 C
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 312488
+Temperature is currently 46 C
+Sleeping...
+Starting execution of btree_k2 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312488 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 312541
+Temperature is currently 44 C
+Sleeping...
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312541 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 312599
+Temperature is currently 46 C
+Sleeping...
+Starting execution of btree_k1 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312599 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 312620
+Temperature is currently 46 C
+Sleeping...
+Starting execution of btree_k2 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312620 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 312667
+Temperature is currently 43 C
+Sleeping...
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312667 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 312722
+Temperature is currently 46 C
+Sleeping...
+Starting execution of btree_k1 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312722 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 312744
+Temperature is currently 47 C
+Sleeping...
+Starting execution of btree_k2 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312744 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 312800
+Temperature is currently 44 C
+Sleeping...
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312800 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 312856
+Temperature is currently 43 C
+Sleeping...
+Starting execution of btree_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312856 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 312881
+Temperature is currently 46 C
+Sleeping...
+Starting execution of btree_k2 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312881 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 312931
+Temperature is currently 44 C
+Sleeping...
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312931 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 312989
+Temperature is currently 47 C
+Sleeping...
+Starting execution of btree_k1 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 312989 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 313010
+Temperature is currently 47 C
+Sleeping...
+Starting execution of btree_k2 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 313010 Killed                  ${!bm_name} > /dev/null
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 313066
+Temperature is currently 43 C
+Sleeping...
+Starting execution of cudaTensorCoreGemm_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 313066 Killed                  ${!bm_name} > /dev/null
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 313120
+Temperature is currently 47 C
+Sleeping...

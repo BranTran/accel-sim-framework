@@ -1,0 +1,125 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+Starting profiling of fastWalshTransform_k2 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 83894
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83894 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83911 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of histogram_k1 
+Profiling concluded. Killing histogram_k1 with pid: 83979
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83979 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 83997 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing histogram_k1 with pid: 84016
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84016 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 84038
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84038 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of fastWalshTransform_k2 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 84095
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84095 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84114 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of histogram_k1 
+Profiling concluded. Killing histogram_k1 with pid: 84151
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84151 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84167 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing histogram_k1 with pid: 84218
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84218 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 84235
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84235 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of fastWalshTransform_k2 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 84257
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84257 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84273 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of histogram_k1 
+Profiling concluded. Killing histogram_k1 with pid: 84342
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84342 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84359 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing histogram_k1 with pid: 84376
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84376 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 84391
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84391 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of fastWalshTransform_k2 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 84415
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84415 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84466 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of histogram_k1 
+Profiling concluded. Killing histogram_k1 with pid: 84499
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84499 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84516 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing histogram_k1 with pid: 84568
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84568 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 84583
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84583 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of fastWalshTransform_k2 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 84605
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84605 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84622 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sleeping...
+Starting profiling of histogram_k1 
+Profiling concluded. Killing histogram_k1 with pid: 84690
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84690 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84706 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing histogram_k1 with pid: 84723
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84723 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 84739
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84739 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt

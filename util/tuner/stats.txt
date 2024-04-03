@@ -1,0 +1,293 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/util/tuner/GPU_Microbenchmark
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/util/tuner/GPU_Microbenchmark
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/util/tuner/GPU_Microbenchmark/bin
+running ./L1asso.csv microbenchmark
+/////////////////////////////////
+running ./L1line.csv microbenchmark
+/////////////////////////////////
+running ./MSHR100_array1073741824_shmem12288_itr6.csv microbenchmark
+/////////////////////////////////
+running ./MaxFlops_double microbenchmark
+/////////////////////////////////
+running ./MaxFlops_float microbenchmark
+/////////////////////////////////
+running ./MaxFlops_half microbenchmark
+/////////////////////////////////
+running ./MaxFlops_int32 microbenchmark
+/////////////////////////////////
+running ./atomic_add_bw microbenchmark
+/////////////////////////////////
+running ./atomic_add_bw_conflict microbenchmark
+/////////////////////////////////
+running ./atomic_add_lat microbenchmark
+/////////////////////////////////
+running ./config_dpu microbenchmark
+/////////////////////////////////
+running ./config_fpu microbenchmark
+/////////////////////////////////
+running ./config_int microbenchmark
+/////////////////////////////////
+running ./config_sfu microbenchmark
+/////////////////////////////////
+running ./config_tensor microbenchmark
+/////////////////////////////////
+running ./config_udp microbenchmark
+-specialized_unit_4 1,4,4,4,4,UDP
+-trace_opcode_latency_initiation_spec_op_4 4,1
+/////////////////////////////////
+running ./core_config microbenchmark
+CUDA version number = 7.0
+
+//Accel_Sim config: 
+-gpgpu_ptx_force_max_capability 70
+-gpgpu_shader_registers 65536
+-gpgpu_registers_per_block 65536
+-gpgpu_occupancy_sm_number 70
+-gpgpu_coalesce_arch 70
+-gpgpu_pipeline_widths 4,4,4,4,4,4,4,4,4,4,8,4,4
+-gpgpu_sub_core_model 1
+-gpgpu_enable_specialized_operand_collector 0
+-gpgpu_operand_collector_num_units_gen 8
+-gpgpu_operand_collector_num_in_ports_gen 8
+-gpgpu_operand_collector_num_out_ports_gen 8
+-gpgpu_num_sched_per_core 4
+-gpgpu_max_insn_issue_per_warp 1
+-gpgpu_dual_issue_diff_exec_units 1
+-gpgpu_inst_fetch_throughput 4
+-gpgpu_shader_core_pipeline 2048:32
+-gpgpu_shader_cta 32
+/////////////////////////////////
+running ./data.csv microbenchmark
+/////////////////////////////////
+running ./deviceQuery microbenchmark
+  Device : "Tesla V100-SXM2-16GB"
+
+  CUDA version number                         : 7.0
+  GPU Max Clock rate                             : 1530 MHz 
+  Multiprocessors Count                       : 80
+  Maximum number of threads per multiprocessor: 2048
+  CUDA Cores per multiprocessor               : 64 
+  Registers per multiprocessor                : 65536
+  Shared memory per multiprocessor            : 98304 bytes
+  Warp size                                   : 32
+  Maximum number of threads per block         : 1024
+  Shared memory per block                     : 49152 bytes
+  Registers per block                         : 65536
+  globalL1CacheSupported                      : 1
+  localL1CacheSupported                       : 1
+  L2 Cache Size                             : 6 MB
+  Global memory size                        : 16 GB
+  Memory Clock rate                           : 877 Mhz
+  Memory Bus Width                            : 4096 bit
+ ////////////////////////// 
+  Device : "Tesla V100-SXM2-16GB"
+
+  CUDA version number                         : 7.0
+  GPU Max Clock rate                             : 1530 MHz 
+  Multiprocessors Count                       : 80
+  Maximum number of threads per multiprocessor: 2048
+  CUDA Cores per multiprocessor               : 64 
+  Registers per multiprocessor                : 65536
+  Shared memory per multiprocessor            : 98304 bytes
+  Warp size                                   : 32
+  Maximum number of threads per block         : 1024
+  Shared memory per block                     : 49152 bytes
+  Registers per block                         : 65536
+  globalL1CacheSupported                      : 1
+  localL1CacheSupported                       : 1
+  L2 Cache Size                             : 6 MB
+  Global memory size                        : 16 GB
+  Memory Clock rate                           : 877 Mhz
+  Memory Bus Width                            : 4096 bit
+ ////////////////////////// 
+  Device : "Tesla V100-SXM2-16GB"
+
+  CUDA version number                         : 7.0
+  GPU Max Clock rate                             : 1530 MHz 
+  Multiprocessors Count                       : 80
+  Maximum number of threads per multiprocessor: 2048
+  CUDA Cores per multiprocessor               : 64 
+  Registers per multiprocessor                : 65536
+  Shared memory per multiprocessor            : 98304 bytes
+  Warp size                                   : 32
+  Maximum number of threads per block         : 1024
+  Shared memory per block                     : 49152 bytes
+  Registers per block                         : 65536
+  globalL1CacheSupported                      : 1
+  localL1CacheSupported                       : 1
+  L2 Cache Size                             : 6 MB
+  Global memory size                        : 16 GB
+  Memory Clock rate                           : 877 Mhz
+  Memory Bus Width                            : 4096 bit
+ ////////////////////////// 
+  Device : "Tesla V100-SXM2-16GB"
+
+  CUDA version number                         : 7.0
+  GPU Max Clock rate                             : 1530 MHz 
+  Multiprocessors Count                       : 80
+  Maximum number of threads per multiprocessor: 2048
+  CUDA Cores per multiprocessor               : 64 
+  Registers per multiprocessor                : 65536
+  Shared memory per multiprocessor            : 98304 bytes
+  Warp size                                   : 32
+  Maximum number of threads per block         : 1024
+  Shared memory per block                     : 49152 bytes
+  Registers per block                         : 65536
+  globalL1CacheSupported                      : 1
+  localL1CacheSupported                       : 1
+  L2 Cache Size                             : 6 MB
+  Global memory size                        : 16 GB
+  Memory Clock rate                           : 877 Mhz
+  Memory Bus Width                            : 4096 bit
+ ////////////////////////// 
+/////////////////////////////////
+running ./kernel_lat microbenchmark
+/////////////////////////////////
+running ./l1_access_grain microbenchmark
+/////////////////////////////////
+running ./l1_adaptive microbenchmark
+The ubench is not imepleneted yet.
+/////////////////////////////////
+running ./l1_associativity microbenchmark
+Launching L1 cache line size ubench
+/////////////////////////////////
+running ./l1_banks microbenchmark
+The ubench is not imepleneted yet.
+/////////////////////////////////
+running ./l1_bw_128 microbenchmark
+/////////////////////////////////
+running ./l1_bw_32f microbenchmark
+/////////////////////////////////
+running ./l1_bw_32f_unroll microbenchmark
+/////////////////////////////////
+running ./l1_bw_64f microbenchmark
+/////////////////////////////////
+running ./l1_bw_64v microbenchmark
+/////////////////////////////////
+running ./l1_config microbenchmark
+
+//Accel_Sim config: 
+-gpgpu_adaptive_cache_config 1
+-gpgpu_shmem_option 0,8,16,32,64,96
+-gpgpu_unified_l1d_size 128
+-gpgpu_l1_banks 4
+-gpgpu_cache:dl1 S:4:128:64,L:T:m:L:L,A:512:64,16:0,32
+-gpgpu_gmem_skip_L1D 0
+-gpgpu_l1_cache_write_ratio 25
+/////////////////////////////////
+running ./l1_lat microbenchmark
+/////////////////////////////////
+running ./l1_mshr microbenchmark
+Launching L1 MSHR ubench
+/////////////////////////////////
+running ./l1_sector microbenchmark
+/////////////////////////////////
+running ./l1_shared_bw microbenchmark
+/////////////////////////////////
+running ./l1_write_policy microbenchmark
+/////////////////////////////////
+running ./l2_access_grain microbenchmark
+/////////////////////////////////
+running ./l2_bw_128 microbenchmark
+/////////////////////////////////
+running ./l2_bw_32f microbenchmark
+/////////////////////////////////
+running ./l2_bw_64f microbenchmark
+/////////////////////////////////
+running ./l2_config microbenchmark
+L2 Cache Size = 6 MB
+L2 Banks number = 64
+
+//Accel_Sim config: 
+-gpgpu_n_sub_partition_per_mchannel 2
+-icnt_flit_size 40
+-gpgpu_memory_partition_indexing 2
+-gpgpu_cache:dl2 S:32:128:24,L:B:m:L:P,A:192:4,32:0,32
+/////////////////////////////////
+running ./l2_copy_engine microbenchmark
+/////////////////////////////////
+running ./l2_lat microbenchmark
+/////////////////////////////////
+running ./l2_write_policy microbenchmark
+/////////////////////////////////
+running ./lat_double microbenchmark
+/////////////////////////////////
+running ./lat_float microbenchmark
+/////////////////////////////////
+running ./lat_half microbenchmark
+/////////////////////////////////
+running ./lat_int32 microbenchmark
+/////////////////////////////////
+running ./list_devices microbenchmark
+
+Device 0: "Tesla V100-SXM2-16GB sm_7.0"
+
+Device 1: "Tesla V100-SXM2-16GB sm_7.0"
+
+Device 2: "Tesla V100-SXM2-16GB sm_7.0"
+
+Device 3: "Tesla V100-SXM2-16GB sm_7.0"
+/////////////////////////////////
+running ./mem_atom_size microbenchmark
+/////////////////////////////////
+running ./mem_bw microbenchmark
+/////////////////////////////////
+running ./mem_config microbenchmark
+Global memory size = 16 GB
+Memory Clock rate = 877 Mhz
+Memory Bus Width = 4096 bit
+Memory type = HBM
+Memory channels = 32
+
+//Accel_Sim config: 
+-gpgpu_n_mem 32
+-gpgpu_n_mem_per_ctrlr 1
+-gpgpu_dram_buswidth 16
+-gpgpu_dram_burst_length 2
+-dram_data_command_freq_ratio 2
+-dram_dual_bus_interface 1
+-gpgpu_dram_timing_opt nbk=16:CCD=1:RRD=4:RCD=13:RAS=29:RP=13:RC=42:CL=13:WL=2:CDLR=3:WR=11:nbkgrp=4:CCDL=2:RTPL=4
+/////////////////////////////////
+running ./mem_lat microbenchmark
+/////////////////////////////////
+running ./regfile_bw microbenchmark
+/////////////////////////////////
+running ./sfu_bw_fsqrt microbenchmark
+/////////////////////////////////
+running ./sfu_lat_fsqrt microbenchmark
+/////////////////////////////////
+running ./shared_bw microbenchmark
+/////////////////////////////////
+running ./shared_bw_64 microbenchmark
+/////////////////////////////////
+running ./shared_lat microbenchmark
+/////////////////////////////////
+running ./shd_config microbenchmark
+Shared memory per multiprocessor = 98304 bytes
+Shared memory per block = 49152 bytes
+
+//Accel_Sim config: 
+-gpgpu_shmem_size 98304
+-gpgpu_shmem_sizeDefault 98304
+-gpgpu_shmem_per_block 49152
+/////////////////////////////////
+running ./system_config microbenchmark
+Device Name = Tesla V100-SXM2-16GB
+GPU Max Clock rate = 1530 MHz 
+GPU Base Clock rate = 1312 MHz 
+SM Count = 80
+CUDA version number = 7.0
+
+//Accel_Sim config: 
+-gpgpu_compute_capability_major 7
+-gpgpu_compute_capability_minor 0
+-gpgpu_n_clusters 80
+-gpgpu_n_cores_per_cluster 1
+-gpgpu_clock_domains 1312:1312:1312:877
+/////////////////////////////////
+running ./tensor_bw_half microbenchmark
+FP16 operand, FP32 accumalte:
+/////////////////////////////////
+running ./tensor_lat_half microbenchmark
+FP16 operand, FP32 accumalte:
+/////////////////////////////////

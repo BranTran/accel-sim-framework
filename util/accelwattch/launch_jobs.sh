@@ -36,7 +36,9 @@ fi
 
 config=""
 if [ "${1}" == "volta_sass_sim" ]; then
-	config="QV100-Accelwattch_SASS_SIM"
+	#config="QV100-Accelwattch_SASS_SIM"
+	config="Tesla_V100-Accelwattch_SASS_SIM"
+
 elif [ "${1}" == "volta_sass_hybrid" ]; then
 	config="QV100-Accelwattch_SASS_HYBRID"
 elif [ "${1}" == "volta_sass_hw" ]; then

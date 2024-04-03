@@ -1,0 +1,115 @@
+####START INFO####
+Host information: Node
+
+c35n15
+####END   INFO####
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+0 GPU-96ca12e8-3aea-debf-64ec-ffb60c3b1ee7
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+Writing results to ./traces/kernel-2.trace
+Writing results to ./traces/kernel-3.trace
+IO        : 3.360919
+Kernel    : 653.638062
+Copy      : 0.668768
+Driver    : 653.636020
+Compute   : 0.003895
+CPU/Kernel Overlap: 653.638062
+Timer Wall Time: 657.669678
+run.sh: line 2: 3726597 Segmentation fault      (core dumped) CUDA_INJECTION64_PATH=/gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/util/tracer_nvbit/tracer_tool/tracer_tool.so /gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_benchmarks/validation/parboil-sad -i ./data/large/input/reference.bin,./data/large/input/frame.bin -o out.bin
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/parboil-sad/_i___data_large_input_reference_bin___data_large_input_frame_bin__o_out_bin/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/parboil-sad/_i___data_large_input_reference_bin___data_large_input_frame_bin__o_out_bin/traces/kernel-2.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/parboil-sad/_i___data_large_input_reference_bin___data_large_input_frame_bin__o_out_bin/traces/kernel-3.trace
+Opening file:./data/medium/input/matrix1.txt
+Matrix dimension: 1024x992
+Opening file:./data/medium/input/matrix2t.txt
+Matrix dimension: 1056x992
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+Opening file:matrix3.txt for write.
+Matrix dimension: 1024x1056
+GFLOPs = 0.0236827
+IO        : 1.920776
+Kernel    : 90.588648
+Copy      : 0.003081
+Driver    : 90.588230
+Compute   : 0.221865
+CPU/Kernel Overlap: 90.588648
+Timer Wall Time: 92.734070
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/parboil-sgemm/_i___data_medium_input_matrix1_txt___data_medium_input_matrix2t_txt___data_medium_input_matrix2t_txt__o_matrix3_txt/traces/kernel-1.trace
+262144 pixels in output; 2048 samples in trajectory; using 2048 samples
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.3) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+Writing results to ./traces/kernel-2.trace
+Writing results to ./traces/kernel-3.trace
+IO        : 0.080880
+Kernel    : 324.346510
+Copy      : 0.168741
+Driver    : 324.345053
+Compute   : 0.000256
+CPU/Kernel Overlap: 324.346510
+Timer Wall Time: 324.595001
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/parboil-mri-q/_i___data_large_input_64_64_64_dataset_bin__o_64_64_64_dataset_out/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/parboil-mri-q/_i___data_large_input_64_64_64_dataset_bin__o_64_64_64_dataset_out/traces/kernel-2.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/parboil-mri-q/_i___data_large_input_64_64_64_dataset_bin__o_64_64_64_dataset_out/traces/kernel-3.trace
+Running parboil-sad
+Running parboil-sgemm
+Running parboil-mri-q

@@ -1,0 +1,100 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 84025
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84025 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84080 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing kmeans_k1 with pid: 84098
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84098 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 84126
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84126 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 84151
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84151 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 84174
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84174 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84191 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing kmeans_k1 with pid: 84242
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84242 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 84270
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84270 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 84292
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84292 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 84314
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84314 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84332 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing kmeans_k1 with pid: 84349
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84349 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 84412
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84412 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 84435
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84435 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 84458
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84458 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84474 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing kmeans_k1 with pid: 84492
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84492 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 84517
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84517 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 84572
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84572 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 84595
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84595 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84611 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing kmeans_k1 with pid: 84630
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84630 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 84654
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84654 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 84676
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_validation_power.sh: line 143: 84676 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt

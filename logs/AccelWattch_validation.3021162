@@ -1,0 +1,469 @@
+
+Lmod is automatically replacing "xl/16.1.1-10" with "gcc/7.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/10.4.0.3-20210112
+
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 248900
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 248900 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 248921
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 248921 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 248937 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing backprop_k2 with pid: 248954
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 248954 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 248981
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 248981 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at binomialOptions.cpp:110 code=46(cudaErrorDevicesUnavailable) "cudaDeviceSynchronize()" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 248996 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 249029
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249029 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249045 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k1 with pid: 249062
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249062 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 249076
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249076 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249092 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing btree_k2 with pid: 249109
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249109 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of cudaTensorCoreGemm_k1 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 249125
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249125 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at cudaTensorCoreGemm.cu:473 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void**)&A, sizeof(half) * M_GLOBAL * K_GLOBAL)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249140 Killed                  $BINDIR/backprop_k1 65536
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+Sleeping...
+Starting profiling of dct8x8_k1 
+Profiling concluded. Killing dct8x8_k1 with pid: 249172
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249172 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249188 Killed                  $BINDIR/backprop_k1 65536
+Profiling concluded. Killing dct8x8_k1 with pid: 249205
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249205 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of dct8x8_k2 
+Profiling concluded. Killing dct8x8_k2 with pid: 249230
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249230 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing dct8x8_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249245 Killed                  $BINDIR/backprop_k1 65536
+Starting profiling of cutlass_k1 
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249282 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 437293 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k2 
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 1286541 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k2 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 2156479 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k3 
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 3537246 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k3 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 590931 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k3 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k1 
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k2 
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of histogram_k1 
+CUDA error at main.cpp:81 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Data, byteCount)" 
+Profiling concluded. Killing histogram_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at main.cpp:81 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Data, byteCount)" 
+Profiling concluded. Killing histogram_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing hotspot_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing kmeans_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of mergeSort_k1 
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of mergeSort_k2 
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_mriq_k1 
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_sad_k1 
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+Profiling concluded. Killing parboil_sad_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+CUDA error: all CUDA-capable devices are busy or unavailable
+Profiling concluded. Killing parboil_sad_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_sgemm_k1 
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of pathfinder_k1 
+Profiling concluded. Killing pathfinder_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing pathfinder_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of quasirandomGenerator_k1 
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of quasirandomGenerator_k2 
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at quasirandomGenerator.cpp:69 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Output, QRNG_DIMENSIONS * N * sizeof(float))" 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 
+Sleeping...
+Starting profiling of sobolQRNG_k1 
+Caught exception: all CUDA-capable devices are busy or unavailable
+Unable to allocate GPU memory (try running with fewer vectors/dimensions)
+Profiling concluded. Killing sobolQRNG_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Caught exception: all CUDA-capable devices are busy or unavailable
+Unable to allocate GPU memory (try running with fewer vectors/dimensions)
+Profiling concluded. Killing sobolQRNG_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing srad_v1_k1 with pid: 
+Sleeping...
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing backprop_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing backprop_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of binomialOptions_k1 
+CUDA error at binomialOptions.cpp:110 code=46(cudaErrorDevicesUnavailable) "cudaDeviceSynchronize()" 
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at binomialOptions.cpp:110 code=46(cudaErrorDevicesUnavailable) "cudaDeviceSynchronize()" 
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k1 
+Profiling concluded. Killing btree_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing btree_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k2 
+Profiling concluded. Killing btree_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing btree_k2 with pid: 
+Sleeping...
+Starting profiling of cudaTensorCoreGemm_k1 
+CUDA error at cudaTensorCoreGemm.cu:473 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void**)&A, sizeof(half) * M_GLOBAL * K_GLOBAL)" 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at cudaTensorCoreGemm.cu:473 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void**)&A, sizeof(half) * M_GLOBAL * K_GLOBAL)" 
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of dct8x8_k1 
+CUDA error at dct8x8.cu:191 code=46(cudaErrorDevicesUnavailable) "cudaMallocArray(&Src, &floattex, Size.width, Size.height)" 
+Profiling concluded. Killing dct8x8_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at dct8x8.cu:191 code=46(cudaErrorDevicesUnavailable) "cudaMallocArray(&Src, &floattex, Size.width, Size.height)" 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing dct8x8_k1 with pid: 
+Sleeping...
+Starting profiling of dct8x8_k2 
+CUDA error at dct8x8.cu:191 code=46(cudaErrorDevicesUnavailable) "cudaMallocArray(&Src, &floattex, Size.width, Size.height)" 
+Profiling concluded. Killing dct8x8_k2 with pid: 249263
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 249263 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+CUDA error at dct8x8.cu:191 code=46(cudaErrorDevicesUnavailable) "cudaMallocArray(&Src, &floattex, Size.width, Size.height)" 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 3365947 Killed                  $BINDIR/backprop_k1 65536
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing dct8x8_k2 with pid: 
+Sleeping...
+Starting profiling of cutlass_k1 
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 486068 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 3313900 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 2385007 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k1 with pid: 
+Sleeping...
+Starting profiling of cutlass_k2 
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 328439 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 772854 Killed                  $BINDIR/backprop_k1 65536
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 2231847 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k2 with pid: 
+Sleeping...
+Starting profiling of cutlass_k3 
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 168701 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Profiling concluded. Killing cutlass_k3 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  GemmPerfTestbed() failed to create CUDA events
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 2066024 Aborted                 (core dumped) ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k3 with pid: 
+Sleeping...
+Starting profiling of fastWalshTransform_k1 
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k2 
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at fastWalshTransform.cu:103 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Kernel, DATA_SIZE)" 
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of histogram_k1 
+CUDA error at main.cpp:81 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Data, byteCount)" 
+Profiling concluded. Killing histogram_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at main.cpp:81 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_Data, byteCount)" 
+Profiling concluded. Killing histogram_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of hotspot_k1 
+Profiling concluded. Killing hotspot_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing hotspot_k1 with pid: 
+Sleeping...
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing kmeans_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of mergeSort_k1 
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of mergeSort_k2 
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+CUDA error at main.cpp:62 code=46(cudaErrorDevicesUnavailable) "cudaMalloc((void **)&d_DstKey, N * sizeof(uint))" 
+Profiling concluded. Killing mergeSort_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_mriq_k1 
+CUDA error on line 42: all CUDA-capable devices are busy or unavailable
+User defined signal 2
+ERROR:  One or more process (first noticed rank 0) terminated with signal 12

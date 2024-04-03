@@ -1,0 +1,238 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+RUNNING POWER/TEMP DUMP WITH ONLY SLEEPS
+Starting execution of sobolQRNG_k1 
+Temperature is currently 31 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 201613
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201613 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 201669
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201669 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 201728
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201728 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 201749
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201749 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 201806
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201806 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 201864
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201864 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 201885
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201885 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 201939
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201939 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 201996
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 201996 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202017
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 202017 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUPS AND SLEEPS
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202074
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202074 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202131
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202131 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202190
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202190 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202246
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202246 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202303
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202303 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202326
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202326 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202386
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202386 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202444
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202444 Killed                  ${!bm_name} > /dev/null
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202500
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202500 Killed                  ${!bm_name} > /dev/null
+Starting execution of srad_v1_k1 
+Temperature is currently 32 C
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202557
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 202557 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUP NO SLEEP
+Starting execution of sobolQRNG_k1 
+Temperature is currently 32 C
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202613
+Temperature is currently 47 C
+Sleeping...
+Starting execution of srad_v1_k1 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202613 Killed                  ${!bm_name} > /dev/null
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202663
+Temperature is currently 45 C
+Sleeping...
+Starting execution of sobolQRNG_k1 
+Temperature is currently 44 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202663 Killed                  ${!bm_name} > /dev/null
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202684
+Temperature is currently 47 C
+Sleeping...
+Starting execution of srad_v1_k1 
+Temperature is currently 47 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202684 Killed                  ${!bm_name} > /dev/null
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202739
+Temperature is currently 45 C
+Sleeping...
+Starting execution of sobolQRNG_k1 
+Temperature is currently 44 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202739 Killed                  ${!bm_name} > /dev/null
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202787
+Temperature is currently 47 C
+Sleeping...
+Starting execution of srad_v1_k1 
+Temperature is currently 47 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202787 Killed                  ${!bm_name} > /dev/null
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202808
+Temperature is currently 45 C
+Sleeping...
+Starting execution of sobolQRNG_k1 
+Temperature is currently 45 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202808 Killed                  ${!bm_name} > /dev/null
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202864
+Temperature is currently 47 C
+Sleeping...
+Starting execution of srad_v1_k1 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202864 Killed                  ${!bm_name} > /dev/null
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 202918
+Temperature is currently 45 C
+Sleeping...
+Starting execution of sobolQRNG_k1 
+Temperature is currently 44 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202918 Killed                  ${!bm_name} > /dev/null
+Starting profiling of sobolQRNG_k1 
+Profiling concluded. Killing sobolQRNG_k1 with pid: 202940
+Temperature is currently 47 C
+Sleeping...
+Starting execution of srad_v1_k1 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 202940 Killed                  ${!bm_name} > /dev/null
+Starting profiling of srad_v1_k1 
+Profiling concluded. Killing srad_v1_k1 with pid: 203005
+Temperature is currently 45 C
+Sleeping...

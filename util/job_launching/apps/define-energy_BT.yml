@@ -1,0 +1,2965 @@
+ACT_CORE1_6000000_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 6000000 1 32
+
+ACT_CORE1_6000000_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 6000000 16 32
+
+ACT_CORE1_6000000_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 6000000 32 32
+
+ACT_CORE1_6000000_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 6000000 48 32
+
+ACT_CORE1_6000000_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 6000000 64 32
+
+ACT_CORE1_6000000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 6000000 80 32
+
+ACT_CORE2_700000_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 700000 1 32
+
+ACT_CORE2_700000_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 700000 16 32
+
+ACT_CORE2_700000_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 700000 32 32
+
+ACT_CORE2_700000_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 700000 48 32
+
+ACT_CORE2_700000_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 700000 64 32
+
+ACT_CORE2_700000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 700000 80 32
+
+INT_STATIC_1500000_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1500000 80 1
+
+INT_STATIC_1500000_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1500000 80 8
+
+INT_STATIC_1500000_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1500000 80 16
+
+INT_STATIC_1500000_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1500000 80 24
+
+INT_STATIC_1500000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1500000 80 32
+
+INT_FP_STATIC_1000000_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1000000 80 1
+
+INT_FP_STATIC_1000000_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1000000 80 8
+
+INT_FP_STATIC_1000000_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1000000 80 16
+
+INT_FP_STATIC_1000000_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1000000 80 24
+
+INT_FP_STATIC_1000000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1000000 80 32
+
+INT_FP_DP_STATIC_10000000_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10000000 80 1
+INT_FP_DP_STATIC_10000000_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10000000 80 8
+
+INT_FP_DP_STATIC_10000000_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10000000 80 16
+
+INT_FP_DP_STATIC_10000000_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10000000 80 24
+
+INT_FP_DP_STATIC_10000000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10000000 80 32
+
+INT_FP_SFU_STATIC_100000_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 100000 80 1
+
+INT_FP_SFU_STATIC_100000_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 100000 80 8
+
+INT_FP_SFU_STATIC_100000_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 100000 80 16
+
+INT_FP_SFU_STATIC_100000_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 100000 80 24
+
+INT_FP_SFU_STATIC_100000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 100000 80 32
+
+INT_FP_TEX_STATIC_150000_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 150000 80 1
+
+INT_FP_TEX_STATIC_150000_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 150000 80 8
+
+INT_FP_TEX_STATIC_150000_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 150000 80 16
+
+INT_FP_TEX_STATIC_150000_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 150000 80 24
+
+INT_FP_TEX_STATIC_150000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 150000 80 32
+
+INT_FP_TENSOR_STATIC_45000_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 45000 80 1
+
+INT_FP_TENSOR_STATIC_45000_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 45000 80 8
+
+INT_FP_TENSOR_STATIC_45000_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 45000 80 16
+
+INT_FP_TENSOR_STATIC_45000_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 45000 80 24
+
+INT_FP_TENSOR_STATIC_45000_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 45000 80 32
+
+add_mem_1_30000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 30000
+
+add_mem_2_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_2:
+            - args: 15000
+
+mul_mem_1_3000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 3000
+
+nul_mem_2_1500:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_2:
+            - args: 1500
+
+BE_DP_FP_ADD_200000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_ADD:
+            - args: 200000
+
+BE_DP_FP_DIV_6000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_DIV:
+            - args: 6000
+
+BE_DP_FP_MAD_100000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MAD:
+            - args: 100000
+
+BE_DP_FP_MUL_200000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MUL:
+            - args: 200000
+
+BE_L1D_HIT_300000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L1D_HIT:
+            - args: 300000
+
+BE_L2D_HIT_50000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L2D_HIT:
+            - args: 50000
+
+BE_MEM_DRAM_Acss_40:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_DRAM_Acss:
+            - args: 40
+
+BE_MEM_SHRD_Acss_350000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_SHRD_Acss:
+            - args: 350000
+
+BE_SFU_EXP_100000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_EXP:
+            - args: 100000
+
+BE_SFU_LG2_100000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_LG2:
+            - args: 100000
+
+BE_SFU_SIN_100000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SIN:
+            - args: 100000
+
+BE_SFU_SQRT_45000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SQRT:
+            - args: 45000
+
+BE_SP_FP_ADD_10000000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_ADD:
+            - args: 10000000
+
+BE_SP_FP_DIV_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_DIV:
+            - args: 15000
+
+BE_SP_FP_MAD_200000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MAD:
+            - args: 200000
+
+BE_SP_FP_MUL_10000000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MUL:
+            - args: 10000000
+
+BE_SP_INT_ADD_9500000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_ADD:
+            - args: 9500000
+
+BE_SP_INT_DIV_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_DIV:
+            - args: 15000
+
+BE_SP_INT_LOGIC_250000000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_LOGIC:
+            - args: 250000000
+
+BE_SP_INT_MUL_85000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL:
+            - args: 85000
+
+BE_SP_INT_MUL24_200000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL24:
+            - args: 200000
+
+BE_SP_INT_MUL32_300000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL32:
+            - args: 300000
+
+BE_TEXTURE_ACCESS_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS:
+            - args: 10000
+
+BE_TEXTURE_ACCESS_2_10000000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS_2:
+            - args: 10000000
+
+BRANCHING1_25000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING1:
+            - args: 25000
+
+BRANCHING2_9000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING2:
+            - args: 9000
+
+BRANCHING3_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING3:
+            - args: 10000
+
+BRANCHING4_5000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING4:
+            - args: 5000
+
+BRANCHING5_8000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING5:
+            - args: 8000
+
+immediates_constant_4000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_constant:
+            - args: 4000
+
+immediates_texture_50000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_texture:
+            - args: 50000
+
+mix1_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix1:
+            - args: 15000
+
+mix10_9000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix10:
+            - args: 9000
+
+mix11_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix11:
+            - args: 10000
+
+mix12_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix12:
+            - args: 10000
+
+mix13_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix13:
+            - args: 10000
+
+mix14_8000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix14:
+            - args: 8000
+
+mix15_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix15:
+            - args: 10000
+
+mix16_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix16:
+            - args: 10000
+
+mix17_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix17:
+            - args: 10000
+
+mix18_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix18:
+            - args: 10000
+
+mix19_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix19:
+            - args: 10000
+
+mix2_9500:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix2:
+            - args: 9500
+
+mix20_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix20:
+            - args: 10000
+
+mix3_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix3:
+            - args: 15000
+
+mix4_8000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix4:
+            - args: 8000
+
+mix5_9000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix5:
+            - args: 9000
+
+mix6_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix6:
+            - args: 10000
+
+mix7_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix7:
+            - args: 10000
+
+mix8_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix8:
+            - args: 10000
+
+mix9_7500:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix9:
+            - args: 7500
+
+mul_add_tex_1_10000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_1:
+            - args: 10000
+
+mul_add_tex_2_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_2:
+            - args: 15000
+
+REG_FILE_100000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - REG_FILE:
+            - args: 100000
+
+SHRD_TEX_SFU_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - SHRD_TEX_SFU:
+            - args: 15000
+
+TENSOR_80000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - TENSOR:
+            - args: 80000
+
+BE_HP_FP_ADD_10000000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_ADD:
+            - args: 10000000
+
+BE_HP_FP_DIV_15000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_DIV:
+            - args: 15000
+
+BE_HP_FP_MAD_200000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MAD:
+            - args: 200000
+
+BE_HP_FP_MUL_10000000:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MUL:
+            - args: 10000000
+
+ACT_CORE1_1_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 1 1 32
+
+ACT_CORE1_1_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 1 16 32
+
+ACT_CORE1_1_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 1 32 32
+
+ACT_CORE1_1_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 1 48 32
+
+ACT_CORE1_1_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 1 64 32
+
+ACT_CORE1_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 1 80 32
+
+ACT_CORE2_1_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 1 1 32
+
+ACT_CORE2_1_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 1 16 32
+
+ACT_CORE2_1_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 1 32 32
+
+ACT_CORE2_1_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 1 48 32
+
+ACT_CORE2_1_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 1 64 32
+
+ACT_CORE2_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 1 80 32
+
+INT_STATIC_1_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1 80 1
+
+INT_STATIC_1_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1 80 8
+
+INT_STATIC_1_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1 80 16
+
+INT_STATIC_1_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1 80 24
+
+INT_STATIC_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 1 80 32
+
+INT_FP_STATIC_1_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1 80 1
+
+INT_FP_STATIC_1_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1 80 8
+
+INT_FP_STATIC_1_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1 80 16
+
+INT_FP_STATIC_1_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1 80 24
+
+INT_FP_STATIC_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 1 80 32
+
+INT_FP_DP_STATIC_1_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 1 80 1
+INT_FP_DP_STATIC_1_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 1 80 8
+
+INT_FP_DP_STATIC_1_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 1 80 16
+
+INT_FP_DP_STATIC_1_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 1 80 24
+
+INT_FP_DP_STATIC_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 1 80 32
+
+INT_FP_SFU_STATIC_1_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 1 80 1
+
+INT_FP_SFU_STATIC_1_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 1 80 8
+
+INT_FP_SFU_STATIC_1_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 1 80 16
+
+INT_FP_SFU_STATIC_1_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 1 80 24
+
+INT_FP_SFU_STATIC_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 1 80 32
+
+INT_FP_TEX_STATIC_1_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 1 80 1
+
+INT_FP_TEX_STATIC_1_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 1 80 8
+
+INT_FP_TEX_STATIC_1_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 1 80 16
+
+INT_FP_TEX_STATIC_1_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 1 80 24
+
+INT_FP_TEX_STATIC_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 1 80 32
+
+INT_FP_TENSOR_STATIC_1_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 1 80 1
+
+INT_FP_TENSOR_STATIC_1_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 1 80 8
+
+INT_FP_TENSOR_STATIC_1_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 1 80 16
+
+INT_FP_TENSOR_STATIC_1_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 1 80 24
+
+INT_FP_TENSOR_STATIC_1_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 1 80 32
+
+add_mem_1_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 1
+
+add_mem_2_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_2:
+            - args: 1
+
+mul_mem_1_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 1
+
+nul_mem_2_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_2:
+            - args: 1
+
+BE_DP_FP_ADD_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_ADD:
+            - args: 1
+
+BE_DP_FP_DIV_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_DIV:
+            - args: 1
+
+BE_DP_FP_MAD_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MAD:
+            - args: 1
+
+BE_DP_FP_MUL_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MUL:
+            - args: 1
+
+BE_L1D_HIT_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L1D_HIT:
+            - args: 1
+
+BE_L2D_HIT_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L2D_HIT:
+            - args: 1
+
+BE_MEM_DRAM_Acss_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_DRAM_Acss:
+            - args: 1
+
+BE_MEM_SHRD_Acss_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_SHRD_Acss:
+            - args: 1
+
+BE_SFU_EXP_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_EXP:
+            - args: 1
+
+BE_SFU_LG2_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_LG2:
+            - args: 1
+
+BE_SFU_SIN_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SIN:
+            - args: 1
+
+BE_SFU_SQRT_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SQRT:
+            - args: 1
+
+BE_SP_FP_ADD_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_ADD:
+            - args: 1
+
+BE_SP_FP_DIV_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_DIV:
+            - args: 1
+
+BE_SP_FP_MAD_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MAD:
+            - args: 1
+
+BE_SP_FP_MUL_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MUL:
+            - args: 1
+
+BE_SP_INT_ADD_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_ADD:
+            - args: 1
+
+BE_SP_INT_DIV_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_DIV:
+            - args: 1
+
+BE_SP_INT_LOGIC_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_LOGIC:
+            - args: 1
+
+BE_SP_INT_MUL_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL:
+            - args: 1
+
+BE_SP_INT_MUL24_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL24:
+            - args: 1
+
+BE_SP_INT_MUL32_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL32:
+            - args: 1
+
+BE_TEXTURE_ACCESS_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS:
+            - args: 1
+
+BE_TEXTURE_ACCESS_2_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS_2:
+            - args: 1
+
+BRANCHING1_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING1:
+            - args: 1
+
+BRANCHING2_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING2:
+            - args: 1
+
+BRANCHING3_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING3:
+            - args: 1
+
+BRANCHING4_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING4:
+            - args: 1
+
+BRANCHING5_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING5:
+            - args: 1
+
+immediates_constant_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_constant:
+            - args: 1
+
+immediates_texture_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_texture:
+            - args: 1
+
+mix1_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix1:
+            - args: 1
+
+mix10_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix10:
+            - args: 1
+
+mix11_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix11:
+            - args: 1
+
+mix12_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix12:
+            - args: 1
+
+mix13_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix13:
+            - args: 1
+
+mix14_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix14:
+            - args: 1
+
+mix15_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix15:
+            - args: 1
+
+mix16_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix16:
+            - args: 1
+
+mix17_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix17:
+            - args: 1
+
+mix18_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix18:
+            - args: 1
+
+mix19_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix19:
+            - args: 1
+
+mix2_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix2:
+            - args: 1
+
+mix20_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix20:
+            - args: 1
+
+mix3_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix3:
+            - args: 1
+
+mix4_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix4:
+            - args: 1
+
+mix5_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix5:
+            - args: 1
+
+mix6_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix6:
+            - args: 1
+
+mix7_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix7:
+            - args: 1
+
+mix8_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix8:
+            - args: 1
+
+mix9_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix9:
+            - args: 1
+
+mul_add_tex_1_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_1:
+            - args: 1
+
+mul_add_tex_2_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_2:
+            - args: 1
+
+REG_FILE_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - REG_FILE:
+            - args: 1
+
+SHRD_TEX_SFU_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - SHRD_TEX_SFU:
+            - args: 1
+
+TENSOR_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - TENSOR:
+            - args: 1
+
+BE_HP_FP_ADD_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_ADD:
+            - args: 1
+
+BE_HP_FP_DIV_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_DIV:
+            - args: 1
+
+BE_HP_FP_MAD_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MAD:
+            - args: 1
+
+BE_HP_FP_MUL_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MUL:
+            - args: 1
+
+ACT_CORE1_2_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 2 1 32
+
+ACT_CORE1_2_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 2 16 32
+
+ACT_CORE1_2_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 2 32 32
+
+ACT_CORE1_2_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 2 48 32
+
+ACT_CORE1_2_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 2 64 32
+
+ACT_CORE1_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 2 80 32
+
+ACT_CORE2_2_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 2 1 32
+
+ACT_CORE2_2_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 2 16 32
+
+ACT_CORE2_2_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 2 32 32
+
+ACT_CORE2_2_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 2 48 32
+
+ACT_CORE2_2_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 2 64 32
+
+ACT_CORE2_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 2 80 32
+
+INT_STATIC_2_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 2 80 1
+
+INT_STATIC_2_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 2 80 8
+
+INT_STATIC_2_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 2 80 16
+
+INT_STATIC_2_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 2 80 24
+
+INT_STATIC_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 2 80 32
+
+INT_FP_STATIC_2_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 2 80 1
+
+INT_FP_STATIC_2_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 2 80 8
+
+INT_FP_STATIC_2_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 2 80 16
+
+INT_FP_STATIC_2_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 2 80 24
+
+INT_FP_STATIC_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 2 80 32
+
+INT_FP_DP_STATIC_2_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 2 80 1
+INT_FP_DP_STATIC_2_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 2 80 8
+
+INT_FP_DP_STATIC_2_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 2 80 16
+
+INT_FP_DP_STATIC_2_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 2 80 24
+
+INT_FP_DP_STATIC_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 2 80 32
+
+INT_FP_SFU_STATIC_2_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 2 80 1
+
+INT_FP_SFU_STATIC_2_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 2 80 8
+
+INT_FP_SFU_STATIC_2_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 2 80 16
+
+INT_FP_SFU_STATIC_2_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 2 80 24
+
+INT_FP_SFU_STATIC_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 2 80 32
+
+INT_FP_TEX_STATIC_2_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 2 80 1
+
+INT_FP_TEX_STATIC_2_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 2 80 8
+
+INT_FP_TEX_STATIC_2_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 2 80 16
+
+INT_FP_TEX_STATIC_2_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 2 80 24
+
+INT_FP_TEX_STATIC_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 2 80 32
+
+INT_FP_TENSOR_STATIC_2_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 2 80 1
+
+INT_FP_TENSOR_STATIC_2_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 2 80 8
+
+INT_FP_TENSOR_STATIC_2_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 2 80 16
+
+INT_FP_TENSOR_STATIC_2_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 2 80 24
+
+INT_FP_TENSOR_STATIC_2_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 2 80 32
+
+add_mem_1_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 2
+
+add_mem_2_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_2:
+            - args: 2
+
+mul_mem_1_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 2
+
+nul_mem_2_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_2:
+            - args: 2
+
+BE_DP_FP_ADD_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_ADD:
+            - args: 2
+
+BE_DP_FP_DIV_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_DIV:
+            - args: 2
+
+BE_DP_FP_MAD_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MAD:
+            - args: 2
+
+BE_DP_FP_MUL_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MUL:
+            - args: 2
+
+BE_L1D_HIT_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L1D_HIT:
+            - args: 2
+
+BE_L2D_HIT_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L2D_HIT:
+            - args: 2
+
+BE_MEM_DRAM_Acss_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_DRAM_Acss:
+            - args: 2
+
+BE_MEM_SHRD_Acss_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_SHRD_Acss:
+            - args: 2
+
+BE_SFU_EXP_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_EXP:
+            - args: 2
+
+BE_SFU_LG2_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_LG2:
+            - args: 2
+
+BE_SFU_SIN_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SIN:
+            - args: 2
+
+BE_SFU_SQRT_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SQRT:
+            - args: 2
+
+BE_SP_FP_ADD_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_ADD:
+            - args: 2
+
+BE_SP_FP_DIV_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_DIV:
+            - args: 2
+
+BE_SP_FP_MAD_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MAD:
+            - args: 2
+
+BE_SP_FP_MUL_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MUL:
+            - args: 2
+
+BE_SP_INT_ADD_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_ADD:
+            - args: 2
+
+BE_SP_INT_DIV_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_DIV:
+            - args: 2
+
+BE_SP_INT_LOGIC_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_LOGIC:
+            - args: 2
+
+BE_SP_INT_MUL_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL:
+            - args: 2
+
+BE_SP_INT_MUL24_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL24:
+            - args: 2
+
+BE_SP_INT_MUL32_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL32:
+            - args: 2
+
+BE_TEXTURE_ACCESS_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS:
+            - args: 2
+
+BE_TEXTURE_ACCESS_2_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS_2:
+            - args: 2
+
+BRANCHING1_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING1:
+            - args: 2
+
+BRANCHING2_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING2:
+            - args: 2
+
+BRANCHING3_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING3:
+            - args: 2
+
+BRANCHING4_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING4:
+            - args: 2
+
+BRANCHING5_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING5:
+            - args: 2
+
+immediates_constant_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_constant:
+            - args: 2
+
+immediates_texture_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_texture:
+            - args: 2
+
+mix1_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix1:
+            - args: 2
+
+mix10_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix10:
+            - args: 2
+
+mix11_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix11:
+            - args: 2
+
+mix12_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix12:
+            - args: 2
+
+mix13_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix13:
+            - args: 2
+
+mix14_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix14:
+            - args: 2
+
+mix15_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix15:
+            - args: 2
+
+mix16_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix16:
+            - args: 2
+
+mix17_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix17:
+            - args: 2
+
+mix18_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix18:
+            - args: 2
+
+mix19_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix19:
+            - args: 2
+
+mix2_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix2:
+            - args: 2
+
+mix20_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix20:
+            - args: 2
+
+mix3_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix3:
+            - args: 2
+
+mix4_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix4:
+            - args: 2
+
+mix5_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix5:
+            - args: 2
+
+mix6_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix6:
+            - args: 2
+
+mix7_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix7:
+            - args: 2
+
+mix8_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix8:
+            - args: 2
+
+mix9_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix9:
+            - args: 2
+
+mul_add_tex_1_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_1:
+            - args: 2
+
+mul_add_tex_2_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_2:
+            - args: 2
+
+REG_FILE_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - REG_FILE:
+            - args: 2
+
+SHRD_TEX_SFU_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - SHRD_TEX_SFU:
+            - args: 2
+
+TENSOR_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - TENSOR:
+            - args: 2
+
+BE_HP_FP_ADD_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_ADD:
+            - args: 2
+
+BE_HP_FP_DIV_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_DIV:
+            - args: 2
+
+BE_HP_FP_MAD_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MAD:
+            - args: 2
+
+BE_HP_FP_MUL_2:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MUL:
+            - args: 2
+
+
+ACT_CORE1_10_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 10 1 32
+
+ACT_CORE1_10_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 10 16 32
+
+ACT_CORE1_10_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 10 32 32
+
+ACT_CORE1_10_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 10 48 32
+
+ACT_CORE1_10_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 10 64 32
+
+ACT_CORE1_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE1:
+            - args: 10 80 32
+
+ACT_CORE2_10_1_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 10 1 32
+
+ACT_CORE2_10_16_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 10 16 32
+
+ACT_CORE2_10_32_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 10 32 32
+
+ACT_CORE2_10_48_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 10 48 32
+
+ACT_CORE2_10_64_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 10 64 32
+
+ACT_CORE2_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - ACT_CORE2:
+            - args: 10 80 32
+
+INT_STATIC_10_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 10 80 1
+
+INT_STATIC_10_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 10 80 8
+
+INT_STATIC_10_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 10 80 16
+
+INT_STATIC_10_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 10 80 24
+
+INT_STATIC_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_STATIC:
+            - args: 10 80 32
+
+INT_FP_STATIC_10_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 10 80 1
+
+INT_FP_STATIC_10_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 10 80 8
+
+INT_FP_STATIC_10_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 10 80 16
+
+INT_FP_STATIC_10_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 10 80 24
+
+INT_FP_STATIC_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_STATIC:
+            - args: 10 80 32
+
+INT_FP_DP_STATIC_10_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10 80 1
+INT_FP_DP_STATIC_10_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10 80 8
+
+INT_FP_DP_STATIC_10_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10 80 16
+
+INT_FP_DP_STATIC_10_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10 80 24
+
+INT_FP_DP_STATIC_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_DP_STATIC:
+            - args: 10 80 32
+
+INT_FP_SFU_STATIC_10_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 10 80 1
+
+INT_FP_SFU_STATIC_10_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 10 80 8
+
+INT_FP_SFU_STATIC_10_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 10 80 16
+
+INT_FP_SFU_STATIC_10_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 10 80 24
+
+INT_FP_SFU_STATIC_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_SFU_STATIC:
+            - args: 10 80 32
+
+INT_FP_TEX_STATIC_10_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 10 80 1
+
+INT_FP_TEX_STATIC_10_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 10 80 8
+
+INT_FP_TEX_STATIC_10_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 10 80 16
+
+INT_FP_TEX_STATIC_10_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 10 80 24
+
+INT_FP_TEX_STATIC_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TEX_STATIC:
+            - args: 10 80 32
+
+INT_FP_TENSOR_STATIC_10_80_1:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 10 80 1
+
+INT_FP_TENSOR_STATIC_10_80_8:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 10 80 8
+
+INT_FP_TENSOR_STATIC_10_80_16:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 10 80 16
+
+INT_FP_TENSOR_STATIC_10_80_24:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 10 80 24
+
+INT_FP_TENSOR_STATIC_10_80_32:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - INT_FP_TENSOR_STATIC:
+            - args: 10 80 32
+
+add_mem_1_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 10
+
+add_mem_10_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_10:
+            - args: 10
+
+mul_mem_1_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_1:
+            - args: 10
+
+nul_mem_10_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - add_mem_10:
+            - args: 10
+
+BE_DP_FP_ADD_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_ADD:
+            - args: 10
+
+BE_DP_FP_DIV_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_DIV:
+            - args: 10
+
+BE_DP_FP_MAD_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MAD:
+            - args: 10
+
+BE_DP_FP_MUL_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_DP_FP_MUL:
+            - args: 10
+
+BE_L1D_HIT_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L1D_HIT:
+            - args: 10
+
+BE_L2D_HIT_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_L2D_HIT:
+            - args: 10
+
+BE_MEM_DRAM_Acss_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_DRAM_Acss:
+            - args: 10
+
+BE_MEM_SHRD_Acss_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_MEM_SHRD_Acss:
+            - args: 10
+
+BE_SFU_EXP_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_EXP:
+            - args: 10
+
+BE_SFU_LG2_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_LG2:
+            - args: 10
+
+BE_SFU_SIN_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SIN:
+            - args: 10
+
+BE_SFU_SQRT_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SFU_SQRT:
+            - args: 10
+
+BE_SP_FP_ADD_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_ADD:
+            - args: 10
+
+BE_SP_FP_DIV_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_DIV:
+            - args: 10
+
+BE_SP_FP_MAD_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MAD:
+            - args: 10
+
+BE_SP_FP_MUL_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_FP_MUL:
+            - args: 10
+
+BE_SP_INT_ADD_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_ADD:
+            - args: 10
+
+BE_SP_INT_DIV_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_DIV:
+            - args: 10
+
+BE_SP_INT_LOGIC_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_LOGIC:
+            - args: 10
+
+BE_SP_INT_MUL_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL:
+            - args: 10
+
+BE_SP_INT_MUL24_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL24:
+            - args: 10
+
+BE_SP_INT_MUL32_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_SP_INT_MUL32:
+            - args: 10
+
+BE_TEXTURE_ACCESS_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS:
+            - args: 10
+
+BE_TEXTURE_ACCESS_10_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_TEXTURE_ACCESS_10:
+            - args: 10
+
+BRANCHING1_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING1:
+            - args: 10
+
+BRANCHING2_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING2:
+            - args: 10
+
+BRANCHING3_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING3:
+            - args: 10
+
+BRANCHING4_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING4:
+            - args: 10
+
+BRANCHING5_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BRANCHING5:
+            - args: 10
+
+immediates_constant_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_constant:
+            - args: 10
+
+immediates_texture_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - immediates_texture:
+            - args: 10
+
+mix1_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix1:
+            - args: 10
+
+mix10_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix10:
+            - args: 10
+
+mix11_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix11:
+            - args: 10
+
+mix12_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix12:
+            - args: 10
+
+mix13_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix13:
+            - args: 10
+
+mix14_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix14:
+            - args: 10
+
+mix15_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix15:
+            - args: 10
+
+mix16_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix16:
+            - args: 10
+
+mix17_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix17:
+            - args: 10
+
+mix18_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix18:
+            - args: 10
+
+mix19_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix19:
+            - args: 10
+
+mix2_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix2:
+            - args: 10
+
+mix20_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix20:
+            - args: 10
+
+mix3_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix3:
+            - args: 10
+
+mix4_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix4:
+            - args: 10
+
+mix5_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix5:
+            - args: 10
+
+mix6_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix6:
+            - args: 10
+
+mix7_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix7:
+            - args: 10
+
+mix8_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix8:
+            - args: 10
+
+mix9_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mix9:
+            - args: 10
+
+mul_add_tex_1_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_1:
+            - args: 10
+
+mul_add_tex_10_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - mul_add_tex_10:
+            - args: 10
+
+REG_FILE_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - REG_FILE:
+            - args: 10
+
+SHRD_TEX_SFU_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - SHRD_TEX_SFU:
+            - args: 10
+
+TENSOR_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - TENSOR:
+            - args: 10
+
+BE_HP_FP_ADD_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_ADD:
+            - args: 10
+
+BE_HP_FP_DIV_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_DIV:
+            - args: 10
+
+BE_HP_FP_MAD_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MAD:
+            - args: 10
+
+BE_HP_FP_MUL_10:
+    exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
+    execs:
+        - BE_HP_FP_MUL:
+            - args: 10
+            

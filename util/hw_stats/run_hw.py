@@ -80,18 +80,16 @@ if not options.disable_nvprof:
 if options.nsight_profiler:
     if not any([os.path.isfile(os.path.join(p, "nv-nsight-cu-cli")) for p in os.getenv("PATH").split(os.pathsep)]):
         exit("ERROR - Cannot find nv-nsight-cu-cli PATH... Is CUDA_INSTALL_PATH/bin in the system PATH?")
-
+# print(options)
 common.load_defined_yamls()
-
 benchmarks = []
 benchmarks = common.gen_apps_from_suite_list(options.benchmark_list.split(","))
-
 cuda_version = common.get_cuda_version( this_directory )
 now_time = datetime.datetime.now()
 day_string = now_time.strftime("%y.%m.%d-%A")
 time_string = now_time.strftime("%H:%M:%S")
 logfile = day_string + "--" + time_string + ".csv"
-
+# exit(0)
 for bench in benchmarks:
     edir, ddir, exe, argslist = bench
     for argpair in argslist:
@@ -181,4 +179,8 @@ for bench in benchmarks:
 
             if subprocess.call(["bash", "run.sh"]) != 0:
                 print("Error invoking profiler on {0}".format(this_run_dir))
+<<<<<<< HEAD
             os.chdir(saved_dir)
+=======
+            os.chdir(saved_dir)
+>>>>>>> 7e02543 (Update Summit repo things April 3rd)

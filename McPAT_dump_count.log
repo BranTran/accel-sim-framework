@@ -1,0 +1,426 @@
+INT_FP_SFU_STATIC-2_80_1: 22
+gpu_sim_cycle = 11080
+SHRD_TEX_SFU-1: 25
+gpu_sim_cycle = 12676
+BRANCHING3-2: 29
+gpu_sim_cycle = 14636
+ACT_CORE1-2_32_32: 19
+gpu_sim_cycle = 9858
+BRANCHING1-1: 25
+gpu_sim_cycle = 12734
+immediates_constant-1: 17
+INT_FP_STATIC-2_80_8: 20
+gpu_sim_cycle = 10035
+BE_SP_INT_DIV-1: 24
+gpu_sim_cycle = 12199
+mul_add_tex_1-2: 29
+gpu_sim_cycle = 14519
+BE_HP_FP_MUL-1: 59
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 9932
+mix15-1: 19
+mix17-2: 19
+ACT_CORE1-2_16_32: 19
+gpu_sim_cycle = 9781
+BE_L1D_HIT-1: 3474
+gpu_sim_cycle = 1725328
+gpu_sim_cycle = 11987
+INT_STATIC-2_80_32: 20
+gpu_sim_cycle = 10248
+INT_STATIC-2_80_16: 20
+gpu_sim_cycle = 10234
+INT_FP_SFU_STATIC-2_80_8: 22
+gpu_sim_cycle = 11080
+mix7-2: 18
+INT_FP_DP_STATIC-1_80_8: 20
+gpu_sim_cycle = 10469
+INT_FP_STATIC-2_80_1: 20
+gpu_sim_cycle = 10035
+REG_FILE-2: 21
+gpu_sim_cycle = 10680
+BE_DP_FP_ADD-1: 23
+gpu_sim_cycle = 11750
+INT_FP_TEX_STATIC-2_80_32: 21
+gpu_sim_cycle = 10802
+ACT_CORE1-1_32_32: 19
+gpu_sim_cycle = 9793
+mix16-1: 19
+BE_L2D_HIT-1: 3476
+gpu_sim_cycle = 1725328
+gpu_sim_cycle = 13169
+ACT_CORE2-1_1_32: 20
+gpu_sim_cycle = 10048
+mix13-1: 17
+BE_SFU_EXP-2: 21
+gpu_sim_cycle = 10680
+INT_FP_TEX_STATIC-1_80_8: 21
+gpu_sim_cycle = 10549
+mix7-1: 18
+INT_FP_SFU_STATIC-2_80_24: 22
+gpu_sim_cycle = 11115
+mix3-1: 24
+gpu_sim_cycle = 12305
+mix2-1: 26
+gpu_sim_cycle = 13052
+BE_SP_FP_MAD-1: 20
+gpu_sim_cycle = 10462
+BE_SFU_SIN-1: 20
+gpu_sim_cycle = 10175
+ACT_CORE1-1_64_32: 19
+gpu_sim_cycle = 9916
+INT_FP_TENSOR_STATIC-1_80_16: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52470
+mix11-1: 18
+ACT_CORE2-2_64_32: 20
+gpu_sim_cycle = 10333
+INT_FP_STATIC-1_80_24: 20
+gpu_sim_cycle = 10002
+add_mem_1-2: 29
+gpu_sim_cycle = 14715
+ACT_CORE1-2_80_32: 20
+gpu_sim_cycle = 10070
+immediates_texture-1: 19
+gpu_sim_cycle = 9790
+INT_FP_DP_STATIC-1_80_32: 20
+gpu_sim_cycle = 10470
+ACT_CORE2-1_48_32: 20
+gpu_sim_cycle = 10174
+BRANCHING1-2: 28
+gpu_sim_cycle = 14427
+BE_SP_INT_DIV-2: 25
+gpu_sim_cycle = 12873
+mul_add_tex_2-2: 30
+gpu_sim_cycle = 15321
+INT_FP_SFU_STATIC-2_80_32: 22
+gpu_sim_cycle = 11071
+add_mem_2-2: 37
+gpu_sim_cycle = 18870
+mix1-2: 28
+gpu_sim_cycle = 14150
+INT_FP_SFU_STATIC-1_80_8: 20
+gpu_sim_cycle = 10474
+INT_STATIC-1_80_16: 20
+gpu_sim_cycle = 10146
+REG_FILE-1: 21
+gpu_sim_cycle = 10512
+ACT_CORE1-1_48_32: 19
+gpu_sim_cycle = 9893
+BE_TEXTURE_ACCESS_2-2: 24
+gpu_sim_cycle = 12436
+INT_FP_TENSOR_STATIC-1_80_8: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52470
+ACT_CORE1-2_1_32: 19
+gpu_sim_cycle = 9737
+mix5-1: 18
+INT_FP_DP_STATIC-2_80_32: 20
+gpu_sim_cycle = 10491
+SHRD_TEX_SFU-2: 28
+gpu_sim_cycle = 14191
+mix12-2: 17
+INT_FP_SFU_STATIC-1_80_24: 20
+gpu_sim_cycle = 10479
+ACT_CORE2-2_16_32: 20
+gpu_sim_cycle = 10249
+INT_FP_SFU_STATIC-1_80_1: 20
+gpu_sim_cycle = 10474
+BRANCHING4-1: 24
+gpu_sim_cycle = 12196
+mix18-1: 18
+BE_HP_FP_MUL-2: 59
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 10017
+BE_DP_FP_MUL-2: 23
+gpu_sim_cycle = 11603
+INT_FP_TEX_STATIC-1_80_24: 21
+gpu_sim_cycle = 10502
+ACT_CORE2-1_16_32: 20
+gpu_sim_cycle = 10099
+INT_FP_STATIC-2_80_16: 20
+gpu_sim_cycle = 10035
+BRANCHING5-2: 36
+gpu_sim_cycle = 18236
+BE_SP_FP_ADD-2: 21
+gpu_sim_cycle = 10523
+BE_TEXTURE_ACCESS_2-1: 20
+gpu_sim_cycle = 10262
+BRANCHING2-2: 33
+gpu_sim_cycle = 16931
+INT_FP_TENSOR_STATIC-2_80_32: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52510
+BE_SP_INT_LOGIC-2: 20
+gpu_sim_cycle = 10497
+INT_FP_STATIC-1_80_32: 19
+gpu_sim_cycle = 9995
+mix15-2: 19
+BE_DP_FP_DIV-2: 44
+gpu_sim_cycle = 22250
+mix11-2: 18
+BE_MEM_SHRD_Acss-1: 20
+gpu_sim_cycle = 10269
+ACT_CORE1-1_16_32: 19
+gpu_sim_cycle = 9720
+INT_FP_TEX_STATIC-1_80_16: 21
+gpu_sim_cycle = 10549
+BE_SP_INT_ADD-1: 21
+gpu_sim_cycle = 10552
+BE_SP_INT_MUL-1: 23
+gpu_sim_cycle = 11827
+INT_FP_DP_STATIC-2_80_8: 21
+gpu_sim_cycle = 10527
+mix17-1: 19
+INT_FP_TENSOR_STATIC-2_80_1: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52510
+mix14-1: 18
+INT_FP_TENSOR_STATIC-2_80_16: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52510
+mix13-2: 17
+INT_FP_DP_STATIC-2_80_1: 21
+gpu_sim_cycle = 10527
+mix12-1: 17
+INT_FP_TENSOR_STATIC-2_80_24: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52510
+ACT_CORE1-1_80_32: 20
+gpu_sim_cycle = 10033
+ACT_CORE2-1_64_32: 20
+gpu_sim_cycle = 10213
+BE_MEM_SHRD_Acss-2: 20
+gpu_sim_cycle = 10306
+INT_FP_TENSOR_STATIC-1_80_1: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52470
+INT_STATIC-1_80_1: 20
+gpu_sim_cycle = 10146
+INT_FP_TENSOR_STATIC-1_80_32: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52470
+BE_SP_INT_ADD-2: 21
+gpu_sim_cycle = 10551
+INT_FP_DP_STATIC-2_80_16: 21
+gpu_sim_cycle = 10527
+INT_STATIC-1_80_32: 20
+gpu_sim_cycle = 10146
+mix3-2: 33
+gpu_sim_cycle = 16753
+mix8-2: 18
+BE_SP_FP_MUL-2: 20
+gpu_sim_cycle = 10443
+BE_HP_FP_ADD-1: 59
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 9952
+mix14-2: 18
+INT_FP_DP_STATIC-2_80_24: 21
+gpu_sim_cycle = 10509
+BE_SP_INT_MUL24-2: 21
+gpu_sim_cycle = 10887
+mix5-2: 18
+INT_FP_TEX_STATIC-1_80_32: 20
+gpu_sim_cycle = 10483
+mix10-1: 18
+BE_HP_FP_ADD-2: 59
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 10031
+BE_SFU_LG2-1: 20
+gpu_sim_cycle = 10202
+INT_FP_SFU_STATIC-1_80_16: 20
+gpu_sim_cycle = 10474
+BRANCHING4-2: 27
+gpu_sim_cycle = 13841
+mix16-2: 19
+BE_HP_FP_DIV-2: 62
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 11731
+mix9-1: 18
+INT_FP_STATIC-1_80_8: 20
+gpu_sim_cycle = 10007
+mix8-1: 18
+mix19-1: 18
+mix6-1: 18
+BRANCHING3-1: 24
+gpu_sim_cycle = 12284
+mix20-2: 18
+ACT_CORE2-2_80_32: 20
+gpu_sim_cycle = 10328
+BE_MEM_DRAM_Acss-1: 576
+gpu_sim_cycle = 288498
+mix20-1: 18
+INT_STATIC-1_80_24: 20
+gpu_sim_cycle = 10152
+BE_SP_INT_MUL32-1: 20
+gpu_sim_cycle = 10447
+INT_FP_DP_STATIC-1_80_16: 20
+gpu_sim_cycle = 10469
+INT_FP_TEX_STATIC-1_80_1: 21
+gpu_sim_cycle = 10549
+mix4-1: 26
+gpu_sim_cycle = 13425
+INT_STATIC-2_80_8: 20
+gpu_sim_cycle = 10234
+BE_SFU_EXP-1: 20
+gpu_sim_cycle = 10282
+immediates_texture-2: 21
+gpu_sim_cycle = 10970
+BE_TEXTURE_ACCESS-2: 31
+gpu_sim_cycle = 15710
+mix9-2: 18
+INT_FP_TEX_STATIC-2_80_16: 21
+gpu_sim_cycle = 10809
+BRANCHING2-1: 26
+gpu_sim_cycle = 13415
+immediates_constant-2: 17
+BE_HP_FP_MAD-1: 59
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 9977
+BE_SFU_SQRT-2: 23
+gpu_sim_cycle = 11966
+BE_DP_FP_MAD-1: 23
+gpu_sim_cycle = 11670
+INT_FP_TENSOR_STATIC-1_80_24: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52470
+BE_SP_FP_ADD-1: 21
+gpu_sim_cycle = 10502
+BE_SFU_SIN-2: 20
+gpu_sim_cycle = 10491
+mix4-2: 34
+gpu_sim_cycle = 17139
+add_mem_1-1: 29
+gpu_sim_cycle = 14523
+BE_SP_INT_LOGIC-1: 21
+gpu_sim_cycle = 10504
+mix1-1: 25
+gpu_sim_cycle = 12690
+INT_FP_DP_STATIC-1_80_1: 20
+gpu_sim_cycle = 10469
+INT_FP_STATIC-2_80_24: 20
+gpu_sim_cycle = 10037
+TENSOR-2: 165
+gpu_sim_cycle = 15610
+gpu_sim_cycle = 18867
+gpu_sim_cycle = 48413
+BE_DP_FP_MUL-1: 23
+gpu_sim_cycle = 11568
+BE_DP_FP_MAD-2: 23
+gpu_sim_cycle = 11662
+BE_L2D_HIT-2: 3479
+gpu_sim_cycle = 1725328
+gpu_sim_cycle = 14504
+BE_TEXTURE_ACCESS-1: 25
+gpu_sim_cycle = 12931
+mix2-2: 32
+gpu_sim_cycle = 16234
+BE_SP_INT_MUL32-2: 20
+gpu_sim_cycle = 10470
+INT_FP_SFU_STATIC-1_80_32: 21
+gpu_sim_cycle = 10570
+ACT_CORE2-2_48_32: 20
+gpu_sim_cycle = 10285
+ACT_CORE2-1_80_32: 20
+gpu_sim_cycle = 10181
+BE_SP_FP_MAD-2: 20
+gpu_sim_cycle = 10440
+BE_SFU_LG2-2: 20
+gpu_sim_cycle = 10482
+INT_STATIC-1_80_8: 20
+gpu_sim_cycle = 10146
+ACT_CORE2-2_1_32: 20
+gpu_sim_cycle = 10160
+ACT_CORE1-2_48_32: 19
+gpu_sim_cycle = 9928
+ACT_CORE1-2_64_32: 19
+gpu_sim_cycle = 9960
+ACT_CORE1-1_1_32: 19
+gpu_sim_cycle = 9662
+add_mem_2-1: 26
+gpu_sim_cycle = 13484
+BE_SFU_SQRT-1: 22
+gpu_sim_cycle = 11009
+mul_add_tex_1-1: 24
+gpu_sim_cycle = 12217
+INT_FP_TEX_STATIC-2_80_24: 21
+gpu_sim_cycle = 10793
+INT_FP_SFU_STATIC-2_80_16: 22
+gpu_sim_cycle = 11080
+INT_FP_TEX_STATIC-2_80_1: 21
+gpu_sim_cycle = 10809
+BE_SP_INT_MUL24-1: 21
+gpu_sim_cycle = 10556
+BE_SP_INT_MUL-2: 24
+gpu_sim_cycle = 12053
+BE_SP_FP_DIV-2: 38
+gpu_sim_cycle = 19251
+ACT_CORE2-2_32_32: 20
+gpu_sim_cycle = 10266
+mix18-2: 18
+INT_FP_STATIC-2_80_32: 20
+gpu_sim_cycle = 10038
+BE_HP_FP_DIV-1: 61
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 11046
+INT_FP_DP_STATIC-1_80_24: 20
+gpu_sim_cycle = 10454
+INT_FP_TEX_STATIC-2_80_8: 21
+gpu_sim_cycle = 10809
+BE_SP_FP_DIV-1: 32
+gpu_sim_cycle = 16011
+BE_MEM_DRAM_Acss-2: 1390
+gpu_sim_cycle = 695423
+TENSOR-1: 165
+gpu_sim_cycle = 15610
+gpu_sim_cycle = 18867
+gpu_sim_cycle = 48147
+INT_FP_TENSOR_STATIC-2_80_8: 173
+gpu_sim_cycle = 15578
+gpu_sim_cycle = 18891
+gpu_sim_cycle = 52510
+mul_add_tex_2-1: 24
+gpu_sim_cycle = 12107
+INT_FP_STATIC-1_80_16: 20
+gpu_sim_cycle = 10007
+INT_FP_STATIC-1_80_1: 20
+gpu_sim_cycle = 10007
+mix19-2: 18
+ACT_CORE2-1_32_32: 20
+gpu_sim_cycle = 10125
+mix6-2: 18
+mix10-2: 18
+BE_SP_FP_MUL-1: 20
+gpu_sim_cycle = 10445
+INT_STATIC-2_80_24: 20
+gpu_sim_cycle = 10246
+BE_HP_FP_MAD-2: 59
+gpu_sim_cycle = 9863
+gpu_sim_cycle = 9794
+gpu_sim_cycle = 10177
+BE_L1D_HIT-2: 3474
+gpu_sim_cycle = 1725328
+gpu_sim_cycle = 12011
+BRANCHING5-1: 28
+gpu_sim_cycle = 14100
+BE_DP_FP_DIV-1: 36
+gpu_sim_cycle = 18189
+INT_STATIC-2_80_1: 20
+gpu_sim_cycle = 10234
+BE_DP_FP_ADD-2: 23
+gpu_sim_cycle = 11793

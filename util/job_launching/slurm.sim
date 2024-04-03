@@ -1,24 +1,16 @@
 #! /bin/bash
-#SBATCH -J REPLACE_NAME
+#SBATCH --nodes=1
+#SBATCH -t 24:00:00
 #SBATCH --threads-per-core=1
 #SBATCH --cpus-per-task=1
-#SBATCH --nodes=1
 #SBATCH --mem-per-cpu=REPLACE_MEM_USAGE
-#SBACTH --time=200:00:00,
 #SBATCH -p REPLACE_QUEUE_NAME
+#SBATCH -A gen150
+#SBATCH -J REPLACE_NAME
+#SBATCH -o REPLACE_NAME.out
 #SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=tranbq@ornl.gov
 #SBATCH --export=ALL
-#SBATCH --output=/tmp/REPLACE_NAME.o%j
-#SBATCH --error=/tmp/REPLACE_NAME.e%j
-
-copy_output() {
-    mv /tmp/REPLACE_NAME.e$SLURM_JOB_ID ./REPLACE_NAME.e$SLURM_JOB_ID
-    mv /tmp/REPLACE_NAME.o$SLURM_JOB_ID ./REPLACE_NAME.o$SLURM_JOB_ID
-}
-
-trap copy_output ERR
-
-set -e
 
 if [ "$GPGPUSIM_SETUP_ENVIRONMENT_WAS_RUN" != "1" ]; then
     export GPGPUSIM_ROOT=REPLACE_GPGPUSIM_ROOT
@@ -49,5 +41,4 @@ export CUDA_LAUNCH_BLOCKING=1
 
 
 echo "doing: REPLACE_EXEC_NAME REPLACE_COMMAND_LINE"
-REPLACE_EXEC_NAME REPLACE_COMMAND_LINE
-copy_output
+srun -n1 REPLACE_EXEC_NAME REPLACE_COMMAND_LINE

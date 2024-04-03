@@ -1,0 +1,343 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+RUNNING POWER/TEMP DUMP WITH ONLY SLEEPS
+Starting execution of kmeans_k1 
+Temperature is currently 32 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 439371
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439371 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 32 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 439403
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439403 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 32 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 439463
+Temperature is currently 49 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439463 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 439517
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439517 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 439538
+Temperature is currently 48 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439538 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 439596
+Temperature is currently 49 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439596 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 439650
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439650 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 32 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 439674
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439674 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 439747
+Temperature is currently 49 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439747 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 439804
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439804 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 32 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 439829
+Temperature is currently 48 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439829 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 439884
+Temperature is currently 48 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439884 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 439940
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439940 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 439961
+Temperature is currently 46 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 439961 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 440017
+Temperature is currently 49 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 440017 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUPS AND SLEEPS
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 440074
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440074 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 440097
+Temperature is currently 48 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440097 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 440155
+Temperature is currently 49 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440155 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 440214
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440214 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 440271
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440271 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 440327
+Temperature is currently 49 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440327 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 440385
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440385 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 440447
+Temperature is currently 48 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440447 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 440501
+Temperature is currently 50 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440501 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 440560
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440560 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 440584
+Temperature is currently 47 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440584 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 440644
+Temperature is currently 49 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440644 Killed                  ${!bm_name} > /dev/null
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 440699
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440699 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k1 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 440758
+Temperature is currently 48 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440758 Killed                  ${!bm_name} > /dev/null
+Starting execution of mergeSort_k2 
+Temperature is currently 33 C
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 440815
+Temperature is currently 50 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 440815 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUP NO SLEEP
+Starting execution of kmeans_k1 
+Temperature is currently 33 C
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 440871
+Temperature is currently 43 C
+Sleeping...
+Starting execution of mergeSort_k1 
+Temperature is currently 42 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 440871 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 440923
+Temperature is currently 47 C
+Sleeping...
+Starting execution of mergeSort_k2 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 440923 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 440946
+Temperature is currently 49 C
+Sleeping...
+Starting execution of kmeans_k1 
+Temperature is currently 47 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 440946 Killed                  ${!bm_name} > /dev/null
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 441002
+Temperature is currently 43 C
+Sleeping...
+Starting execution of mergeSort_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441002 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 441057
+Temperature is currently 48 C
+Sleeping...
+Starting execution of mergeSort_k2 
+Temperature is currently 47 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441057 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 441080
+Temperature is currently 49 C
+Sleeping...
+Starting execution of kmeans_k1 
+Temperature is currently 48 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441080 Killed                  ${!bm_name} > /dev/null
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 441136
+Temperature is currently 43 C
+Sleeping...
+Starting execution of mergeSort_k1 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441136 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 441189
+Temperature is currently 47 C
+Sleeping...
+Starting execution of mergeSort_k2 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441189 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 441210
+Temperature is currently 49 C
+Sleeping...
+Starting execution of kmeans_k1 
+Temperature is currently 49 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441210 Killed                  ${!bm_name} > /dev/null
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 441269
+Temperature is currently 43 C
+Sleeping...
+Starting execution of mergeSort_k1 
+Temperature is currently 42 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441269 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 441324
+Temperature is currently 48 C
+Sleeping...
+Starting execution of mergeSort_k2 
+Temperature is currently 47 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441324 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 441345
+Temperature is currently 50 C
+Sleeping...
+Starting execution of kmeans_k1 
+Temperature is currently 48 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441345 Killed                  ${!bm_name} > /dev/null
+Starting profiling of kmeans_k1 
+Profiling concluded. Killing kmeans_k1 with pid: 441401
+Temperature is currently 43 C
+Sleeping...
+Starting execution of mergeSort_k1 
+Temperature is currently 42 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441401 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k1 
+Profiling concluded. Killing mergeSort_k1 with pid: 441458
+Temperature is currently 48 C
+Sleeping...
+Starting execution of mergeSort_k2 
+Temperature is currently 46 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 441458 Killed                  ${!bm_name} > /dev/null
+Starting profiling of mergeSort_k2 
+Profiling concluded. Killing mergeSort_k2 with pid: 441480
+Temperature is currently 49 C
+Sleeping...

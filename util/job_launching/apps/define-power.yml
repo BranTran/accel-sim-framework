@@ -166,6 +166,40 @@ parboil_validation:
 
         #- parboil-mri-gridding:
         #    - args: -i ./data/small/input/small.uks -o output.txt -- 32 0
+just_binomial:
+    exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation/"
+    data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs/"
+    execs:
+        - binomialOptions:
+            - args:
+              accel-sim-mem: 20G
+out_of_range:
+    exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation/"
+    data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs/"
+    execs:
+        - dct8x8:
+            - args:
+              accel-sim-mem: 2G
+        - parboil-sad:
+            - args: -i ./data/large/input/reference.bin,./data/large/input/frame.bin -o out.bin
+              accel-sim-mem: 2G              
+        - kmeans-rodinia-3.1:
+            - args:  -o -i ./data/819200.txt
+              accel-sim-mem: 2G
+
+cuda_samples_11.0_segfault:
+    exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation/"
+    data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs/"
+    execs:
+        - dct8x8:
+            - args:
+              accel-sim-mem: 2G
+        - binomialOptions:
+            - args:
+              accel-sim-mem: 20G
+        - quasirandomGenerator:
+            - args:
+              accel-sim-mem: 2G
 
 cuda_samples_11.0_validation:
     exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation/"
@@ -181,17 +215,17 @@ cuda_samples_11.0_validation:
             - args:
               accel-sim-mem: 2G
         - histogram:
-            - args:
-              accel-sim-mem: 4G
-        - mergeSort:
-            - args:
-              accel-sim-mem: 2G
-        - quasirandomGenerator:
-            - args:
-              accel-sim-mem: 2G
+           - args:
+             accel-sim-mem: 4G
         - sobolQRNG:
             - args:
               accel-sim-mem: 1G
+        - quasirandomGenerator:
+            - args:
+              accel-sim-mem: 2G
+        - mergeSort:
+            - args:
+              accel-sim-mem: 2G
 
 cudaTensorCoreGemm_validation:
     exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation/"
@@ -230,7 +264,169 @@ Deepbench_validation:
             - args: inference half 512 1 1 gru
             - args: train half 128 32 1 lstm
             - args: train half 128 32 1 gru
-           
+
+power_ubench_datatype:
+    exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/ubench_datatype/"
+    data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/ubench_datatype/"
+    execs:
+        - BE_SP_INT_ADD:
+            - args: 100
+        - BE_SP_FP_ADD:
+            - args: 100
+        - BE_DP_FP_ADD:
+            - args: 100
+        - BE_HP_FP_ADD:
+            - args: 100
+        - BE_SP_FP_MUL:
+            - args: 100
+        - BE_DP_FP_MUL:
+            - args: 100
+        - BE_HP_FP_MUL:
+            - args: 100
+
+power_ubench_function:
+    exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"
+    data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"
+    execs:
+        - BE_SP_INT_ADD:
+            - args: 100
+        - BE_SP_INT_DIV:
+            - args: 10
+        - BE_SP_INT_MUL:
+            - args: 100
+        - BE_SP_FP_ADD:
+            - args: 100
+        - BE_SP_FP_DIV:
+            - args: 10
+        - BE_SP_FP_MAD:
+            - args: 100
+        - BE_SP_FP_MUL:
+            - args: 100
+        - BE_DP_FP_ADD:
+            - args: 100
+        - BE_DP_FP_DIV:
+            - args: 10
+        - BE_DP_FP_MAD:
+            - args: 100
+        - BE_DP_FP_MUL:
+            - args: 100
+        - BE_SFU_EXP:
+            - args: 100
+        - BE_SFU_LG2:
+            - args: 100
+        - BE_SFU_SIN:
+            - args: 100
+        - BE_SFU_SQRT:
+            - args: 100
+        - TENSOR:
+            - args: 10
+        - BE_L1D_HIT:
+            - args: 100
+        - BE_L2D_HIT:
+            - args: 100
+        - BE_MEM_DRAM_Acss:
+            - args: 1
+        - BE_MEM_SHRD_Acss:
+            - args: 100
+        - BE_TEXTURE_ACCESS:
+            - args: 100
+        - BE_TEXTURE_ACCESS_2:
+            - args: 100
+            
+power_ubench_bad_mix:            
+    exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"
+    data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"
+    execs:
+        - mix10:
+            - args: 10
+        - mix11:
+            - args: 100
+        - mix12:
+            - args: 100
+        - mix13:
+            - args: 100
+        - mix14:
+            - args: 100
+        - mix15:
+            - args: 100
+        - mix16:
+            - args: 100
+        - mix17:
+            - args: 100
+        - mix18:
+            - args: 100
+        - mix19:
+            - args: 100
+        - mix20:
+            - args: 100
+        - mix5:
+            - args: 10
+        - mix6:
+            - args: 10
+        - mix7:
+            - args: 10
+        - mix8:
+            - args: 10
+        - mix9:
+            - args: 10
+            
+power_ubench_mix:
+    exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"
+    data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"
+    execs:
+        - add_mem_1:
+            - args: 10
+        - add_mem_2:
+            - args: 10
+        - mix1:
+            - args: 100
+        - mix10:
+            - args: 10
+        - mix11:
+            - args: 100
+        - mix12:
+            - args: 100
+        - mix13:
+            - args: 100
+        - mix14:
+            - args: 100
+        - mix15:
+            - args: 100
+        - mix16:
+            - args: 100
+        - mix17:
+            - args: 100
+        - mix18:
+            - args: 100
+        - mix19:
+            - args: 100
+        - mix2:
+            - args: 10
+        - mix20:
+            - args: 100
+        - mix3:
+            - args: 100
+        - mix4:
+            - args: 10
+        - mix5:
+            - args: 10
+        - mix6:
+            - args: 10
+        - mix7:
+            - args: 10
+        - mix8:
+            - args: 10
+        - mix9:
+            - args: 10
+        - mul_add_tex_1:
+            - args: 100
+        - mul_add_tex_2:
+            - args: 100
+        - mul_mem_1:
+            - args: 10
+        - mul_mem_2:
+            - args: 10
+          
 power_ubench:
     exec_dir: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"
     data_dirs: "$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks/"

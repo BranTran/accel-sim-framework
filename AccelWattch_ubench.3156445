@@ -1,0 +1,433 @@
+
+The following have been reloaded with a version change:
+  1) python/3.8-anaconda3 => python/2.7.15
+
+####START INFO####
+Host information: Node
+
+g31n14
+GPU Information: Device_ID GPU_ID
+0 GPU-848c9ac1-9174-fcca-069f-89b3e08e5083
+1 GPU-dc75d15d-f7a8-c3f5-0614-2acbc9bc6d85
+2 GPU-003fab64-7a41-3f17-b0d4-021161c809a5
+3 GPU-fcc566a8-70b3-b708-40e4-3ae61290467e
+####END   INFO####
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1167848
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1167846
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1167847
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1167852
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1167851
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1167854
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167848 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167846 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167847 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167851 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167852 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167854 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1167951
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1167975
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1167974
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168002
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168013
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168001
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167951 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167975 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1167974 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168002 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168013 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168001 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168090
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168114
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168113
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168131
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168146
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168155
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168090 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168114 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168113 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168131 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168146 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168155 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 43072.969 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42864.160 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42905.590 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 43004.328 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42839.203 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42916.773 ms
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168360
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168376
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168389
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168400
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168415
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168424
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168360 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168376 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168389 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168400 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168415 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168424 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168496
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168512
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168525
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168538
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168551
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1168562
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168496 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168512 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168525 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168538 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168551 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168562 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168630
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168646
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168659
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168672
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168685
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1168698
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168630 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168646 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168659 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168672 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168685 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168698 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 43086.086 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42854.160 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42926.578 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42867.977 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 43000.973 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42898.504 ms
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168900
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168916
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168929
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168942
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168955
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1168968
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168900 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168916 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168929 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168942 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168955 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1168968 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169034
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169050
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169063
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169076
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169089
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169102
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169034 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169050 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169063 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169076 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169089 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169102 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169170
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169186
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169199
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169212
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169225
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169238
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169170 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169186 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169199 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169212 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169225 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169238 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 43090.777 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42854.039 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42913.547 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 43017.555 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42892.535 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42913.773 ms
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Profiling concluded. Killing BE_SP_INT_ADD_2000000000 with pid: 
+Sleeping...
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Starting profiling of BE_DP_FP_ADD_2000000000
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1169439
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1169455
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1169471
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1169477
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1169494
+Sleeping...
+Profiling concluded. Killing BE_DP_FP_ADD_2000000000 with pid: 1169507
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169439 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169455 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169471 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169477 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169494 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169507 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_FP_ADD_2000000000
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169574
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169590
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169603
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169616
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169627
+Sleeping...
+Profiling concluded. Killing BE_SP_FP_ADD_2000000000 with pid: 1169642
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169574 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169590 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169603 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169616 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169627 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169642 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_HP_FP_ADD_2000000000
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169709
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169726
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169739
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169752
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169765
+Sleeping...
+Profiling concluded. Killing BE_HP_FP_ADD_2000000000 with pid: 1169778
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169709 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169726 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169739 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169752 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169765 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_ubench_power.sh: line 74: 1169778 Killed                  CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm
+Starting profiling of BE_SP_INT_ADD_2000000000
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42894.203 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42853.152 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42924.031 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 43024.957 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42913.211 ms
+Power Microbenchmarks with iterations 2000000000
+gpu execution time = 42931.570 ms
+WARNING: exiting due to 2 SIGINT's within 1 second.
+ Job step may still be running and must be managed manually with jskill
+ 

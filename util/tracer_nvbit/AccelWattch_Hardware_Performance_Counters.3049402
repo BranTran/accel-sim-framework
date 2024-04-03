@@ -1,0 +1,1199 @@
+####START INFO####
+Host information: Node
+
+h33n03
+####END   INFO####
+
+The following have been reloaded with a version change:
+  1) python/2.7.15 => python/3.8-anaconda3
+
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+0 GPU-850820f5-14ea-2ddb-517e-2a80c27bade6
+WG size of kernel 1 & 2  = 256 
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Selecting device 0
+Input File: ./data/mil.txt 
+Command File: ./data/command.txt 
+Command Buffer: 
+j 6000 3000
+k 10000
+
+
+Getting input from file ./data/mil.txt...
+Transforming data to a GPU suitable structure...
+Tree transformation took 0.260463
+Waiting for command
+> 
+******command: j count=6000, rSize=6000 
+knodes_elem=7874, knodes_unit_mem=2068, knodes_mem=16283432
+# of blocks = 6000, # of threads/block = 256 (ensure that device can handle)
+Writing results to ./traces/kernel-1.trace
+Time spent in different stages of GPU_CUDA KERNEL:
+ 0.099033996463 s,  0.736403584480 % : GPU: SET DEVICE / DRIVER INIT
+ 0.000608999981 s,  0.004528441932 % : GPU MEM: ALO
+ 0.001762000029 s,  0.013101995923 % : GPU MEM: COPY IN
+13.346459388733 s, 99.242477416992 % : GPU: KERNEL
+ 0.000067000001 s,  0.000498202979 % : GPU MEM: COPY OUT
+ 0.000402000005 s,  0.002989218105 % : GPU MEM: FRE
+Total time:
+13.448332786560 s
+> > > > > > > > > > > > 
+ ******command: k count=10000 
+records_elem=1000000, records_unit_mem=4, records_mem=4000000
+knodes_elem=7874, knodes_unit_mem=2068, knodes_mem=16283432
+# of blocks = 10000, # of threads/block = 256 (ensure that device can handle)
+Writing results to ./traces/kernel-2.trace
+Time spent in different stages of GPU_CUDA KERNEL:
+ 0.003505999921 s,  0.029745249078 % : GPU: SET DEVICE / DRIVER INIT
+ 0.000968999986 s,  0.008221091703 % : GPU MEM: ALO
+ 0.002318999963 s,  0.019674625248 % : GPU MEM: COPY IN
+11.778951644897 s, 99.933792114258 % : GPU: KERNEL
+ 0.000114000002 s,  0.000967187225 % : GPU MEM: COPY OUT
+ 0.000896000012 s,  0.007601752412 % : GPU MEM: FRE
+Total time:
+11.786755561829 s
+> > > > > > > > > > 
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/b+tree-rodinia-3.1/file___data_mil_txt_command___data_command_txt/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/b+tree-rodinia-3.1/file___data_mil_txt_command___data_command_txt/traces/kernel-2.trace
+Random number generator seed: 7
+Input layer size : 65536
+Starting training kernel
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Performing GPU computation
+Writing results to ./traces/kernel-1.trace
+Writing results to ./traces/kernel-2.trace
+Training done
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/backprop-rodinia-3.1/65536/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/backprop-rodinia-3.1/65536/traces/kernel-2.trace
+WG size of kernel = 16 X 16
+pyramidHeight: 2
+gridSize: [1024, 1024]
+border:[2, 2]
+blockGrid:[86, 86]
+targetBlock:[12, 12]
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Start computing the transient temperature
+Writing results to ./traces/kernel-1.trace
+Ending simulation
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/hotspot-rodinia-3.1/1024_2_2___data_temp_1024___data_power_1024_output_out/traces/kernel-1.trace
+
+I/O completed
+
+Number of objects: 819200
+Number of features: 34
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
+run.sh: line 2: 920141 Aborted                 (core dumped) CUDA_INJECTION64_PATH=/gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/util/tracer_nvbit/tracer_tool/tracer_tool.so /gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_benchmarks/validation/kmeans-rodinia-3.1 -o -i ./data/819200.txt
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/kmeans-rodinia-3.1/_o__i___data_819200_txt/traces/kernel-1.trace
+The file was not opened for reading
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+    EXCLUDE_PRED_OFF = 1 - Exclude predicated off instruction from count
+DYNAMIC_KERNEL_LIMIT_END = 0 - Limit of the number kernel to be printed, 0 means no limit
+DYNAMIC_KERNEL_LIMIT_START = 0 - start to report kernel from this kernel id, 0 means starts from the begging, i.e. first kernel
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TOOL_COMPRESS = 1 - Enable traces compression
+     TOOL_TRACE_CORE = 0 - write the core id in the traces
+----------------------------------------------------------------------------------------------------
+Writing results to ./traces/kernel-1.trace
+Writing results to ./traces/kernel-2.trace
+Writing results to ./traces/kernel-3.trace
+Writing results to ./traces/kernel-4.trace
+Writing results to ./traces/kernel-5.trace
+Writing results to ./traces/kernel-6.trace
+Writing results to ./traces/kernel-7.trace
+Writing results to ./traces/kernel-8.trace
+Writing results to ./traces/kernel-9.trace
+Writing results to ./traces/kernel-10.trace
+Writing results to ./traces/kernel-11.trace
+Writing results to ./traces/kernel-12.trace
+Writing results to ./traces/kernel-13.trace
+Writing results to ./traces/kernel-14.trace
+Writing results to ./traces/kernel-15.trace
+Writing results to ./traces/kernel-16.trace
+Writing results to ./traces/kernel-17.trace
+Writing results to ./traces/kernel-18.trace
+Writing results to ./traces/kernel-19.trace
+Writing results to ./traces/kernel-20.trace
+Writing results to ./traces/kernel-21.trace
+Writing results to ./traces/kernel-22.trace
+Writing results to ./traces/kernel-23.trace
+Writing results to ./traces/kernel-24.trace
+Writing results to ./traces/kernel-25.trace
+Writing results to ./traces/kernel-26.trace
+Writing results to ./traces/kernel-27.trace
+Writing results to ./traces/kernel-28.trace
+Writing results to ./traces/kernel-29.trace
+Writing results to ./traces/kernel-30.trace
+Writing results to ./traces/kernel-31.trace
+Writing results to ./traces/kernel-32.trace
+Writing results to ./traces/kernel-33.trace
+Writing results to ./traces/kernel-34.trace
+Writing results to ./traces/kernel-35.trace
+Writing results to ./traces/kernel-36.trace
+Writing results to ./traces/kernel-37.trace
+Writing results to ./traces/kernel-38.trace
+Writing results to ./traces/kernel-39.trace
+Writing results to ./traces/kernel-40.trace
+Writing results to ./traces/kernel-41.trace
+Writing results to ./traces/kernel-42.trace
+Writing results to ./traces/kernel-43.trace
+Writing results to ./traces/kernel-44.trace
+Writing results to ./traces/kernel-45.trace
+Writing results to ./traces/kernel-46.trace
+Writing results to ./traces/kernel-47.trace
+Writing results to ./traces/kernel-48.trace
+Writing results to ./traces/kernel-49.trace
+Writing results to ./traces/kernel-50.trace
+Writing results to ./traces/kernel-51.trace
+Writing results to ./traces/kernel-52.trace
+Writing results to ./traces/kernel-53.trace
+Writing results to ./traces/kernel-54.trace
+Writing results to ./traces/kernel-55.trace
+Writing results to ./traces/kernel-56.trace
+Writing results to ./traces/kernel-57.trace
+Writing results to ./traces/kernel-58.trace
+Writing results to ./traces/kernel-59.trace
+Writing results to ./traces/kernel-60.trace
+Writing results to ./traces/kernel-61.trace
+Writing results to ./traces/kernel-62.trace
+Writing results to ./traces/kernel-63.trace
+Writing results to ./traces/kernel-64.trace
+Writing results to ./traces/kernel-65.trace
+Writing results to ./traces/kernel-66.trace
+Writing results to ./traces/kernel-67.trace
+Writing results to ./traces/kernel-68.trace
+Writing results to ./traces/kernel-69.trace
+Writing results to ./traces/kernel-70.trace
+Writing results to ./traces/kernel-71.trace
+Writing results to ./traces/kernel-72.trace
+Writing results to ./traces/kernel-73.trace
+Writing results to ./traces/kernel-74.trace
+Writing results to ./traces/kernel-75.trace
+Writing results to ./traces/kernel-76.trace
+Writing results to ./traces/kernel-77.trace
+Writing results to ./traces/kernel-78.trace
+Writing results to ./traces/kernel-79.trace
+Writing results to ./traces/kernel-80.trace
+Writing results to ./traces/kernel-81.trace
+Writing results to ./traces/kernel-82.trace
+Writing results to ./traces/kernel-83.trace
+Writing results to ./traces/kernel-84.trace
+Writing results to ./traces/kernel-85.trace
+Writing results to ./traces/kernel-86.trace
+Writing results to ./traces/kernel-87.trace
+Writing results to ./traces/kernel-88.trace
+Writing results to ./traces/kernel-89.trace
+Writing results to ./traces/kernel-90.trace
+Writing results to ./traces/kernel-91.trace
+Writing results to ./traces/kernel-92.trace
+Writing results to ./traces/kernel-93.trace
+Writing results to ./traces/kernel-94.trace
+Writing results to ./traces/kernel-95.trace
+Writing results to ./traces/kernel-96.trace
+Writing results to ./traces/kernel-97.trace
+Writing results to ./traces/kernel-98.trace
+Writing results to ./traces/kernel-99.trace
+Writing results to ./traces/kernel-100.trace
+Writing results to ./traces/kernel-101.trace
+Writing results to ./traces/kernel-102.trace
+Writing results to ./traces/kernel-103.trace
+Writing results to ./traces/kernel-104.trace
+Writing results to ./traces/kernel-105.trace
+Writing results to ./traces/kernel-106.trace
+Writing results to ./traces/kernel-107.trace
+Writing results to ./traces/kernel-108.trace
+Writing results to ./traces/kernel-109.trace
+Writing results to ./traces/kernel-110.trace
+Writing results to ./traces/kernel-111.trace
+Writing results to ./traces/kernel-112.trace
+Writing results to ./traces/kernel-113.trace
+Writing results to ./traces/kernel-114.trace
+Writing results to ./traces/kernel-115.trace
+Writing results to ./traces/kernel-116.trace
+Writing results to ./traces/kernel-117.trace
+Writing results to ./traces/kernel-118.trace
+Writing results to ./traces/kernel-119.trace
+Writing results to ./traces/kernel-120.trace
+Writing results to ./traces/kernel-121.trace
+Writing results to ./traces/kernel-122.trace
+Writing results to ./traces/kernel-123.trace
+Writing results to ./traces/kernel-124.trace
+Writing results to ./traces/kernel-125.trace
+Writing results to ./traces/kernel-126.trace
+Writing results to ./traces/kernel-127.trace
+Writing results to ./traces/kernel-128.trace
+Writing results to ./traces/kernel-129.trace
+Writing results to ./traces/kernel-130.trace
+Writing results to ./traces/kernel-131.trace
+Writing results to ./traces/kernel-132.trace
+Writing results to ./traces/kernel-133.trace
+Writing results to ./traces/kernel-134.trace
+Writing results to ./traces/kernel-135.trace
+Writing results to ./traces/kernel-136.trace
+Writing results to ./traces/kernel-137.trace
+Writing results to ./traces/kernel-138.trace
+Writing results to ./traces/kernel-139.trace
+Writing results to ./traces/kernel-140.trace
+Writing results to ./traces/kernel-141.trace
+Writing results to ./traces/kernel-142.trace
+Writing results to ./traces/kernel-143.trace
+Writing results to ./traces/kernel-144.trace
+Writing results to ./traces/kernel-145.trace
+Writing results to ./traces/kernel-146.trace
+Writing results to ./traces/kernel-147.trace
+Writing results to ./traces/kernel-148.trace
+Writing results to ./traces/kernel-149.trace
+Writing results to ./traces/kernel-150.trace
+Writing results to ./traces/kernel-151.trace
+Writing results to ./traces/kernel-152.trace
+Writing results to ./traces/kernel-153.trace
+Writing results to ./traces/kernel-154.trace
+Writing results to ./traces/kernel-155.trace
+Writing results to ./traces/kernel-156.trace
+Writing results to ./traces/kernel-157.trace
+Writing results to ./traces/kernel-158.trace
+Writing results to ./traces/kernel-159.trace
+Writing results to ./traces/kernel-160.trace
+Writing results to ./traces/kernel-161.trace
+Writing results to ./traces/kernel-162.trace
+Writing results to ./traces/kernel-163.trace
+Writing results to ./traces/kernel-164.trace
+Writing results to ./traces/kernel-165.trace
+Writing results to ./traces/kernel-166.trace
+Writing results to ./traces/kernel-167.trace
+Writing results to ./traces/kernel-168.trace
+Writing results to ./traces/kernel-169.trace
+Writing results to ./traces/kernel-170.trace
+Writing results to ./traces/kernel-171.trace
+Writing results to ./traces/kernel-172.trace
+Writing results to ./traces/kernel-173.trace
+Writing results to ./traces/kernel-174.trace
+Writing results to ./traces/kernel-175.trace
+Writing results to ./traces/kernel-176.trace
+Writing results to ./traces/kernel-177.trace
+Writing results to ./traces/kernel-178.trace
+Writing results to ./traces/kernel-179.trace
+Writing results to ./traces/kernel-180.trace
+Writing results to ./traces/kernel-181.trace
+Writing results to ./traces/kernel-182.trace
+Writing results to ./traces/kernel-183.trace
+Writing results to ./traces/kernel-184.trace
+Writing results to ./traces/kernel-185.trace
+Writing results to ./traces/kernel-186.trace
+Writing results to ./traces/kernel-187.trace
+Writing results to ./traces/kernel-188.trace
+Writing results to ./traces/kernel-189.trace
+Writing results to ./traces/kernel-190.trace
+Writing results to ./traces/kernel-191.trace
+Writing results to ./traces/kernel-192.trace
+Writing results to ./traces/kernel-193.trace
+Writing results to ./traces/kernel-194.trace
+Writing results to ./traces/kernel-195.trace
+Writing results to ./traces/kernel-196.trace
+Writing results to ./traces/kernel-197.trace
+Writing results to ./traces/kernel-198.trace
+Writing results to ./traces/kernel-199.trace
+Writing results to ./traces/kernel-200.trace
+Writing results to ./traces/kernel-201.trace
+Writing results to ./traces/kernel-202.trace
+Writing results to ./traces/kernel-203.trace
+Writing results to ./traces/kernel-204.trace
+Writing results to ./traces/kernel-205.trace
+Writing results to ./traces/kernel-206.trace
+Writing results to ./traces/kernel-207.trace
+Writing results to ./traces/kernel-208.trace
+Writing results to ./traces/kernel-209.trace
+Writing results to ./traces/kernel-210.trace
+Writing results to ./traces/kernel-211.trace
+Writing results to ./traces/kernel-212.trace
+Writing results to ./traces/kernel-213.trace
+Writing results to ./traces/kernel-214.trace
+Writing results to ./traces/kernel-215.trace
+Writing results to ./traces/kernel-216.trace
+Writing results to ./traces/kernel-217.trace
+Writing results to ./traces/kernel-218.trace
+Writing results to ./traces/kernel-219.trace
+Writing results to ./traces/kernel-220.trace
+Writing results to ./traces/kernel-221.trace
+Writing results to ./traces/kernel-222.trace
+Writing results to ./traces/kernel-223.trace
+Writing results to ./traces/kernel-224.trace
+Writing results to ./traces/kernel-225.trace
+Writing results to ./traces/kernel-226.trace
+Writing results to ./traces/kernel-227.trace
+Writing results to ./traces/kernel-228.trace
+Writing results to ./traces/kernel-229.trace
+Writing results to ./traces/kernel-230.trace
+Writing results to ./traces/kernel-231.trace
+Writing results to ./traces/kernel-232.trace
+Writing results to ./traces/kernel-233.trace
+Writing results to ./traces/kernel-234.trace
+Writing results to ./traces/kernel-235.trace
+Writing results to ./traces/kernel-236.trace
+Writing results to ./traces/kernel-237.trace
+Writing results to ./traces/kernel-238.trace
+Writing results to ./traces/kernel-239.trace
+Writing results to ./traces/kernel-240.trace
+Writing results to ./traces/kernel-241.trace
+Writing results to ./traces/kernel-242.trace
+Writing results to ./traces/kernel-243.trace
+Writing results to ./traces/kernel-244.trace
+Writing results to ./traces/kernel-245.trace
+Writing results to ./traces/kernel-246.trace
+Writing results to ./traces/kernel-247.trace
+Writing results to ./traces/kernel-248.trace
+Writing results to ./traces/kernel-249.trace
+Writing results to ./traces/kernel-250.trace
+Writing results to ./traces/kernel-251.trace
+Writing results to ./traces/kernel-252.trace
+Writing results to ./traces/kernel-253.trace
+Writing results to ./traces/kernel-254.trace
+Writing results to ./traces/kernel-255.trace
+Writing results to ./traces/kernel-256.trace
+Writing results to ./traces/kernel-257.trace
+Writing results to ./traces/kernel-258.trace
+Writing results to ./traces/kernel-259.trace
+Writing results to ./traces/kernel-260.trace
+Writing results to ./traces/kernel-261.trace
+Writing results to ./traces/kernel-262.trace
+Writing results to ./traces/kernel-263.trace
+Writing results to ./traces/kernel-264.trace
+Writing results to ./traces/kernel-265.trace
+Writing results to ./traces/kernel-266.trace
+Writing results to ./traces/kernel-267.trace
+Writing results to ./traces/kernel-268.trace
+Writing results to ./traces/kernel-269.trace
+Writing results to ./traces/kernel-270.trace
+Writing results to ./traces/kernel-271.trace
+Writing results to ./traces/kernel-272.trace
+Writing results to ./traces/kernel-273.trace
+Writing results to ./traces/kernel-274.trace
+Writing results to ./traces/kernel-275.trace
+Writing results to ./traces/kernel-276.trace
+Writing results to ./traces/kernel-277.trace
+Writing results to ./traces/kernel-278.trace
+Writing results to ./traces/kernel-279.trace
+Writing results to ./traces/kernel-280.trace
+Writing results to ./traces/kernel-281.trace
+Writing results to ./traces/kernel-282.trace
+Writing results to ./traces/kernel-283.trace
+Writing results to ./traces/kernel-284.trace
+Writing results to ./traces/kernel-285.trace
+Writing results to ./traces/kernel-286.trace
+Writing results to ./traces/kernel-287.trace
+Writing results to ./traces/kernel-288.trace
+Writing results to ./traces/kernel-289.trace
+Writing results to ./traces/kernel-290.trace
+Writing results to ./traces/kernel-291.trace
+Writing results to ./traces/kernel-292.trace
+Writing results to ./traces/kernel-293.trace
+Writing results to ./traces/kernel-294.trace
+Writing results to ./traces/kernel-295.trace
+Writing results to ./traces/kernel-296.trace
+Writing results to ./traces/kernel-297.trace
+Writing results to ./traces/kernel-298.trace
+Writing results to ./traces/kernel-299.trace
+Writing results to ./traces/kernel-300.trace
+Writing results to ./traces/kernel-301.trace
+Writing results to ./traces/kernel-302.trace
+Writing results to ./traces/kernel-303.trace
+Writing results to ./traces/kernel-304.trace
+Writing results to ./traces/kernel-305.trace
+Writing results to ./traces/kernel-306.trace
+Writing results to ./traces/kernel-307.trace
+Writing results to ./traces/kernel-308.trace
+Writing results to ./traces/kernel-309.trace
+Writing results to ./traces/kernel-310.trace
+Writing results to ./traces/kernel-311.trace
+Writing results to ./traces/kernel-312.trace
+Writing results to ./traces/kernel-313.trace
+Writing results to ./traces/kernel-314.trace
+Writing results to ./traces/kernel-315.trace
+Writing results to ./traces/kernel-316.trace
+Writing results to ./traces/kernel-317.trace
+Writing results to ./traces/kernel-318.trace
+Writing results to ./traces/kernel-319.trace
+Writing results to ./traces/kernel-320.trace
+Writing results to ./traces/kernel-321.trace
+Writing results to ./traces/kernel-322.trace
+Writing results to ./traces/kernel-323.trace
+Writing results to ./traces/kernel-324.trace
+Writing results to ./traces/kernel-325.trace
+Writing results to ./traces/kernel-326.trace
+Writing results to ./traces/kernel-327.trace
+Writing results to ./traces/kernel-328.trace
+Writing results to ./traces/kernel-329.trace
+Writing results to ./traces/kernel-330.trace
+Writing results to ./traces/kernel-331.trace
+Writing results to ./traces/kernel-332.trace
+Writing results to ./traces/kernel-333.trace
+Writing results to ./traces/kernel-334.trace
+Writing results to ./traces/kernel-335.trace
+Writing results to ./traces/kernel-336.trace
+Writing results to ./traces/kernel-337.trace
+Writing results to ./traces/kernel-338.trace
+Writing results to ./traces/kernel-339.trace
+Writing results to ./traces/kernel-340.trace
+Writing results to ./traces/kernel-341.trace
+Writing results to ./traces/kernel-342.trace
+Writing results to ./traces/kernel-343.trace
+Writing results to ./traces/kernel-344.trace
+Writing results to ./traces/kernel-345.trace
+Writing results to ./traces/kernel-346.trace
+Writing results to ./traces/kernel-347.trace
+Writing results to ./traces/kernel-348.trace
+Writing results to ./traces/kernel-349.trace
+Writing results to ./traces/kernel-350.trace
+Writing results to ./traces/kernel-351.trace
+Writing results to ./traces/kernel-352.trace
+Writing results to ./traces/kernel-353.trace
+Writing results to ./traces/kernel-354.trace
+Writing results to ./traces/kernel-355.trace
+Writing results to ./traces/kernel-356.trace
+Writing results to ./traces/kernel-357.trace
+Writing results to ./traces/kernel-358.trace
+Writing results to ./traces/kernel-359.trace
+Writing results to ./traces/kernel-360.trace
+Writing results to ./traces/kernel-361.trace
+Writing results to ./traces/kernel-362.trace
+Writing results to ./traces/kernel-363.trace
+Writing results to ./traces/kernel-364.trace
+Writing results to ./traces/kernel-365.trace
+Writing results to ./traces/kernel-366.trace
+Writing results to ./traces/kernel-367.trace
+Writing results to ./traces/kernel-368.trace
+Writing results to ./traces/kernel-369.trace
+Writing results to ./traces/kernel-370.trace
+Writing results to ./traces/kernel-371.trace
+Writing results to ./traces/kernel-372.trace
+Writing results to ./traces/kernel-373.trace
+Writing results to ./traces/kernel-374.trace
+Writing results to ./traces/kernel-375.trace
+Writing results to ./traces/kernel-376.trace
+Writing results to ./traces/kernel-377.trace
+Writing results to ./traces/kernel-378.trace
+Writing results to ./traces/kernel-379.trace
+Writing results to ./traces/kernel-380.trace
+Writing results to ./traces/kernel-381.trace
+Writing results to ./traces/kernel-382.trace
+Writing results to ./traces/kernel-383.trace
+Writing results to ./traces/kernel-384.trace
+Writing results to ./traces/kernel-385.trace
+Writing results to ./traces/kernel-386.trace
+Writing results to ./traces/kernel-387.trace
+Writing results to ./traces/kernel-388.trace
+Writing results to ./traces/kernel-389.trace
+Writing results to ./traces/kernel-390.trace
+Writing results to ./traces/kernel-391.trace
+Writing results to ./traces/kernel-392.trace
+Writing results to ./traces/kernel-393.trace
+Writing results to ./traces/kernel-394.trace
+Writing results to ./traces/kernel-395.trace
+Writing results to ./traces/kernel-396.trace
+Writing results to ./traces/kernel-397.trace
+Writing results to ./traces/kernel-398.trace
+Writing results to ./traces/kernel-399.trace
+Writing results to ./traces/kernel-400.trace
+Writing results to ./traces/kernel-401.trace
+Writing results to ./traces/kernel-402.trace
+Writing results to ./traces/kernel-403.trace
+Writing results to ./traces/kernel-404.trace
+Writing results to ./traces/kernel-405.trace
+Writing results to ./traces/kernel-406.trace
+Writing results to ./traces/kernel-407.trace
+Writing results to ./traces/kernel-408.trace
+Writing results to ./traces/kernel-409.trace
+Writing results to ./traces/kernel-410.trace
+Writing results to ./traces/kernel-411.trace
+Writing results to ./traces/kernel-412.trace
+Writing results to ./traces/kernel-413.trace
+Writing results to ./traces/kernel-414.trace
+Writing results to ./traces/kernel-415.trace
+Writing results to ./traces/kernel-416.trace
+Writing results to ./traces/kernel-417.trace
+Writing results to ./traces/kernel-418.trace
+Writing results to ./traces/kernel-419.trace
+Writing results to ./traces/kernel-420.trace
+Writing results to ./traces/kernel-421.trace
+Writing results to ./traces/kernel-422.trace
+Writing results to ./traces/kernel-423.trace
+Writing results to ./traces/kernel-424.trace
+Writing results to ./traces/kernel-425.trace
+Writing results to ./traces/kernel-426.trace
+Writing results to ./traces/kernel-427.trace
+Writing results to ./traces/kernel-428.trace
+Writing results to ./traces/kernel-429.trace
+Writing results to ./traces/kernel-430.trace
+Writing results to ./traces/kernel-431.trace
+Writing results to ./traces/kernel-432.trace
+Writing results to ./traces/kernel-433.trace
+Writing results to ./traces/kernel-434.trace
+Writing results to ./traces/kernel-435.trace
+Writing results to ./traces/kernel-436.trace
+Writing results to ./traces/kernel-437.trace
+Writing results to ./traces/kernel-438.trace
+Writing results to ./traces/kernel-439.trace
+Writing results to ./traces/kernel-440.trace
+Writing results to ./traces/kernel-441.trace
+Writing results to ./traces/kernel-442.trace
+Writing results to ./traces/kernel-443.trace
+Writing results to ./traces/kernel-444.trace
+Writing results to ./traces/kernel-445.trace
+Writing results to ./traces/kernel-446.trace
+Writing results to ./traces/kernel-447.trace
+Writing results to ./traces/kernel-448.trace
+Writing results to ./traces/kernel-449.trace
+Writing results to ./traces/kernel-450.trace
+Writing results to ./traces/kernel-451.trace
+Writing results to ./traces/kernel-452.trace
+Writing results to ./traces/kernel-453.trace
+Writing results to ./traces/kernel-454.trace
+Writing results to ./traces/kernel-455.trace
+Writing results to ./traces/kernel-456.trace
+Writing results to ./traces/kernel-457.trace
+Writing results to ./traces/kernel-458.trace
+Writing results to ./traces/kernel-459.trace
+Writing results to ./traces/kernel-460.trace
+Writing results to ./traces/kernel-461.trace
+Writing results to ./traces/kernel-462.trace
+Writing results to ./traces/kernel-463.trace
+Writing results to ./traces/kernel-464.trace
+Writing results to ./traces/kernel-465.trace
+Writing results to ./traces/kernel-466.trace
+Writing results to ./traces/kernel-467.trace
+Writing results to ./traces/kernel-468.trace
+Writing results to ./traces/kernel-469.trace
+Writing results to ./traces/kernel-470.trace
+Writing results to ./traces/kernel-471.trace
+Writing results to ./traces/kernel-472.trace
+Writing results to ./traces/kernel-473.trace
+Writing results to ./traces/kernel-474.trace
+Writing results to ./traces/kernel-475.trace
+Writing results to ./traces/kernel-476.trace
+Writing results to ./traces/kernel-477.trace
+Writing results to ./traces/kernel-478.trace
+Writing results to ./traces/kernel-479.trace
+Writing results to ./traces/kernel-480.trace
+Writing results to ./traces/kernel-481.trace
+Writing results to ./traces/kernel-482.trace
+Writing results to ./traces/kernel-483.trace
+Writing results to ./traces/kernel-484.trace
+Writing results to ./traces/kernel-485.trace
+Writing results to ./traces/kernel-486.trace
+Writing results to ./traces/kernel-487.trace
+Writing results to ./traces/kernel-488.trace
+Writing results to ./traces/kernel-489.trace
+Writing results to ./traces/kernel-490.trace
+Writing results to ./traces/kernel-491.trace
+Writing results to ./traces/kernel-492.trace
+Writing results to ./traces/kernel-493.trace
+Writing results to ./traces/kernel-494.trace
+Writing results to ./traces/kernel-495.trace
+Writing results to ./traces/kernel-496.trace
+Writing results to ./traces/kernel-497.trace
+Writing results to ./traces/kernel-498.trace
+Writing results to ./traces/kernel-499.trace
+Writing results to ./traces/kernel-500.trace
+Writing results to ./traces/kernel-501.trace
+Writing results to ./traces/kernel-502.trace
+Time spent in different stages of the application:
+ 0.000000000000 s,  0.000000000000 % : SETUP VARIABLES
+ 0.000013000000 s,  0.000002145685 % : READ COMMAND LINE PARAMETERS
+ 0.000040999999 s,  0.000006767160 % : READ IMAGE FROM FILE
+ 0.000467000005 s,  0.000077079610 % : RESIZE IMAGE
+ 0.151125997305 s,  0.024943752214 % : GPU DRIVER INIT, CPU/GPU SETUP, MEMORY ALLOCATION
+ 0.000111000001 s,  0.000018320849 % : COPY DATA TO CPU->GPU
+ 0.803659975529 s,  0.132646247745 % : EXTRACT IMAGE
+604.285034179688 s, 99.738868713379 % : COMPUTE
+ 0.603644013405 s,  0.099633060396 % : COMPRESS IMAGE
+ 0.000239000001 s,  0.000039447594 % : COPY DATA TO GPU->CPU
+ 0.021727999672 s,  0.003586265026 % : SAVE IMAGE INTO FILE
+ 0.001086000004 s,  0.000179247218 % : FREE MEMORY
+Total time:
+605.867126464844 s
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-1.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-2.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-3.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-4.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-5.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-6.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-7.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-8.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-9.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-10.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-11.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-12.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-13.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-14.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-15.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-16.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-17.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-18.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-19.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-20.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-21.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-22.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-23.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-24.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-25.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-26.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-27.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-28.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-29.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-30.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-31.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-32.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-33.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-34.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-35.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-36.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-37.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-38.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-39.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-40.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-41.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-42.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-43.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-44.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-45.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-46.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-47.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-48.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-49.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-50.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-51.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-52.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-53.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-54.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-55.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-56.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-57.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-58.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-59.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-60.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-61.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-62.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-63.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-64.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-65.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-66.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-67.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-68.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-69.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-70.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-71.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-72.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-73.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-74.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-75.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-76.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-77.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-78.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-79.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-80.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-81.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-82.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-83.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-84.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-85.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-86.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-87.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-88.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-89.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-90.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-91.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-92.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-93.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-94.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-95.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-96.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-97.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-98.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-99.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-100.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-101.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-102.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-103.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-104.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-105.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-106.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-107.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-108.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-109.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-110.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-111.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-112.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-113.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-114.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-115.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-116.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-117.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-118.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-119.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-120.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-121.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-122.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-123.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-124.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-125.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-126.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-127.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-128.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-129.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-130.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-131.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-132.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-133.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-134.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-135.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-136.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-137.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-138.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-139.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-140.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-141.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-142.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-143.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-144.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-145.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-146.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-147.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-148.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-149.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-150.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-151.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-152.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-153.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-154.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-155.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-156.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-157.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-158.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-159.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-160.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-161.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-162.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-163.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-164.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-165.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-166.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-167.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-168.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-169.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-170.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-171.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-172.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-173.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-174.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-175.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-176.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-177.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-178.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-179.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-180.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-181.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-182.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-183.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-184.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-185.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-186.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-187.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-188.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-189.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-190.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-191.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-192.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-193.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-194.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-195.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-196.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-197.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-198.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-199.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-200.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-201.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-202.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-203.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-204.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-205.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-206.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-207.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-208.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-209.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-210.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-211.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-212.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-213.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-214.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-215.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-216.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-217.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-218.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-219.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-220.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-221.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-222.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-223.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-224.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-225.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-226.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-227.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-228.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-229.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-230.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-231.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-232.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-233.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-234.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-235.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-236.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-237.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-238.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-239.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-240.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-241.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-242.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-243.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-244.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-245.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-246.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-247.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-248.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-249.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-250.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-251.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-252.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-253.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-254.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-255.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-256.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-257.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-258.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-259.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-260.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-261.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-262.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-263.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-264.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-265.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-266.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-267.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-268.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-269.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-270.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-271.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-272.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-273.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-274.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-275.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-276.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-277.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-278.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-279.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-280.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-281.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-282.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-283.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-284.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-285.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-286.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-287.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-288.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-289.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-290.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-291.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-292.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-293.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-294.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-295.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-296.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-297.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-298.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-299.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-300.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-301.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-302.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-303.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-304.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-305.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-306.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-307.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-308.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-309.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-310.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-311.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-312.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-313.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-314.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-315.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-316.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-317.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-318.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-319.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-320.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-321.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-322.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-323.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-324.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-325.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-326.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-327.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-328.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-329.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-330.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-331.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-332.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-333.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-334.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-335.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-336.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-337.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-338.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-339.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-340.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-341.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-342.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-343.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-344.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-345.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-346.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-347.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-348.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-349.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-350.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-351.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-352.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-353.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-354.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-355.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-356.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-357.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-358.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-359.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-360.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-361.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-362.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-363.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-364.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-365.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-366.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-367.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-368.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-369.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-370.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-371.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-372.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-373.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-374.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-375.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-376.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-377.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-378.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-379.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-380.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-381.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-382.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-383.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-384.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-385.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-386.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-387.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-388.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-389.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-390.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-391.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-392.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-393.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-394.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-395.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-396.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-397.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-398.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-399.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-400.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-401.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-402.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-403.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-404.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-405.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-406.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-407.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-408.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-409.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-410.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-411.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-412.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-413.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-414.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-415.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-416.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-417.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-418.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-419.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-420.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-421.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-422.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-423.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-424.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-425.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-426.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-427.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-428.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-429.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-430.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-431.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-432.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-433.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-434.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-435.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-436.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-437.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-438.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-439.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-440.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-441.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-442.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-443.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-444.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-445.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-446.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-447.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-448.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-449.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-450.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-451.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-452.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-453.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-454.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-455.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-456.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-457.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-458.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-459.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-460.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-461.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-462.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-463.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-464.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-465.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-466.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-467.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-468.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-469.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-470.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-471.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-472.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-473.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-474.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-475.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-476.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-477.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-478.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-479.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-480.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-481.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-482.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-483.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-484.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-485.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-486.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-487.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-488.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-489.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-490.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-491.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-492.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-493.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-494.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-495.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-496.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-497.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-498.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-499.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-500.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-501.trace
+Processing file /gpfs/alpine/gen150/scratch/brantran/accelwattch-artifact-appendix/accel-sim-framework/hw_run/traces/device-0/11.0/srad_v1-rodinia-3.1/100_0_5_502_458/traces/kernel-502.trace
+Running b+tree-rodinia-3.1
+Running backprop-rodinia-3.1
+Running hotspot-rodinia-3.1
+Running kmeans-rodinia-3.1
+Running srad_v1-rodinia-3.1

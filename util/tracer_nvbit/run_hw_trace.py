@@ -23,6 +23,9 @@ parser.add_option("-B", "--benchmark_list", dest="benchmark_list",
                  help="a comma seperated list of benchmark suites to run. See apps/define-*.yml for " +\
                        "the benchmark suite names.",
                  default="rodinia_2.0-ft")
+parser.add_option("-d", "--trace_directory_name", dest='trace_directory_name', 
+                 help="the name of the directory inside of hw_runs that we are writing to",
+                 default="traces")
 parser.add_option("-D", "--device_num", dest="device_num",
                  help="CUDA device number",
                  default="0")
@@ -32,6 +35,10 @@ parser.add_option("-l", "--limit_kernel_number", dest='kernel_number', default=-
                         "number of traced limits")
 parser.add_option("-t", "--terminate_upon_limit", dest='terminate_upon_limit', action="store_true", help="Once the kernel limit is " +\
                         "reached, terminate the tracing process")
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e02543 (Update Summit repo things April 3rd)
 
 (options, args) = parser.parse_args()
 
@@ -54,7 +61,7 @@ for bench in benchmarks:
         args = argpair["args"]
         run_name = os.path.join( exe, common.get_argfoldername( args ) )
         this_run_dir = os.path.abspath(os.path.expandvars(
-            os.path.join(this_directory, "..", "..", "hw_run","traces","device-" + options.device_num, cuda_version, run_name)))
+            os.path.join(this_directory, "..", "..", "hw_run",options.trace_directory_name,"device-" + options.device_num, cuda_version, run_name)))
         this_trace_folder = os.path.join(this_run_dir, "traces")
         if not os.path.exists(this_run_dir):
             os.makedirs(this_run_dir)

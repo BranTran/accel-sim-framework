@@ -49,9 +49,9 @@ for benchmark in ubenchmarks :
 	samples = []
 	mean = 0
 	for each in x:
-		if ((float(each)) == 0): #ignore erronous datapoint- 0Watts
-			continue
-	 	samples.append(float(each))
+            if ((float(each)) == 0): #ignore erronous datapoint- 0Watts
+                continue
+            samples.append(float(each))
 	datapoints = numpy.array(samples)
 	power_dict[benchmark] = collections.OrderedDict()
 

@@ -34,6 +34,9 @@ TITANV_OLD:
 QV100:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM7_QV100/gpgpusim.config"
 
+Tesla_V100:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/Tesla_V100-SXM2-16GB/gpgpusim.config"
+
 QV100_64SM:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM7_QV100_SMs/gpgpusim.config"
 
@@ -164,7 +167,8 @@ PTXPLUS_SM6:
 Accelwattch_SASS_SIM:
     extra_params: "-power_simulation_enabled 1
     \n-power_simulation_mode 0
-    \n-accelwattch_xml_file accelwattch_sass_sim.xml"
+    \n-accelwattch_xml_file accelwattch_sass_sim.xml
+    \n-power_per_cycle_dump 1"
 
 Accelwattch_SASS_HW:
     extra_params: "-power_simulation_enabled 1

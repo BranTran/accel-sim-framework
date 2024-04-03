@@ -59,21 +59,32 @@ std::vector<std::string> inst_trace_t::get_opcode_tokens() const {
   return opcode_tokens;
 }
 
-unsigned inst_trace_t::get_datawidth_from_opcode(
-    const std::vector<std::string> &opcode) const {
+unsigned inst_trace_t::get_datawidth_from_opcode(const std::vector<std::string> &opcode) const {
   for (unsigned i = 0; i < opcode.size(); ++i) {
+    std::cout << "Checking opcode[" << i << "]: " << opcode[i] << std::endl;
+
     if (is_number(opcode[i])) {
-      return (std::stoi(opcode[i], NULL) / 8);
+      unsigned datawidth = std::stoi(opcode[i], nullptr) / 8;
+      std::cout << "Found number. Datawidth: " << datawidth << std::endl;
+      return datawidth;
     } else if (opcode[i][0] == 'U' && is_number(opcode[i].substr(1))) {
-      // handle the U* case
+      std::cout << "Found U* case. Opcode: " << opcode[i] << std::endl;
       unsigned bits;
       sscanf(opcode[i].c_str(), "U%u", &bits);
-      return bits / 8;
+      unsigned datawidth = bits / 8;
+      std::cout << "Datawidth: " << datawidth << std::endl;
+      return datawidth;
     }
   }
 
+<<<<<<< HEAD
   return 4;  // default is 4 bytes
+=======
+  std::cout << "No matching opcode found. Default datawidth: 4" << std::endl;
+  return 4; // default is 4 bytes
+>>>>>>> 7e02543 (Update Summit repo things April 3rd)
 }
+
 
 kernel_trace_t::kernel_trace_t() {
   kernel_name = "Empty";

@@ -1,0 +1,343 @@
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+RUNNING POWER/TEMP DUMP WITH ONLY SLEEPS
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2006631
+Temperature is currently 45 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006631 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 31 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2006687
+Temperature is currently 40 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006687 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2006752
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006752 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2006773
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006773 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 31 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2006831
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006831 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2006888
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006888 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2006909
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006909 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2006964
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2006964 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2007020
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2007020 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2007043
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2007043 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2007099
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2007099 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2007153
+Temperature is currently 41 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2007153 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2007174
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2007174 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2007231
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2007231 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2007288
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 131: 2007288 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUPS AND SLEEPS
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2007309
+Temperature is currently 43 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007309 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2007368
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007368 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2007424
+Temperature is currently 41 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007424 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2007482
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007482 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2007539
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007539 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2007595
+Temperature is currently 41 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007595 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2007653
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007653 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2007711
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007711 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2007768
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007768 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2007791
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007791 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2007847
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007847 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2007905
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007905 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2007960
+Temperature is currently 44 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2007960 Killed                  ${!bm_name} > /dev/null
+Starting execution of backprop_k2 
+Temperature is currently 30 C
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2008018
+Temperature is currently 39 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2008018 Killed                  ${!bm_name} > /dev/null
+Starting execution of binomialOptions_k1 
+Temperature is currently 30 C
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2008076
+Temperature is currently 42 C
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 163: 2008076 Killed                  ${!bm_name} > /dev/null
+
+
+
+RUNNING POWER/TEMP DUMP WITH WARMUP NO SLEEP
+Starting execution of backprop_k1 
+Temperature is currently 30 C
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2008134
+Temperature is currently 44 C
+Sleeping...
+Starting execution of backprop_k2 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008134 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2008152
+Temperature is currently 40 C
+Sleeping...
+Starting execution of binomialOptions_k1 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008152 Killed                  ${!bm_name} > /dev/null
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2008206
+Temperature is currently 42 C
+Sleeping...
+Starting execution of backprop_k1 
+Temperature is currently 41 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008206 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2008261
+Temperature is currently 45 C
+Sleeping...
+Starting execution of backprop_k2 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008261 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2008283
+Temperature is currently 39 C
+Sleeping...
+Starting execution of binomialOptions_k1 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008283 Killed                  ${!bm_name} > /dev/null
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2008338
+Temperature is currently 43 C
+Sleeping...
+Starting execution of backprop_k1 
+Temperature is currently 42 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008338 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2008384
+Temperature is currently 44 C
+Sleeping...
+Starting execution of backprop_k2 
+Temperature is currently 44 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008384 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2008405
+Temperature is currently 39 C
+Sleeping...
+Starting execution of binomialOptions_k1 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008405 Killed                  ${!bm_name} > /dev/null
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2008461
+Temperature is currently 42 C
+Sleeping...
+Starting execution of backprop_k1 
+Temperature is currently 41 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008461 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2008516
+Temperature is currently 45 C
+Sleeping...
+Starting execution of backprop_k2 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008516 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2008537
+Temperature is currently 39 C
+Sleeping...
+Starting execution of binomialOptions_k1 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008537 Killed                  ${!bm_name} > /dev/null
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2008594
+Temperature is currently 42 C
+Sleeping...
+Starting execution of backprop_k1 
+Temperature is currently 42 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008594 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 2008652
+Temperature is currently 45 C
+Sleeping...
+Starting execution of backprop_k2 
+Temperature is currently 43 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008652 Killed                  ${!bm_name} > /dev/null
+Starting profiling of backprop_k2 
+Profiling concluded. Killing backprop_k2 with pid: 2008675
+Temperature is currently 39 C
+Sleeping...
+Starting execution of binomialOptions_k1 
+Temperature is currently 39 C
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/profile_temp_power.sh: line 194: 2008675 Killed                  ${!bm_name} > /dev/null
+Starting profiling of binomialOptions_k1 
+Profiling concluded. Killing binomialOptions_k1 with pid: 2008729
+Temperature is currently 41 C
+Sleeping...

@@ -1,0 +1,496 @@
+
+Lmod is automatically replacing "xl/16.1.1-10" with "gcc/7.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/10.4.0.3-20210112
+
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix
+WARNING ** source setup_environment must be run in a bash, zsh or sh shell; see README
+GPGPU-Sim version 4.0.0 (build gpgpu-sim_git-commit-66ae8815dd1a9cd5fcc0e08332ebca323c356863-modified_600.0) configured with AccelWattch.
+
+----------------------------------------------------------------------------
+INFO - If you only care about PTX execution, ignore this message. GPGPU-Sim supports PTX execution in modern CUDA.
+If you want to run PTXPLUS (sm_1x SASS) with a modern card configuration - set the envronment variable
+$PTXAS_CUDA_INSTALL_PATH to point a CUDA version compabible with your card configurations (i.e. 8+ for PASCAL, 9+ for VOLTA etc..)
+For example: "export $PTXAS_CUDA_INSTALL_PATH=/usr/local/cuda-9.1"
+
+The following text describes why:
+If you are using PTXPLUS, only sm_1x is supported and it requires that the app and simulator binaries are compiled in CUDA 4.2 or less.
+The simulator requires it since CUDA headers desribe struct sizes in the exec which change from gen to gen.
+The apps require 4.2 because new versions of CUDA tools have dropped parsing support for generating sm_1x
+When running using modern config (i.e. volta) and PTXPLUS with CUDA 4.2, the $PTXAS_CUDA_INSTALL_PATH env variable is required to get proper register usage
+(and hence occupancy) using a version of CUDA that knows the register usage on the real card.
+
+----------------------------------------------------------------------------
+setup_environment succeeded
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator
+Starting profiling of backprop_k1 
+Profiling concluded. Killing backprop_k1 with pid: 297996
+Sleeping...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../util/accelwattch/accelwattch_hw_profiler/profile_validation_power.sh: line 116: 297996 Killed                  ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt
+Starting profiling of backprop_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing backprop_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing backprop_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of binomialOptions_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/binomialOptions_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+cat: /gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_hw_profiler/validation_profile_output/binomialOptions_k1.txt: No such file or directory
+Sleeping...
+Starting profiling of btree_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing btree_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing btree_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing btree_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing btree_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cudaTensorCoreGemm_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cudaTensorCoreGemm_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cudaTensorCoreGemm_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of dct8x8_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of dct8x8_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k1 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k3 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k3: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k3 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k3: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k3 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of histogram_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/histogram_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing histogram_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/histogram_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing histogram_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of hotspot_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/hotspot_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing hotspot_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/hotspot_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing hotspot_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of kmeans_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/kmeans_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing kmeans_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/kmeans_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing kmeans_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of mergeSort_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/mergeSort_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing mergeSort_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/mergeSort_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing mergeSort_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of mergeSort_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/mergeSort_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing mergeSort_k2 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/mergeSort_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing mergeSort_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_mriq_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/parboil_mriq_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/parboil_mriq_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing parboil_mriq_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_sad_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/parboil_sad_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing parboil_sad_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/parboil_sad_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing parboil_sad_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of parboil_sgemm_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/parboil_sgemm_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/parboil_sgemm_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing parboil_sgemm_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of pathfinder_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/pathfinder_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing pathfinder_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/pathfinder_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing pathfinder_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of quasirandomGenerator_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/quasirandomGenerator_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/quasirandomGenerator_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing quasirandomGenerator_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of quasirandomGenerator_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/quasirandomGenerator_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/quasirandomGenerator_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing quasirandomGenerator_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of sobolQRNG_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/sobolQRNG_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing sobolQRNG_k1 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/sobolQRNG_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing sobolQRNG_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of srad_v1_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/srad_v1_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing srad_v1_k1 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/srad_v1_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing srad_v1_k1 with pid: 
+Sleeping...
+Starting profiling of backprop_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing backprop_k1 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing backprop_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of backprop_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing backprop_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing backprop_k2 with pid: 
+Sleeping...
+Starting profiling of binomialOptions_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/binomialOptions_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/binomialOptions_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing binomialOptions_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing btree_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing btree_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of btree_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing btree_k2 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/btree_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing btree_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cudaTensorCoreGemm_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cudaTensorCoreGemm_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cudaTensorCoreGemm_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cudaTensorCoreGemm_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of dct8x8_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of dct8x8_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/dct8x8_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing dct8x8_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of cutlass_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing cutlass_k2 with pid: 
+Sleeping...
+Starting profiling of cutlass_k3 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k3: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k3 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/cutlass_perf_test_k3: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing cutlass_k3 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing fastWalshTransform_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of fastWalshTransform_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/fastWalshTransform_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing fastWalshTransform_k2 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of histogram_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/histogram_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing histogram_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/histogram_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing histogram_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of hotspot_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/hotspot_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing hotspot_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/hotspot_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing hotspot_k1 with pid: 
+Sleeping...
+Starting profiling of kmeans_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/kmeans_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing kmeans_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/kmeans_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Profiling concluded. Killing kmeans_k1 with pid: 
+Sleeping...
+Starting profiling of mergeSort_k1 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/mergeSort_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing mergeSort_k1 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/mergeSort_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing mergeSort_k1 with pid: 
+Sleeping...
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Starting profiling of mergeSort_k2 
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/mergeSort_k2: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Profiling concluded. Killing mergeSort_k2 with pid: 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Heating up the GPU to >65C and rerunning kernel...
+/gpfs/alpine/scratch/brantran/gen150/accelwattch-artifact-appendix/accel-sim-framework/gpu-simulator/../accelwattch_benchmarks/validation/backprop_k1: error while loading shared libraries: libcudart.so.11.0: cannot open shared object file: No such file or directory
+User defined signal 2
+ERROR:  One or more process (first noticed rank 0) terminated with signal 12
