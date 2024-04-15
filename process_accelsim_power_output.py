@@ -55,11 +55,19 @@ def process_files(input_dir):
     with Pool() as pool:
         pool.map(process_file, files)
                 
-                
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python process_accelsim_power_output.py <input_directory>")
+def main():
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print("Usage: python process_accelsim_power_output.py <input_directory> [input_file]")
         sys.exit(1)
-
     input_dir = sys.argv[1]
-    process_accelsim_power_output(input_dir, output_file)
+
+    if len(sys.argv) == 3:
+        file = sys.argv[2]
+        process_file(os.path.join(input_dir,file))
+    else:
+        process_files(input_dir)
+
+        
+
+if __name__ == "__main__":
+    main()
