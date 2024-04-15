@@ -4,6 +4,9 @@ import sys
 from multiprocessing import Pool
 
 def process_file(input_file):
+    if not input_file.endswith('.out') or 'accelsim' not in input_file:
+        print(f"Input file is not an accelsim output file: {input_file}")
+        return
     found_mcpat = False
     found_proc = False
     processor_info = []
@@ -42,6 +45,8 @@ def process_file(input_file):
                     metric, value = line.strip().split('=')
                     metric = metric.strip()  # Remove leading and trailing spaces
                     value = value.strip()    # Remove leading and trailing spaces
+                    if value.endswith(' mm^2') or value.endswith(' W'):
+                        value = value.replace(' mm^2','').replace(' W','')
                     if metric in power_metrics:
                         processor_info.append(value)
                 elif found_mcpat and found_proc:
