@@ -19,7 +19,7 @@ fi
 
 # Execute the loop
 for file in $(ls ${target_directory}); do
-    srun -n 1 -N 1 -c 1 --exclusive python aggregate_profiler_info.py $target_directory $file &
+    srun -n 1 -N 1 -c 1 --exclusive python process_accelsim_power_output.py $target_directory $file &
 done
 
 # Wait for all background processes to finish
