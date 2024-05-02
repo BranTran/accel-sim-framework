@@ -35,7 +35,8 @@ if [ "$GPGPUSIM_SETUP_ENVIRONMENT_WAS_RUN" != "1" ]; then
 fi
 
 rate=100
-samples=900
+temp=65
+samples=600
 sleep_time=30
 
 if [ "${1}" == "" ]; then
@@ -43,48 +44,35 @@ if [ "${1}" == "" ]; then
     exit 1
 fi
 DEVID=${1}
-UUID_list=(`nvidia-smi -L | awk '{print $NF}' | tr -d '[)]'`)
-GPU_UUID=${UUID_list[${DEVID}]}
 
-<<<<<<< HEAD:util/accelwattch/accelwattch_hw_profiler/profile_ubench_power.sh
-SCRIPT_DIR=$ACCELSIM_ROOT/../util/accelwattch/accelwattch_hw_profiler
-BINDIR="$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks"
+SCRIPT_DIR=$ACCELSIM_ROOT/../accelwattch_hw_profiler
+BINDIR="$ACCELSIM_ROOT/../accelwattch_benchmarks/microbenchmarks"
 PROFILER="$SCRIPT_DIR/measureGpuPower"
 UBENCH_FILE="$SCRIPT_DIR/ubench.cfg"
 
-if [ -d $ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/microbenchmarks ]; then
-	cd $ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks
+if [ -d $ACCELSIM_ROOT/../accelwattch_benchmarks/microbenchmarks ]; then
+	cd $ACCELSIM_ROOT/../accelwattch_benchmarks
     ./extract_binaries.sh
-=======
-SCRIPT_DIR=$ACCELSIM_ROOT/../accelwattch_hw_profiler
-BINDIR="$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/ubench_datatype" #microbenchmarks"
-PROFILER="$SCRIPT_DIR/dumpGpuPower" #measureGpuPower"
-UBENCH_FILE="$SCRIPT_DIR/${2}"
-
-if [ ! -d $ACCELSIM_ROOT/../accelwattch_benchmarks/microbenchmarks ]; then
-    echo "Could not find directory $ACCELSIM_ROOT/../accelwattch_benchmarks/microbenchmarks"
-    exit 1
->>>>>>> 7e02543 (Update Summit repo things April 3rd):accelwattch_hw_profiler/profile_ubench_power.sh
 fi
 cd $SCRIPT_DIR
 
 if [ -f $SCRIPT_DIR/$PROFILER ]; then
-    make
+	make
 fi
 
-#If directories are not there, make them
-if [ ! -d $SCRIPT_DIR/ubench_power_reports ]; then
-    mkdir -p $SCRIPT_DIR/ubench_power_reports
+if [ -d $SCRIPT_DIR/ubench_power_reports ]; then
+	rm -r $SCRIPT_DIR/ubench_power_reports
 fi
+mkdir $SCRIPT_DIR/ubench_power_reports
 
-if [ ! -d $SCRIPT_DIR/ubench_profile_output ]; then
-    mkdir -p $SCRIPT_DIR/ubench_profile_output
+if [ -d $SCRIPT_DIR/ubench_profile_output ]; then
+	rm -r $SCRIPT_DIR/ubench_profile_output
 fi
+mkdir $SCRIPT_DIR/ubench_profile_output
+mkdir -p $SCRIPT_DIR/ubench_profile_output
 
-#For five iterations
 for run in {1..5}
 do
-    #For each config in the config file
     while IFS= read -r bm
     do  
         if [ `echo $bm | awk '{print NF}'` == "4" ]; then
@@ -93,17 +81,24 @@ do
             bm_name=`echo $bm | awk '{print $1"_"$2}'`
         fi
         echo "Starting profiling of $bm_name"
-        mkdir -p $SCRIPT_DIR/ubench_power_reports/$bm_name/$GPU_UUID
+        mkdir -p $SCRIPT_DIR/ubench_power_reports/$bm_name				
         CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm & 
-#        echo "Warming up..."
-#        sleep $sleep_time
-        "$PROFILER" -r "$rate" -n "$samples" -d "$DEVID" -o "$SCRIPT_DIR/ubench_power_reports/$bm_name/$GPU_UUID/run_$run.rpt" >> "$SCRIPT_DIR/ubench_profile_output/${bm_name}_${GPU_UUID}.txt"
-
+        $PROFILER -t $temp -r $rate -n $samples -d $DEVID -o $SCRIPT_DIR/ubench_power_reports/$bm_name/run_$run.rpt >> $SCRIPT_DIR/ubench_profile_output/$bm_name.txt
         kill_name=`echo $bm | awk '{print $1}'`
         pid=`nvidia-smi | grep $kill_name | awk '{ print $5 }'`
         echo "Profiling concluded. Killing $bm_name with pid: $pid"
-        #If the benchmark is still running, kill it
-        if [ -n "$pid" ]; then
+        kill -9 $pid
+        
+        if cat $SCRIPT_DIR/ubench_profile_output/$bm_name.txt | grep -q "WARNING: TEMPERATURE CUTTOFF NOT REACHED"; then
+            echo "Heating up the GPU to >65C and rerunning kernel..."
+            CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/mix6 2000000000 &
+            sleep 20
+            pid=`nvidia-smi | grep mix6 | awk '{ print $5 }'`
+            kill -9 $pid
+            CUDA_VISIBLE_DEVICES=$DEVID $BINDIR/$bm & 
+            $PROFILER -t $temp -r $rate -n $samples -d $DEVID -o $SCRIPT_DIR/ubench_power_reports/$bm_name/run_$run.rpt >> $SCRIPT_DIR/ubench_profile_output/$bm_name.txt
+            pid=`nvidia-smi | grep $kill_name | awk '{ print $5 }'`
+            echo "Profiling concluded. Killing $bm_name with pid: $pid"
             kill -9 $pid
         fi
         

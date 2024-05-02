@@ -781,8 +781,4 @@ mlperf_inference_no_external_datasets:
               accel-sim-mem: 60G
         - inference_mlperf_ssd:
             - args:
-<<<<<<< HEAD
               accel-sim-mem: 60G
-=======
-              accel-sim-mem: 60G
->>>>>>> 7e02543 (Update Summit repo things April 3rd)

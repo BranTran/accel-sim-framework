@@ -2522,11 +2522,11 @@ add_mem_1_10:
         - add_mem_1:
             - args: 10
 
-add_mem_10_10:
+add_mem_2_10:
     exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
     data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
     execs:
-        - add_mem_10:
+        - add_mem_2:
             - args: 10
 
 mul_mem_1_10:
@@ -2536,11 +2536,11 @@ mul_mem_1_10:
         - add_mem_1:
             - args: 10
 
-nul_mem_10_10:
+nul_mem_2_10:
     exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
     data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
     execs:
-        - add_mem_10:
+        - add_mem_2:
             - args: 10
 
 BE_DP_FP_ADD_10:
@@ -2907,11 +2907,11 @@ mul_add_tex_1_10:
         - mul_add_tex_1:
             - args: 10
 
-mul_add_tex_10_10:
+mul_add_tex_2_10:
     exec_dir: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
     data_dirs: "$ACCELSIM_ROOT/../../flop_counting/bin/power_ubench/"
     execs:
-        - mul_add_tex_10:
+        - mul_add_tex_2:
             - args: 10
 
 REG_FILE_10:

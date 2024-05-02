@@ -179,8 +179,4 @@ for bench in benchmarks:
 
             if subprocess.call(["bash", "run.sh"]) != 0:
                 print("Error invoking profiler on {0}".format(this_run_dir))
-<<<<<<< HEAD
             os.chdir(saved_dir)
-=======
-            os.chdir(saved_dir)
->>>>>>> 7e02543 (Update Summit repo things April 3rd)

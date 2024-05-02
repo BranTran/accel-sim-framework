@@ -35,20 +35,20 @@ if [ "$GPGPUSIM_SETUP_ENVIRONMENT_WAS_RUN" != "1" ]; then
 fi
 
 rate=100
-temp=50
-samples=300
-sleep_time=20
+temp=45
+samples=600
+sleep_time=30
 
-SCRIPT_DIR=$ACCELSIM_ROOT/../util/accelwattch/accelwattch_hw_profiler
-BINDIR="$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation"
+SCRIPT_DIR=$ACCELSIM_ROOT/../accelwattch_hw_profiler
+BINDIR="$ACCELSIM_ROOT/../accelwattch_benchmarks/validation"
 
-if [ ! -d $ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs ]; then
-	echo "Please create a data_dirs/ directory containing the datasets at $ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs"
+if [ ! -d $ACCELSIM_ROOT/../accelwattch_benchmarks/data_dirs ]; then
+	echo "Please create a data_dirs/ directory containing the datasets at $ACCELSIM_ROOT/../accelwattch_benchmarks/data_dirs"
     exit 1
 fi
 
-if [ ! -d $ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation ]; then
-	echo "Please create a validation/ directory with binaries at $ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/validation"
+if [ ! -d $ACCELSIM_ROOT/../accelwattch_benchmarks/validation ]; then
+	echo "Please create a validation/ directory with binaries at $ACCELSIM_ROOT/../accelwattch_benchmarks/validation"
     exit 1
 fi
 
@@ -64,10 +64,10 @@ fi
 
 
 cd $SCRIPT_DIR
-RODINIA_DATADIR="$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs/cuda/rodinia/3.1"
-PARBOIL_DATADIR="$ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs/parboil"
+RODINIA_DATADIR="$ACCELSIM_ROOT/../accelwattch_benchmarks/data_dirs/cuda/rodinia/3.1"
+PARBOIL_DATADIR="$ACCELSIM_ROOT/../accelwattch_benchmarks/data_dirs/parboil"
 PROFILER="$SCRIPT_DIR/measureGpuPower"
-BENCH_FILE="$SCRIPT_DIR/${3}"
+BENCH_FILE="$SCRIPT_DIR/validation_${1}.cfg"
 DEVID=${2}
 backprop_k1_r="$BINDIR/backprop_k1 65536"
 backprop_k2_r="$BINDIR/backprop_k2 65536"
@@ -95,50 +95,23 @@ quasirandomGenerator_k1_r="$BINDIR/quasirandomGenerator_k1"
 quasirandomGenerator_k2_r="$BINDIR/quasirandomGenerator_k2"
 sobolQRNG_k1_r="$BINDIR/sobolQRNG_k1"
 srad_v1_k1_r="$BINDIR/srad_v1_k1 100 0.5 502 458"
-#Adding GPU_Microbenchmark
-MaxFlops_r="$BINDIR/MaxFlops"
-atomic_add_bw_r="$BINDIR/atomic_add_bw"
-atomic_add_bw_conflict_r="$BINDIR/atomic_add_bw_conflict"
-atomic_add_lat_r="$BINDIR/atomic_add_lat"
-l1_bw_128_r="$BINDIR/l1_bw_128"
-l1_bw_32f_r="$BINDIR/l1_bw_32f"
-l1_bw_32f_unroll_r="$BINDIR/l1_bw_32f_unroll"
-l1_bw_32f_unroll_large_r="$BINDIR/l1_bw_32f_unroll_large"
-l1_bw_64f_r="$BINDIR/l1_bw_64f"
-l1_lat_r="$BINDIR/l1_lat"
-l1_shared_bw_r="$BINDIR/l1_shared_bw"
-l2_bw_128_r="$BINDIR/l2_bw_128"
-l2_bw_32f_r="$BINDIR/l2_bw_32f"
-l2_bw_64f_r="$BINDIR/l2_bw_64f"
-l2_lat_r="$BINDIR/l2_lat"
-mem_bw_r="$BINDIR/mem_bw"
-mem_lat_r="$BINDIR/mem_lat"
-shared_bw_r="$BINDIR/shared_bw"
-shared_lat_r="$BINDIR/shared_lat"
-
 
 if [ ! -f $PROFILER ]; then
-	make -C $ACCELSIM_ROOT/../util/accelwattch/accelwattch_hw_profiler
+	make -C $ACCELSIM_ROOT/../accelwattch_hw_profiler
 fi
 
-#if [ -d $SCRIPT_DIR/validation_power_reports ]; then
-#	rm -r $SCRIPT_DIR/validation_power_reports
-#fi
-#
-#if [ -d $SCRIPT_DIR/validation_profile_output ]; then
-#	rm -r $SCRIPT_DIR/validation_profile_output
-#fi
-
-if [ ! -d $SCRIPT_DIR/validation_power_reports ]; then
-    mkdir $SCRIPT_DIR/validation_power_reports
+if [ -d $SCRIPT_DIR/validation_power_reports ]; then
+	rm -r $SCRIPT_DIR/validation_power_reports
 fi
+mkdir $SCRIPT_DIR/validation_power_reports
 
-if [ ! -d $SCRIPT_DIR/validation_profile_output ]; then
-    mkdir $SCRIPT_DIR/validation_profile_output
+if [ -d $SCRIPT_DIR/validation_profile_output ]; then
+	rm -r $SCRIPT_DIR/validation_profile_output
 fi
+mkdir $SCRIPT_DIR/validation_profile_output
 
 cd $SCRIPT_DIR/validation_profile_output
-cp $ACCELSIM_ROOT/../util/accelwattch/accelwattch_benchmarks/data_dirs/dct8x8/data/* .
+cp $ACCELSIM_ROOT/../accelwattch_benchmarks/data_dirs/dct8x8/data/* .
 
 for run in {1..5}
 do
@@ -147,7 +120,7 @@ do
         bm_name="${bm}_r"
         echo "Starting profiling of ${bm} "
         mkdir -p $SCRIPT_DIR/validation_power_reports/$bm
-        ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt &
+        ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt &
         $PROFILER -t $temp -r $rate -n $samples -d $DEVID -o $SCRIPT_DIR/validation_power_reports/$bm/run_$run.rpt >> $SCRIPT_DIR/validation_profile_output/$bm.txt
         
         if [ $bm == "cutlass_k1" ] || [ $bm == "cutlass_k2" ] || [ $bm == "cutlass_k3" ]; then
@@ -157,17 +130,14 @@ do
         fi
         echo "Profiling concluded. Killing $bm with pid: $pid"
         kill -9 $pid
-
-        temp=`nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits -i $DEVID`
-        echo "Temperature is currently $temp C" >> $SCRIPT_DIR/validation_profile_output/$bm.txt
-
+        
         if cat $SCRIPT_DIR/validation_profile_output/$bm.txt | grep -q "WARNING: TEMPERATURE CUTTOFF NOT REACHED"; then
             echo "Heating up the GPU to >65C and rerunning kernel..."
             $BINDIR/backprop_k1 65536 &
             sleep 20
             pid=`nvidia-smi | grep backprop_k1 | awk '{ print $5 }'`
             kill -9 $pid
-            ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/${bm}_output.txt &
+            ${!bm_name} >> $SCRIPT_DIR/validation_profile_output/$bm_output.txt &
             $PROFILER -t $temp -r $rate -n $samples -d $DEVID -o $SCRIPT_DIR/validation_power_reports/$bm/run_$run.rpt >> $SCRIPT_DIR/validation_profile_output/$bm.txt
             if [ $bm == "cutlass_k1" ] || [ $bm == "cutlass_k2" ] || [ $bm == "cutlass_k3" ]; then
                 pid=`nvidia-smi | grep "cutlass_perf_test" | awk '{ print $5 }'`
@@ -176,10 +146,6 @@ do
             fi
             echo "Profiling concluded. Killing $bm with pid: $pid"
             kill -9 $pid
-       
-            temp=`nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits -i $DEVID`
-            echo "Temperature is currently $temp C" >> $SCRIPT_DIR/validation_profile_output/$bm.txt
-       
         fi
         
         echo "Sleeping..."

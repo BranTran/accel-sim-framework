@@ -39,22 +39,16 @@ if [ "${1}" == "" ]; then
     echo "Please enter GPU Device ID. ./profile_validation_perf.sh <GPU_devid>"
     exit 1
 fi
-DEVID=${1}
 
-runs_dir="$ACCELSIM_ROOT/../hw_run/device-${1}/${CUDA_VERSION}"
+runs_dir="$ACCELSIM_ROOT/../hw_run/device-0/${CUDA_VERSION}"
 if [ -d ${runs_dir} ] ; then
 	rm -r ${runs_dir}
 fi
 export CUDA_VISIBLE_DEVICES=$DEVID
 $ACCELSIM_ROOT/../util/hw_stats/run_hw.py -D $DEVID -B rodinia-3.1_validation_hw,parboil_validation,cuda_samples_11.0_validation,cutlass_5_trace_validation,cudaTensorCoreGemm_validation --collect other_stats --nsight_profiler --disable_nvprof
-$ACCELSIM_ROOT/../util/accelwattch/accelwattch_hw_profiler/gen_hw_perf_csv.py -d ${runs_dir}
+$ACCELSIM_ROOT/../accelwattch_hw_profiler/gen_hw_perf_csv.py -d ${runs_dir}
 
-<<<<<<< HEAD:util/accelwattch/accelwattch_hw_profiler/profile_validation_perf.sh
-mv ${root_dir}/hw_perf.csv $ACCELSIM_ROOT/../util/accelwattch/accelwattch_hw_profiler/hw_perf.csv
-echo "y" | cp $ACCELSIM_ROOT/../util/accelwattch/accelwattch_hw_profiler/hw_perf.csv $ACCELSIM_ROOT/gpgpu-sim/configs/tested-cfgs/SM7_QV100/hw_perf.csv
-=======
 mv ${root_dir}/hw_perf.csv $ACCELSIM_ROOT/../accelwattch_hw_profiler/hw_perf.csv
-echo "y" | cp $ACCELSIM_ROOT/../accelwattch_hw_profiler/hw_perf.csv $ACCELSIM_ROOT/gpgpu-sim/configs/tested-cfgs/Tesla_V100-SMX2-16GB/hw_perf.csv
->>>>>>> 7e02543 (Update Summit repo things April 3rd):accelwattch_hw_profiler/profile_validation_perf.sh
+echo "y" | cp $ACCELSIM_ROOT/../accelwattch_hw_profiler/hw_perf.csv $ACCELSIM_ROOT/gpgpu-sim/configs/tested-cfgs/SM7_QV100/hw_perf.csv
 echo "Done"
 

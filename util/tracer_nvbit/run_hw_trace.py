@@ -35,10 +35,7 @@ parser.add_option("-l", "--limit_kernel_number", dest='kernel_number', default=-
                         "number of traced limits")
 parser.add_option("-t", "--terminate_upon_limit", dest='terminate_upon_limit', action="store_true", help="Once the kernel limit is " +\
                         "reached, terminate the tracing process")
-<<<<<<< HEAD
-=======
 
->>>>>>> 7e02543 (Update Summit repo things April 3rd)
 
 (options, args) = parser.parse_args()
 

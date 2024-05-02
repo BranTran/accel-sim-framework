@@ -58,7 +58,7 @@ do
 		do
 			bench_dir=${runs_dir}/${bench}/${inp}/*
 			if [ -f ${bench_dir}/${power_file} ] ; then
-				cp ${bench_dir}/${power_file} ${power_dir}/${bench}_${inp}.log 
+				cp ${bench_dir}/${power_file} ${power_dir}/${bench}.log 
 			else
 				echo "Warning: No Accelwattch power report in ${bench_dir}."
 			fi

@@ -11,11 +11,7 @@
 
 #define L1_SIZE (128 * 1024) // Max L1 size in bytes
 
-<<<<<<< HEAD
-#define CLK_FREQUENCY 1455 // frequency in MHz
-=======
 #define CLK_FREQUENCY 1530 // Max boosted frequency in MHz
->>>>>>> 7e02543 (Update Summit repo things April 3rd)
 
 #define ISSUE_MODEL issue_model::single
 #define CORE_MODEL core_model::subcore
@@ -34,8 +30,4 @@
 #define L2_BANKS_PER_MEM_CHANNEL 2 
 #define L2_BANK_WIDTH_in_BYTE 32
 
-<<<<<<< HEAD
 #endif
-=======
-#endif
->>>>>>> 7e02543 (Update Summit repo things April 3rd)

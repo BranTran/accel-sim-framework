@@ -7,7 +7,6 @@
 #SBATCH -p REPLACE_QUEUE_NAME
 #SBATCH -A gen150
 #SBATCH -J REPLACE_NAME
-#SBATCH -o REPLACE_NAME.out
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=tranbq@ornl.gov
 #SBATCH --export=ALL

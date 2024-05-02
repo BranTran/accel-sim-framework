@@ -88,8 +88,8 @@ for file in path:
     # skip first several lines of nsight output
     with open(file) as myFile:
         for num, line in enumerate(myFile, 1):
-            if line.startswith('"ID"'):
-                start = num-1
+            if "Disconnected" in line:
+                start = num
                 break
     if start == 0:
         print("output file error", file)
@@ -300,7 +300,7 @@ for file in path:
         combine_kernel = combine_kernel[1:]
         # print("kernel", "<" + kernel_names[kernel] + ">","found",count,"times")
 
-        if(combine_kernel.shape[0]) == 0:
+        if(combine_kernel.shape[0]) is 0:
             # parsing error or string comparision error
             exit("ERROR,", kernel_names[kernel], "not found")
 

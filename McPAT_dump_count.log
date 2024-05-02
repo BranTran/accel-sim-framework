@@ -19,8 +19,6 @@ BE_HP_FP_MUL-1: 59
 gpu_sim_cycle = 9863
 gpu_sim_cycle = 9794
 gpu_sim_cycle = 9932
-mix15-1: 19
-mix17-2: 19
 ACT_CORE1-2_16_32: 19
 gpu_sim_cycle = 9781
 BE_L1D_HIT-1: 3474
@@ -32,7 +30,6 @@ INT_STATIC-2_80_16: 20
 gpu_sim_cycle = 10234
 INT_FP_SFU_STATIC-2_80_8: 22
 gpu_sim_cycle = 11080
-mix7-2: 18
 INT_FP_DP_STATIC-1_80_8: 20
 gpu_sim_cycle = 10469
 INT_FP_STATIC-2_80_1: 20
@@ -51,12 +48,10 @@ gpu_sim_cycle = 1725328
 gpu_sim_cycle = 13169
 ACT_CORE2-1_1_32: 20
 gpu_sim_cycle = 10048
-mix13-1: 17
 BE_SFU_EXP-2: 21
 gpu_sim_cycle = 10680
 INT_FP_TEX_STATIC-1_80_8: 21
 gpu_sim_cycle = 10549
-mix7-1: 18
 INT_FP_SFU_STATIC-2_80_24: 22
 gpu_sim_cycle = 11115
 mix3-1: 24
@@ -73,7 +68,6 @@ INT_FP_TENSOR_STATIC-1_80_16: 173
 gpu_sim_cycle = 15578
 gpu_sim_cycle = 18891
 gpu_sim_cycle = 52470
-mix11-1: 18
 ACT_CORE2-2_64_32: 20
 gpu_sim_cycle = 10333
 INT_FP_STATIC-1_80_24: 20
@@ -116,12 +110,10 @@ gpu_sim_cycle = 18891
 gpu_sim_cycle = 52470
 ACT_CORE1-2_1_32: 19
 gpu_sim_cycle = 9737
-mix5-1: 18
 INT_FP_DP_STATIC-2_80_32: 20
 gpu_sim_cycle = 10491
 SHRD_TEX_SFU-2: 28
 gpu_sim_cycle = 14191
-mix12-2: 17
 INT_FP_SFU_STATIC-1_80_24: 20
 gpu_sim_cycle = 10479
 ACT_CORE2-2_16_32: 20
@@ -130,7 +122,6 @@ INT_FP_SFU_STATIC-1_80_1: 20
 gpu_sim_cycle = 10474
 BRANCHING4-1: 24
 gpu_sim_cycle = 12196
-mix18-1: 18
 BE_HP_FP_MUL-2: 59
 gpu_sim_cycle = 9863
 gpu_sim_cycle = 9794
@@ -159,7 +150,6 @@ BE_SP_INT_LOGIC-2: 20
 gpu_sim_cycle = 10497
 INT_FP_STATIC-1_80_32: 19
 gpu_sim_cycle = 9995
-mix15-2: 19
 BE_DP_FP_DIV-2: 44
 gpu_sim_cycle = 22250
 mix11-2: 18
@@ -175,20 +165,16 @@ BE_SP_INT_MUL-1: 23
 gpu_sim_cycle = 11827
 INT_FP_DP_STATIC-2_80_8: 21
 gpu_sim_cycle = 10527
-mix17-1: 19
 INT_FP_TENSOR_STATIC-2_80_1: 173
 gpu_sim_cycle = 15578
 gpu_sim_cycle = 18891
 gpu_sim_cycle = 52510
-mix14-1: 18
 INT_FP_TENSOR_STATIC-2_80_16: 173
 gpu_sim_cycle = 15578
 gpu_sim_cycle = 18891
 gpu_sim_cycle = 52510
-mix13-2: 17
 INT_FP_DP_STATIC-2_80_1: 21
 gpu_sim_cycle = 10527
-mix12-1: 17
 INT_FP_TENSOR_STATIC-2_80_24: 173
 gpu_sim_cycle = 15578
 gpu_sim_cycle = 18891
@@ -224,15 +210,12 @@ BE_HP_FP_ADD-1: 59
 gpu_sim_cycle = 9863
 gpu_sim_cycle = 9794
 gpu_sim_cycle = 9952
-mix14-2: 18
 INT_FP_DP_STATIC-2_80_24: 21
 gpu_sim_cycle = 10509
 BE_SP_INT_MUL24-2: 21
 gpu_sim_cycle = 10887
-mix5-2: 18
 INT_FP_TEX_STATIC-1_80_32: 20
 gpu_sim_cycle = 10483
-mix10-1: 18
 BE_HP_FP_ADD-2: 59
 gpu_sim_cycle = 9863
 gpu_sim_cycle = 9794
@@ -243,17 +226,12 @@ INT_FP_SFU_STATIC-1_80_16: 20
 gpu_sim_cycle = 10474
 BRANCHING4-2: 27
 gpu_sim_cycle = 13841
-mix16-2: 19
 BE_HP_FP_DIV-2: 62
 gpu_sim_cycle = 9863
 gpu_sim_cycle = 9794
 gpu_sim_cycle = 11731
-mix9-1: 18
 INT_FP_STATIC-1_80_8: 20
 gpu_sim_cycle = 10007
-mix8-1: 18
-mix19-1: 18
-mix6-1: 18
 BRANCHING3-1: 24
 gpu_sim_cycle = 12284
 mix20-2: 18
@@ -280,12 +258,10 @@ immediates_texture-2: 21
 gpu_sim_cycle = 10970
 BE_TEXTURE_ACCESS-2: 31
 gpu_sim_cycle = 15710
-mix9-2: 18
 INT_FP_TEX_STATIC-2_80_16: 21
 gpu_sim_cycle = 10809
 BRANCHING2-1: 26
 gpu_sim_cycle = 13415
-immediates_constant-2: 17
 BE_HP_FP_MAD-1: 59
 gpu_sim_cycle = 9863
 gpu_sim_cycle = 9794
@@ -371,7 +347,6 @@ BE_SP_FP_DIV-2: 38
 gpu_sim_cycle = 19251
 ACT_CORE2-2_32_32: 20
 gpu_sim_cycle = 10266
-mix18-2: 18
 INT_FP_STATIC-2_80_32: 20
 gpu_sim_cycle = 10038
 BE_HP_FP_DIV-1: 61
@@ -400,11 +375,8 @@ INT_FP_STATIC-1_80_16: 20
 gpu_sim_cycle = 10007
 INT_FP_STATIC-1_80_1: 20
 gpu_sim_cycle = 10007
-mix19-2: 18
 ACT_CORE2-1_32_32: 20
 gpu_sim_cycle = 10125
-mix6-2: 18
-mix10-2: 18
 BE_SP_FP_MUL-1: 20
 gpu_sim_cycle = 10445
 INT_STATIC-2_80_24: 20

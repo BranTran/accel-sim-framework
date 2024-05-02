@@ -116,7 +116,7 @@ int getDevice(int devId, nvmlDevice_t* dev, nvmlUnit_t* unit)
         printf("Error: failed to get name of device %i: %s\n", devId, nvmlErrorString(res));
         return 0;
     }
-
+    
     printf("Selected device %d: %s\n", devId, devName);
 
 #if 0
@@ -136,29 +136,29 @@ int getDevice(int devId, nvmlDevice_t* dev, nvmlUnit_t* unit)
 
 int processIsAlive(int pid)
 {
-    char command[256];
-    sprintf(command, "ps | grep -c %d", pid);
-    FILE* f;
-    f = popen(command, "r");
-    if (f == NULL) {
-        printf("Failed to run command\n");
-        pclose(f);
-        return 0;
-    }
-    char line[8];
-    if (fgets(line, sizeof(line), f) != NULL) {
-        pclose(f);
-        return atoi(line);
-    }
-    pclose(f);
-    return 0;
+	char command[256];
+	sprintf(command, "ps | grep -c %d", pid);
+	FILE* f;
+	f = popen(command, "r");
+	if (f == NULL) {
+		printf("Failed to run command\n");
+		pclose(f);
+		return 0;
+	}
+	char line[8];
+	if (fgets(line, sizeof(line), f) != NULL) {
+		pclose(f);
+		return atoi(line);
+	}
+	pclose(f);
+	return 0;
 }
 
 int measurePower(char* oFileName, int csv, int devId, nvmlDevice_t* dev, int sampleRate, int numSamples, nvmlUnit_t* unit, int printPsuInfo, int pid, int temp_cutoff_T)
 {
     nvmlReturn_t res;
     unsigned int mWatts = 0;
-    unsigned int temperature = 0;
+	unsigned int temperature = 0;
     nvmlPSUInfo_t psu;
     nvmlPstates_t pState;
     int samplesRemaining = (numSamples == -1 ? 1 : numSamples);
@@ -174,19 +174,19 @@ int measurePower(char* oFileName, int csv, int devId, nvmlDevice_t* dev, int sam
             return 0;
         }
     } 
-
+    
     printf("\n\nStarting power measurement...\n");
 
     while( samplesRemaining > 0 ) {
         // Throttle to sample rate
         usleep(sampleRate * 1000.0);
         //increment number of samples processed
+        
 
-
-        if (pid != 0 && processIsAlive(pid) == 0) {
-            printf("Application terminated. Closing profiler...\n");
-            break;
-        }
+		if (pid != 0 && processIsAlive(pid) == 0) {
+			printf("Application terminated. Closing profiler...\n");
+			break;
+		}
         res = nvmlDeviceGetUtilizationRates ( *dev, &util);
 
         if(util.gpu < 95) {
@@ -195,28 +195,28 @@ int measurePower(char* oFileName, int csv, int devId, nvmlDevice_t* dev, int sam
                 continue;
             }
             else if( numSamples == -1 )
-                continue; 
-            else
+				continue; 
+			else
                 break;
         }
 
+        
 
-
-        if (temp_cutoff_T)
-        {
-            res = nvmlDeviceGetTemperature( *dev, NVML_TEMPERATURE_GPU, &temperature );
-            if( res != NVML_SUCCESS ) {
-                printf("Error: failed to get temperature for device %i: %s\n", devId, nvmlErrorString(res));
-                return 0;
-            }
-            if (temperature == temp_cutoff_T) {
+		if (temp_cutoff_T)
+		{
+			res = nvmlDeviceGetTemperature( *dev, NVML_TEMPERATURE_GPU, &temperature );
+			if( res != NVML_SUCCESS ) {
+				printf("Error: failed to get temperature for device %i: %s\n", devId, nvmlErrorString(res));
+				return 0;
+			}
+			if (temperature == temp_cutoff_T) {
                 temp_cutoff = true;
-                printf("Cutoff temperature %d C reached: concluding power measurements\n", temp_cutoff_T);
-                samplesRemaining = 1; // record the temperature one last time
+				printf("Cutoff temperature %d C reached: concluding power measurements\n", temp_cutoff_T);
+				samplesRemaining = 1; // record the temperature one last time
                 avgWatts = 0.0;
                 sampleCount = 0;
-            }
-        }
+			}
+		}
         res = nvmlDeviceGetPowerUsage( *dev, &mWatts );
         if( res != NVML_SUCCESS ) {
             printf("Error: failed to get power for device %i: %s\n", devId, nvmlErrorString(res));
@@ -238,7 +238,7 @@ int measurePower(char* oFileName, int csv, int devId, nvmlDevice_t* dev, int sam
 
         if(( numSamples != -1 ) || (temp_cutoff == true))
             samplesRemaining--;
-
+         
         if( exitFlag ) {
             printf("Stopping power measurement...\n");
             break;
@@ -271,7 +271,7 @@ int measurePower(char* oFileName, int csv, int devId, nvmlDevice_t* dev, int sam
                 printf("Power draw = %.4lf W, power state = %d \n", avgWatts, pState);
         }
     }
-
+        
 
     if ((temp_cutoff_T) && (!temp_cutoff))
         printf("WARNING: TEMPERATURE CUTTOFF NOT REACHED \n\n");
@@ -289,8 +289,8 @@ void printHelp()
     printf("-r <sample rate>: \t\tSample rate to collect power in milliseconds\n");
     printf("-n <number of samples>: \tNumber of power samples to collect (-1 == poll until CTRL+C)\n");
     printf("-p: \t\t\t\tPrint PSU info as well \n");
-    printf("-a: <process name>: \t\tApplication to profile with this profiler. Profiler will stop when process terminates\n");
-    printf("-t: <temp>:\t\tCutoff temperature in degrees C. Profiler will stop profiling if the GPU reaches this temperature\n");
+	printf("-a: <process name>: \t\tApplication to profile with this profiler. Profiler will stop when process terminates\n");
+	printf("-t: <temp>:\t\tCutoff temperature in degrees C. Profiler will stop profiling if the GPU reaches this temperature\n");
 
     printf("\nCTRL+C will stop the power measurements and shutdown NVML\n");
     printf("=============================================================================================\n\n");
@@ -330,13 +330,13 @@ int parseOptions(int argc, char** argv, char** outFileName, int* csv, int* devId
                 *printPsuInfo = 1;
                 break;
 
-            case 'a':
-                *pname = optarg;
-                break;
+			case 'a':
+				*pname = optarg;
+				break;
 
-            case 't':
-                *temp_cutoff_T = atoi(optarg);
-                break;
+			case 't':
+				*temp_cutoff_T = atoi(optarg);
+				break;
 
             default: 
                 printf("Error: unknown option\n");
@@ -351,8 +351,8 @@ int parseOptions(int argc, char** argv, char** outFileName, int* csv, int* devId
             "\tSample Rate = %d ms\n"
             "\tNumber of power samples = %d\n"
             "\tPrint PSU info = %d\n"
-            "\tProcess Name = %s\n\n"
-            "\tTemperature Cutoff (0 iff disabled) = %d\n",
+			"\tProcess Name = %s\n\n"
+			"\tTemperature Cutoff (0 iff disabled) = %d\n",
             *outFileName, *csv, *devId, *sampleRate, *numSamples, *printPsuInfo, *pname, *temp_cutoff_T);
 
     return 1;
@@ -372,9 +372,9 @@ int main(int argc, char** argv)
     char* oFileName = NULL;
     int csv = 0;
     int printPsuInfo = 0;
-    char* pname = NULL;
-    int pid = 0;
-    int temp_cutoff_T = 0;
+	char* pname = NULL;
+	int pid = 0;
+	int temp_cutoff_T = 0;
 
     // Setup CTRL+C handler
     signal(SIGINT, intHandler);
@@ -394,39 +394,39 @@ int main(int argc, char** argv)
         return EXIT_FAILURE;
     }
 
-    if (pname != NULL) {
-        char command[256];
-        FILE* f;
-        char pname_short[16];
-        int plength = strlen(pname) < 15 ? strlen(pname) : 15;
-        for (int i = 0; i <= plength; i++)
-        {
-            if (i != plength)
-                pname_short[i] = pname[i];
-            else
-                pname_short[i] = '\0';
-        }
-        sprintf(command, "ps | grep '%s' | awk '{print $1}'", pname_short);
-        printf("Attempting to get pid\n");
-        f = popen(command, "r");
-        if( f == NULL ) {
-            printf("Error: failed to run ps command.\n");
-            pclose(f);
-            shutdown();
-            return EXIT_FAILURE;
-        }
-        char line[8];
-        if (fgets(line, sizeof(line), f)) {
-            pid = atoi(line);
-        } else {
-            pclose(f);
-            printf("Error: application not found in process list. Make sure to start application before profiling!\n");
-            shutdown();
-            return EXIT_FAILURE;
-        }
-        pclose(f);
-        printf("Got the pid\n");
-    }
+	if (pname != NULL) {
+		char command[256];
+		FILE* f;
+		char pname_short[16];
+		int plength = strlen(pname) < 15 ? strlen(pname) : 15;
+		for (int i = 0; i <= plength; i++)
+		{
+			if (i != plength)
+				pname_short[i] = pname[i];
+			else
+				pname_short[i] = '\0';
+		}
+		sprintf(command, "ps | grep '%s' | awk '{print $1}'", pname_short);
+		printf("Attempting to get pid\n");
+		f = popen(command, "r");
+		if( f == NULL ) {
+			printf("Error: failed to run ps command.\n");
+			pclose(f);
+			shutdown();
+			return EXIT_FAILURE;
+		}
+		char line[8];
+		if (fgets(line, sizeof(line), f)) {
+			pid = atoi(line);
+		} else {
+			pclose(f);
+			printf("Error: application not found in process list. Make sure to start application before profiling!\n");
+			shutdown();
+			return EXIT_FAILURE;
+		}
+		pclose(f);
+		printf("Got the pid\n");
+	}
 
     if( !measurePower(oFileName, csv, devId, &dev, sampleRate, numSamples, &unit, printPsuInfo, pid, temp_cutoff_T) ) {
         shutdown();
