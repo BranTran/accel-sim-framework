@@ -8,7 +8,7 @@
 #SBATCH -A gen150
 #SBATCH -J REPLACE_NAME
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=tranbq@ornl.gov
+#SBATCH --mail-user=bqtran2@wisc.edu
 #SBATCH --export=ALL
 
 if [ "$GPGPUSIM_SETUP_ENVIRONMENT_WAS_RUN" != "1" ]; then

@@ -77,12 +77,8 @@ unsigned inst_trace_t::get_datawidth_from_opcode(const std::vector<std::string> 
     }
   }
 
-<<<<<<< HEAD
-  return 4;  // default is 4 bytes
-=======
   std::cout << "No matching opcode found. Default datawidth: 4" << std::endl;
   return 4; // default is 4 bytes
->>>>>>> 7e02543 (Update Summit repo things April 3rd)
 }
 
 

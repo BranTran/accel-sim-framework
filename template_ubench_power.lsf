@@ -3,7 +3,7 @@
 #BSUB -W 2:00
 #BSUB -J AccelWattch_ubench
 #BSUB -nnodes 1
-#BSUB -N tranbq@ornl.gov
+#BSUB -N bqtran2@wisc.edu
 #Run this script from the root of the accelwattch artifact directory
 
 #Needed modules

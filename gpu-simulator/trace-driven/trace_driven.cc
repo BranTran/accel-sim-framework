@@ -260,7 +260,6 @@ bool trace_warp_inst_t::parse_from_trace_struct(
 
   // handle special cases and fill memory space
   switch (m_opcode) {
-<<<<<<< HEAD
     case OP_LDC: //handle Load from Constant
       data_size = 4;
       memory_op = memory_load;
@@ -299,39 +298,6 @@ bool trace_warp_inst_t::parse_from_trace_struct(
       assert(data_size > 0);
       memory_op = memory_load;
       op = LOAD_OP;
-=======
-  case OP_LDC: //handle Load from Constant
-    //assert(trace.memadd_info->width > 0);
-    data_size = 4;
-    memory_op = memory_load;
-    const_cache_operand = 1;
-    space.set_type(const_space);
-    cache_op = CACHE_ALL;
-    break;
-  case OP_LDG:
-  case OP_LDL:
-    assert(data_size > 0);
-    memory_op = memory_load;
-    cache_op = CACHE_ALL;
-    if (m_opcode == OP_LDL)
-      space.set_type(local_space);
-    else
-      space.set_type(global_space);
-    // check the cache scope, if its strong GPU, then bypass L1
-    if (trace.check_opcode_contain(opcode_tokens, "STRONG") &&
-        trace.check_opcode_contain(opcode_tokens, "GPU")) {
-      cache_op = CACHE_GLOBAL;
-    }
-    break;
-  case OP_STG:
-  case OP_STL:
-    assert(data_size > 0);
-    memory_op = memory_store;
-    cache_op = CACHE_ALL;
-    if (m_opcode == OP_STL)
-      space.set_type(local_space);
-    else
->>>>>>> 7e02543 (Update Summit repo things April 3rd)
       space.set_type(global_space);
       m_isatomic = true;
       cache_op = CACHE_GLOBAL;  // all the atomics should be done at L2

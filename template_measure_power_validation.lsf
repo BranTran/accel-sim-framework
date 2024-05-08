@@ -3,7 +3,7 @@
 #BSUB -W 2:00
 #BSUB -J AccelWattch_validation
 #BSUB -nnodes 1
-#BSUB -N tranbq@ornl.gov
+#BSUB -N bqtran2@wisc.edu
 #Run this script from the accelwattch-artifact/
 
 #Get host/GPU information
