@@ -81,8 +81,8 @@ def process_file(input_file):
                 sim_instr = line.strip().split()[-1]
                 # Now that we are at the end of a kernel
                 # Open the output CSV file for writing output for a particular kernel
-                output_file = output_file.replace('processed', f'processed_k{kernel_num}_{sim_cycle}cycle_{sim_instr}instr')
-                with open(output_file, 'w', newline='') as csvfile:
+                kernel_output_file = output_file.replace('processed', f'processed_k{kernel_num}_{sim_cycle}cycle_{sim_instr}instr')
+                with open(kernel_output_file, 'w', newline='') as csvfile:
                     writer = csv.writer(csvfile)
                     writer.writerow(row_header)  # Write CSV header
                     for row in processor_info_list:
