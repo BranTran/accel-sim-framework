@@ -56,7 +56,8 @@ do
 	if [ ! ${bench} == "gpgpu-sim-builds" ]; then
 		for inp in `ls ${runs_dir}/${bench}/`
 		do
-			bench_dir=${runs_dir}/${bench}/${inp}/*
+			#bench_dir=${runs_dir}/${bench}/${inp}/*
+			bench_dir=${runs_dir}/${bench}
 			if [ -f ${bench_dir}/${power_file} ] ; then
 				cp ${bench_dir}/${power_file} ${power_dir}/${bench}.log 
 			else
