@@ -16,8 +16,18 @@ insts = 2
 
 # Dictionary with opcode information
 opcode_sass_line_dict = {
-    "MUFU_RCP":  "ffffffff 1 R0 MUFU.RCP 1 R0 0",
-    }
+        "PLOP3_LUT": "ffffffff 0 PLOP3.LUT 0 0",
+        "LOP3_LUT" : "ffffffff 1 R0 LOP3.LUT 2 R1 R2 0",
+        "HMMA_884_F16_F16_STEP0": "ffffffff 1 R0 HMMA.884.F16.F16.STEP0 3 R1 R2 R3 0",
+        "HMMA_884_F16_F16_STEP1": "ffffffff 1 R0 HMMA.884.F16.F16.STEP1 3 R1 R2 R3 0",
+        "HMMA_884_F32_F32_STEP0": "ffffffff 1 R0 HMMA.884.F32.F32.STEP0 3 R1 R2 R3 0",
+        "HMMA_884_F32_F32_STEP1": "ffffffff 1 R0 HMMA.884.F32.F32.STEP1 3 R1 R2 R3 0",
+        "FADD": "ffffffff 1 R0 FADD 2 R1 R2 0",
+        "F2F_F32_F64": "ffffffff 1 R0 F2F.F32.F64 1 R1 0",
+        "F2F_F64_F32": "ffffffff 1 R0 F2F.F64.F32 1 R1 0",
+        }
+##Generate other opcodes
+#"MUFU_RCP":  "ffffffff 1 R0 MUFU.RCP 1 R0 0",
 #    "MUFU_RCP64H":  "ffffffff 1 R0 MUFU.RCP64H 1 R0 0",
 #    "MUFU.EX2":  "ffffffff 1 R0 MUFU.EX2 1 R0 0",
 #    "S2R":  "ffffffff 1 R0 S2R 0 0",
