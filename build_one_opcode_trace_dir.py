@@ -16,6 +16,15 @@ insts = 2
 
 # Dictionary with opcode information
 opcode_sass_line_dict = {
+        "TLD": "ffffffff 1 R255 TLD.SCR.LZ 2 R1 R0 0",
+        "LDC": "ffffffff 1 R0 LDC 0 0",
+        "LDG_E_SYS": "ffffffff 1 R0 LDG.E.SYS 1 R1 4 1 0x200093700000 4",
+        "LDS_U": "ffffffff 1 R0 LDS.U 1 R1 4 1 0x0 4",
+        "STG_E_SYS": "ffffffff 0 STG.E.SYS 2 R0 R1 4 1 0x200093700000 4",
+        "STS": "ffffffff 0 STS 2 R0 R1 4 1 0x0 4",
+        "BRA": "ffffffff 0 BRA 0 0",
+        "BAR_SYNC": "ffffffff 0 BAR.SYNC 0 0",
+        "NOP": "ffffffff 0 NOP 0 0",
         "PLOP3_LUT": "ffffffff 0 PLOP3.LUT 0 0",
         "LOP3_LUT" : "ffffffff 1 R0 LOP3.LUT 2 R1 R2 0",
         "HMMA_884_F16_F16_STEP0": "ffffffff 1 R0 HMMA.884.F16.F16.STEP0 3 R1 R2 R3 0",
@@ -25,21 +34,20 @@ opcode_sass_line_dict = {
         "FADD": "ffffffff 1 R0 FADD 2 R1 R2 0",
         "F2F_F32_F64": "ffffffff 1 R0 F2F.F32.F64 1 R1 0",
         "F2F_F64_F32": "ffffffff 1 R0 F2F.F64.F32 1 R1 0",
-        }
-##Generate other opcodes
-#"MUFU_RCP":  "ffffffff 1 R0 MUFU.RCP 1 R0 0",
-#    "MUFU_RCP64H":  "ffffffff 1 R0 MUFU.RCP64H 1 R0 0",
-#    "MUFU.EX2":  "ffffffff 1 R0 MUFU.EX2 1 R0 0",
-#    "S2R":  "ffffffff 1 R0 S2R 0 0",
-#    "DEPBAR_LE": "ffffffff 0 DEPBAR.LE 0 0",
-#    "BSYNC": "ffffffff 0 BSYNC 0 0",
-#    "BSSY": "ffffffff 0 BSSY 0 0",
-#    "BMOV_32_CLEAR": "ffffffff 1 R0 BMOV.32.CLEAR 0 0",
-#    "BREAK": "00000000 0 BREAK 0 0",
-#    "RET_REL_NODEC": "00000001 1 R0 RET.REL.NODEC 0 0",
-#    "CALL_REL_NOINC": "ffffffff 0 CALL.REL.NOINC 0 0",
-#    "EXIT": "ffffffff 0 EXIT 0 0",
-#}
+#Generate "other" opcodes
+        "MUFU_RCP":  "ffffffff 1 R0 MUFU.RCP 1 R0 0",
+        "MUFU_RCP64H":  "ffffffff 1 R0 MUFU.RCP64H 1 R0 0",
+        "MUFU.EX2":  "ffffffff 1 R0 MUFU.EX2 1 R0 0",
+        "S2R":  "ffffffff 1 R0 S2R 0 0",
+        "DEPBAR_LE": "ffffffff 0 DEPBAR.LE 0 0",
+        "BSYNC": "ffffffff 0 BSYNC 0 0",
+        "BSSY": "ffffffff 0 BSSY 0 0",
+        "BMOV_32_CLEAR": "ffffffff 1 R0 BMOV.32.CLEAR 0 0",
+        "BREAK": "00000000 0 BREAK 0 0",
+        "RET_REL_NODEC": "00000001 1 R0 RET.REL.NODEC 0 0",
+        "CALL_REL_NOINC": "ffffffff 0 CALL.REL.NOINC 0 0",
+        "EXIT": "ffffffff 0 EXIT 0 0",
+}
 
 # Define header for kernel-1.traceg
 trace_header = """-kernel name = _BranTranTest-{opcode}_

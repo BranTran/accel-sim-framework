@@ -1,5 +1,6 @@
-// Copyright (c) 2009-2021, Tor M. Aamodt, Ahmed El-Shafiey, Tayler Hetherington, Vijay Kandiah, Nikos Hardavellas
-// The University of British Columbia, Northwestern University
+// Copyright (c) 2009-2021, Tor M. Aamodt, Ahmed El-Shafiey, Tayler Hetherington, Vijay Kandiah, Nikos Hardavellas, 
+// Mahmoud Khairy, Junrui Pan, Timothy G. Rogers
+// The University of British Columbia, Northwestern University, Purdue University
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -190,48 +191,39 @@ void mcpat_reset_perf_count(class gpgpu_sim_wrapper *wrapper) {
   wrapper->reset_counters();
 }
 
-bool parse_hw_file(char* hwpowerfile, bool find_target_kernel, vector<string> &hw_data, char* benchname, std::string executed_kernelname) {
+bool parse_hw_file(char* hwpowerfile, bool find_target_kernel, vector<string> &hw_data, char* benchname, std::string executed_kernelname){
   fstream hw_file;
   hw_file.open(hwpowerfile, ios::in);
   string line, word, temp;
-  
-  while (!hw_file.eof()) {
+  while(!hw_file.eof()){
     hw_data.clear();
     getline(hw_file, line);
     stringstream s(line);
-    
-    while (getline(s, word, ',')) {
+    while (getline(s,word,',')){
       hw_data.push_back(word);
     }
-    // cout << "I found the following benchname" << hw_data[HW_BENCH_NAME] << endl;
-    if (hw_data[HW_BENCH_NAME] == std::string(benchname)) {
-      if (find_target_kernel) {
-        if (hw_data[HW_KERNEL_NAME] == "") {
+    if(hw_data[HW_BENCH_NAME] == std::string(benchname)){
+      if(find_target_kernel){
+        if(hw_data[HW_KERNEL_NAME] == ""){
           hw_file.close();
-          // cout << "Target kernel not found. Empty kernel name." << endl;
           return true;
-        } else {
-          if (hw_data[HW_KERNEL_NAME] == executed_kernelname) {
+        }
+        else{
+          if(hw_data[HW_KERNEL_NAME] == executed_kernelname){
             hw_file.close();
-            // cout << "Target kernel found: " << executed_kernelname << endl;
             return true;
-          } else {
-            // cout << "Target kernel not found. Mismatched kernel name: " << hw_data[HW_KERNEL_NAME] << endl;
           }
         }
-      } else {
+      }
+      else{
         hw_file.close();
-        // cout << "Any kernel found for benchmark: " << benchname << endl;
         return true;
       }
-    }
+    } 
   }
-  
   hw_file.close();
-  // cout << "No matching benchmark found: " << benchname << endl;
   return false;
 }
-
 
 
 void calculate_hw_mcpat(const gpgpu_sim_config &config,
@@ -243,22 +235,14 @@ void calculate_hw_mcpat(const gpgpu_sim_config &config,
                  char* benchname, std::string executed_kernelname, 
                  const bool *accelwattch_hybrid_configuration, bool aggregate_power_stats){
 
-  /* Reading HW data from CSV file */ 
+  /* Reading HW data from CSV file */
 
   vector<string> hw_data;
   bool kernel_found = false;
-  kernel_found = parse_hw_file(hwpowerfile, true, hw_data, benchname, executed_kernelname); // Searching for matching executed_kernelname.
-  if (!kernel_found) {
-    kernel_found = parse_hw_file(hwpowerfile, false, hw_data, benchname, executed_kernelname); // Searching for any kernel with the same benchname.
-  }
-  // Print the kernel and filename if kernel not found
-  if (!kernel_found) {
-    cout << "Failed to find perf stats for the target benchmark in hwpowerfile." << endl;
-    cout << "Failing kernel: " << executed_kernelname << endl;
-    cout << "Filename: " << hwpowerfile << endl;
-  }
-
-  assert(kernel_found); // Assert the kernel was found
+  kernel_found = parse_hw_file(hwpowerfile, true, hw_data, benchname, executed_kernelname); //Searching for matching executed_kernelname.
+  if(!kernel_found)
+    kernel_found = parse_hw_file(hwpowerfile, false, hw_data, benchname, executed_kernelname); //Searching for any kernel with same benchname. 
+  assert("Could not find perf stats for the target benchmark in hwpowerfile.\n" && (kernel_found));
   unsigned perf_cycles = static_cast<unsigned int>(std::stod(hw_data[HW_CYCLES]) + 0.5);
   if((power_simulation_mode == 2) && (accelwattch_hybrid_configuration[HW_CYCLES]))
     perf_cycles = cycle;
@@ -285,7 +269,7 @@ void calculate_hw_mcpat(const gpgpu_sim_config &config,
   if((power_simulation_mode == 2) && (accelwattch_hybrid_configuration[HW_L1_WM]))
     l1_write_misses = power_stats->get_l1d_write_misses(1) - power_stats->l1w_misses_kernel;
 
-    if(aggregate_power_stats){
+  if(aggregate_power_stats){
       power_stats->tot_inst_execution += power_stats->get_total_inst(1);
       power_stats->tot_int_inst_execution +=  power_stats->get_total_int_inst(1);
       power_stats->tot_fp_inst_execution +=  power_stats->get_total_fp_inst(1);
@@ -297,16 +281,16 @@ void calculate_hw_mcpat(const gpgpu_sim_config &config,
         l1_read_hits + l1_read_misses,
         l1_write_hits + l1_write_misses,
         power_stats->commited_inst_execution);
-    }
-    else{
-    wrapper->set_inst_power(
+  }
+  else{
+        wrapper->set_inst_power(
         shdr_config->gpgpu_clock_gated_lanes, cycle, //TODO: core.[0] cycles counts don't matter, remove this
         cycle, power_stats->get_total_inst(1),
         power_stats->get_total_int_inst(1), power_stats->get_total_fp_inst(1),
         l1_read_hits + l1_read_misses,
         l1_write_hits + l1_write_misses,
         power_stats->get_committed_inst(1));
-    }
+  }
 
     // Single RF for both int and fp ops -- activity factor set to 0 for Accelwattch HW and Accelwattch Hybrid because no HW Perf Stats for register files
     wrapper->set_regfile_power(power_stats->get_regfile_reads(1),
