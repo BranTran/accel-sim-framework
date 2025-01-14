@@ -40,7 +40,7 @@ def process_file(input_file, output_file_header='',kernel_launch_latency=0):
         'runtime_dynamic_W',
     ]
     
-    output_file = f"{output_file_header}.processed_csv"
+    output_file = f"{output_file_header}.processed.csv"
         
     # Open the input file (with multiple kernels in it)
     with open(input_file, 'r') as infile:
@@ -136,7 +136,8 @@ def process_input_dir(input_dir):
             simulation_file = os.path.join(config_path, "accelwattch_simulation.output")
             if os.path.isfile(simulation_file):
                 # Pass the file, opcode, and config to the processing function
-                output_file_header = f"{opcode_folder}_{config_folder}"
+                output_file_header = os.path.join("accelwattch_parsed_output",f"{opcode_folder}-{config_folder}")
+                print(output_file_header,kernel_launch_latency) 
                 process_file(simulation_file, output_file_header, kernel_launch_latency)
 
                 
@@ -146,11 +147,13 @@ def main():
         sys.exit(1)
     input_dir = sys.argv[1]
 
+    os.makedirs("accelwattch_parsed_output",exist_ok=True)
+
     if len(sys.argv) == 3:
         file = sys.argv[2]
         process_file(os.path.join(input_dir,file))
     else:
-        process_files(input_dir)
+        process_input_dir(input_dir)
 
         
 
