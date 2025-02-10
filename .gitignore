@@ -3,14 +3,12 @@ gpu-app-collection/
 hw_run/
 sim_run_*
 *.DS_Store*
-<<<<<<< HEAD
 *.csv
 *.csv#
 4.2/
 gpucomputingsdk_4.2.9_linux.run
 util/job_launching/*.txt
-=======
 
 *.out
 accelwattch*/
->>>>>>> 7e02543 (Update Summit repo things April 3rd)
+.ipynb_checkpoints/*
