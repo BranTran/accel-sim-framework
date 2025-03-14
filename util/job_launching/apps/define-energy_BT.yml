@@ -2962,4 +2962,186 @@ BE_HP_FP_MUL_10:
     execs:
         - BE_HP_FP_MUL:
             - args: 10
-            
+
+Deepbench_nvidia_tencore_BT:
+    exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
+    data_dirs: "$GPUAPPS_ROOT/data_dirs/"
+    execs:
+        - gemm_bench_tencore:
+            - args:  training double 1760 128 1760 0 0
+              accel-sim-mem: 20G
+            - args:  training double 2560 64 2560 0 0
+              accel-sim-mem: 20G
+            - args:  training double 3072 128 1024 1 0
+              accel-sim-mem: 20G
+            - args:  training double 5124 9124 2560 1 0
+              accel-sim-mem: 20G
+            - args:  training double 7860 64 2560 0 0
+              accel-sim-mem: 20G
+            - args:  training float 1760 128 1760 0 0
+              accel-sim-mem: 20G
+            - args:  training float 2560 64 2560 0 0
+              accel-sim-mem: 20G
+            - args:  training float 3072 128 1024 1 0
+              accel-sim-mem: 20G
+            - args:  training float 5124 9124 2560 1 0
+              accel-sim-mem: 20G
+            - args:  training float 7860 64 2560 0 0
+              accel-sim-mem: 20G
+            - args:  training half 1760 128 1760 0 0
+              accel-sim-mem: 20G
+            - args:  training half 2560 64 2560 0 0
+              accel-sim-mem: 20G
+            - args:  training half 3072 128 1024 1 0
+              accel-sim-mem: 20G
+            - args:  training half 5124 9124 2560 1 0
+              accel-sim-mem: 20G
+            - args:  training half 7860 64 2560 0 0
+              accel-sim-mem: 20G
+        - conv_bench_tencore:
+            - args:  training double 7 7 512 16 512 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training double 28 28 192 16 32 5 5 2 2 1 1
+              accel-sim-mem: 20G
+            - args:  training double 54 54 64 8 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training double 224 224 3 16 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training double 700 161 1 32 32 5 20 0 0 2 2
+              accel-sim-mem: 20G
+            - args:  training float 7 7 512 16 512 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training float 28 28 192 16 32 5 5 2 2 1 1
+              accel-sim-mem: 20G
+            - args:  training float 54 54 64 8 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training float 224 224 3 16 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training float 700 161 1 32 32 5 20 0 0 2 2
+              accel-sim-mem: 20G
+            - args:  training half 7 7 512 16 512 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training half 28 28 192 16 32 5 5 2 2 1 1
+              accel-sim-mem: 20G
+            - args:  training half 54 54 64 8 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training half 224 224 3 16 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  training half 700 161 1 32 32 5 20 0 0 2 2
+              accel-sim-mem: 20G
+            - args:  inference double 7 7 512 16 512 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference double 28 28 192 16 32 5 5 2 2 1 1
+              accel-sim-mem: 20G
+            - args:  inference double 54 54 64 8 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference double 224 224 3 16 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference double 700 161 1 32 32 5 20 0 0 2 2
+              accel-sim-mem: 20G
+            - args:  inference float 7 7 512 16 512 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference float 28 28 192 16 32 5 5 2 2 1 1
+              accel-sim-mem: 20G
+            - args:  inference float 54 54 64 8 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference float 224 224 3 16 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference float 700 161 1 32 32 5 20 0 0 2 2
+              accel-sim-mem: 20G
+            - args:  inference half 7 7 512 16 512 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference half 28 28 192 16 32 5 5 2 2 1 1
+              accel-sim-mem: 20G
+            - args:  inference half 54 54 64 8 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference half 224 224 3 16 64 3 3 1 1 1 1
+              accel-sim-mem: 20G
+            - args:  inference half 700 161 1 32 32 5 20 0 0 2 2
+              accel-sim-mem: 20G
+        - rnn_bench_tencore:
+            - args: inference half 1536 2 375 gru
+              accel-sim-mem: 20G
+            - args: inference half 1536 4 50 lstm
+              accel-sim-mem: 20G
+            - args: inference half 1024 128 25 lstm
+              accel-sim-mem: 20G
+            - args: inference half 256 4 150 lstm
+              accel-sim-mem: 20G
+            - args: inference half 2560 32 50 vanilla
+              accel-sim-mem: 20G
+            - args: inference half 1760 16 50 vanilla
+              accel-sim-mem: 20G
+            - args: training half 1536 2 375 gru
+              accel-sim-mem: 20G
+            - args: training half 1536 4 50 lstm
+              accel-sim-mem: 20G
+            - args: training half 1024 128 25 lstm
+              accel-sim-mem: 20G
+            - args: training half 256 4 150 lstm
+              accel-sim-mem: 20G
+            - args: training half 2560 32 50 vanilla
+              accel-sim-mem: 20G
+            - args: training half 1760 16 50 vanilla
+              accel-sim-mem: 20G
+            - args: inference float 1536 2 375 gru
+              accel-sim-mem: 20G
+            - args: inference float 1536 4 50 lstm
+              accel-sim-mem: 20G
+            - args: inference float 1024 128 25 lstm
+              accel-sim-mem: 20G
+            - args: inference float 256 4 150 lstm
+              accel-sim-mem: 20G
+            - args: inference float 2560 32 50 vanilla
+              accel-sim-mem: 20G
+            - args: inference float 1760 16 50 vanilla
+              accel-sim-mem: 20G
+            - args: training float 1536 2 375 gru
+              accel-sim-mem: 20G
+            - args: training float 1536 4 50 lstm
+              accel-sim-mem: 20G
+            - args: training float 1024 128 25 lstm
+              accel-sim-mem: 20G
+            - args: training float 256 4 150 lstm
+              accel-sim-mem: 20G
+            - args: training float 2560 32 50 vanilla
+              accel-sim-mem: 20G
+            - args: training float 1760 16 50 vanilla
+              accel-sim-mem: 20G
+            - args: training double 1536 2 375 gru
+              accel-sim-mem: 20G
+            - args: training double 1536 4 50 lstm
+              accel-sim-mem: 20G
+            - args: training double 1024 128 25 lstm
+              accel-sim-mem: 20G
+            - args: training double 256 4 150 lstm
+              accel-sim-mem: 20G
+            - args: training double 2560 32 50 vanilla
+              accel-sim-mem: 20G
+            - args: training double 1760 16 50 vanilla
+              accel-sim-mem: 20G
+        - rnn_bench_tencore_persist_static:
+            - args:  inference float 256 4 150 lstm
+              accel-sim-mem: 20G
+            - args:  inference float 1024 128 25 lstm
+              accel-sim-mem: 20G
+            - args:  inference float 1536 2 375 gru
+              accel-sim-mem: 20G
+            - args:  inference float 1536 4 50 lstm
+              accel-sim-mem: 20G
+            - args:  inference float 1760 16 50 vanilla
+              accel-sim-mem: 20G
+            - args:  inference float 2560 32 50 vanilla
+              accel-sim-mem: 20G
+            - args:  training float 256 4 150 lstm
+              accel-sim-mem: 20G
+            - args:  training float 1024 128 25 lstm
+              accel-sim-mem: 20G
+            - args:  training float 1536 2 375 gru
+              accel-sim-mem: 20G
+            - args:  training float 1536 4 50 lstm
+              accel-sim-mem: 20G
+            - args:  training float 1760 16 50 vanilla
+              accel-sim-mem: 20G
+            - args:  training float 2560 32 50 vanilla
+              accel-sim-mem: 20G            
