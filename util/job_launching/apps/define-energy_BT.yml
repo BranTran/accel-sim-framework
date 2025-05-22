@@ -2962,8 +2962,7 @@ BE_HP_FP_MUL_10:
     execs:
         - BE_HP_FP_MUL:
             - args: 10
-
-Deepbench_nvidia_tencore_BT:
+Deepbench_BT_priority:
     exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
     data_dirs: "$GPUAPPS_ROOT/data_dirs/"
     execs:
@@ -3145,3 +3144,22 @@ Deepbench_nvidia_tencore_BT:
               accel-sim-mem: 20G
             - args:  training float 2560 32 50 vanilla
               accel-sim-mem: 20G            
+Deepbench_BT_partial:
+    exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
+    data_dirs: "$GPUAPPS_ROOT/data_dirs/"
+    execs:
+        - conv_bench_tencore:
+            - args:  inference half 28 28 192 16 32 5 5 2 2 1 1
+              accel-sim-mem: 20G
+
+Deepbench_BT_partial_1:
+    exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
+    data_dirs: "$GPUAPPS_ROOT/data_dirs/"
+    execs:
+        - gemm_bench_tencore:
+            - args:  training double 1760 128 1760 0 0
+              accel-sim-mem: 20G
+            - args:  training double 3072 128 1024 1 0
+              accel-sim-mem: 20G
+
+

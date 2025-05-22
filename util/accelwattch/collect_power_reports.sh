@@ -42,11 +42,11 @@ report_dir=$ACCELSIM_ROOT/../accelwattch_power_reports
 #	echo "For example: ./util/accelwattch/collect_power_reports.sh volta_sass_sim"
 #	exit
 #fi
-config=${1}
+name=${1}
 power_file=accelwattch_power_report.log
 mkdir -p ${report_dir}
-runs_dir=$ACCELSIM_ROOT/../accelwattch_runs/${config}
-power_dir=${report_dir}/${config}
+runs_dir=$ACCELSIM_ROOT/../accelwattch_runs/${name}
+power_dir=${report_dir}/${name}
 if [ -d ${power_dir} ] ; then
 	rm -r ${power_dir}
 fi
@@ -58,12 +58,16 @@ do
 		do
 			#power_report/benchmark/input/<power_file>
 			bench_dir=${runs_dir}/${bench}/${inp}
-			#bench_dir=${runs_dir}/${bench}
-			if [ -f ${bench_dir}/${power_file} ] ; then
-				cp ${bench_dir}/${power_file} ${power_dir}/${bench}_${inp}.log 
-			else
-				echo "Warning: No Accelwattch power report in ${bench_dir}."
-			fi
+			for config in `ls ${bench_dir}`
+			do
+				#bench_dir=${runs_dir}/${bench}
+				true_dir=${bench_dir}/${config}
+				if [ -s ${true_dir}/${power_file} ] ; then
+					cp ${true_dir}/${power_file} ${power_dir}/${bench}_${inp}_${config}.log 
+				else
+					echo "Warning: No non-empty Accelwattch power report in ${true_dir}."
+				fi
+			done
 		done
 	fi
 done
